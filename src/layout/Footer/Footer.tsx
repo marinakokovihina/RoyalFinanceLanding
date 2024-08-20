@@ -17,7 +17,6 @@ export const Footer = () => {
             </SvgWrapperStyled>
 
         <StyledFooter>
-
             <StyledH4>Присоединяйтесь к нам</StyledH4>
             <GroupFooterCard>
                 <FooterCard idIcon={'number1White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Пообщаемся и поймем, как решить задачу с учетом ваших обстоятельств'} textH={'Обсудим'}/>
@@ -49,6 +48,9 @@ const StyledFooter = styled.footer `
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 120px;
+  @media (max-width: 426px) {
+    flex-direction: column;
+  }
   
 `;
 const GroupFooterCard = styled.div `
@@ -56,6 +58,9 @@ const GroupFooterCard = styled.div `
   flex-direction: row;
   gap: 24px;
   margin-bottom: 62px;
+  @media (max-width: 426px) {
+    flex-direction: column;
+  }
 `;
 const StyledH4 = styled.div `
   font-style: normal;

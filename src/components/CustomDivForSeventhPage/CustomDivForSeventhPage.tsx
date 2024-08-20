@@ -15,11 +15,11 @@ export const CustomDivForSeventhPage = () => {
             </GroupOfCard>
             <GroupOfCardMob>
                 <Item1>
-                    <CardForCustomDiv widthDiv={'143px'} iconId={'picture'} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
-                    <CardForCustomDiv widthDiv={'156px'} iconId={'pencil '} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
+                    <CardForCustomDiv widthDiv={'135px'} iconId={'picture'} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
+                    <CardForCustomDiv widthDiv={'148px'} iconId={'pencil '} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
                   </Item1>
                 <Item2>
-                    <CardForCustomDiv widthDiv={'260px'} iconId={'email '} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
+                    <CardForCustomDiv widthDiv={'252px'} iconId={'email '} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
                 </Item2>
             </GroupOfCardMob>
         </StyledDiv>
@@ -37,6 +37,9 @@ const StyledH4 = styled.h4`
   @media (max-width: 426px) {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 24px;
+    max-width: 100%;
+
 
   }
 `
@@ -49,7 +52,8 @@ const StyledP = styled.p`
   color: ${theme.colors.fontColorWhite};
   @media (max-width: 426px) {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 23px;
+    margin-bottom: 24px;
 
   }
 
@@ -69,6 +73,8 @@ const StyledDiv = styled.div `
     width: 351px;
     height: 248px;
     gap: 24px;
+    padding: 16px;
+    display: block;
 
 
   }
@@ -78,6 +84,8 @@ const StyledDiv = styled.div `
 const Item1 = styled.div `
     display: flex;
   flex-direction: row;
+  gap: 16px;
+  
     `
 const Item2 = styled.div ``
 const GroupOfCardMob = styled.div `
@@ -86,6 +94,7 @@ const GroupOfCardMob = styled.div `
   @media (max-width: 426px) {
     display: flex;
     flex-direction: column;
+    gap: 16px;
   }
 `
 const GroupOfCard = styled.div `

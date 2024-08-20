@@ -82,6 +82,7 @@ const CardWrapper = styled.div `
     
     
     
+    
 }
 `
 const TextWrapper = styled.div `
