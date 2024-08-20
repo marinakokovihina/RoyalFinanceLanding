@@ -23,7 +23,7 @@ export const Footer = () => {
                 <FooterCard idIcon={'number2White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Обсудим детали сотрудничества на выгодных для обоих сторон условиях'} textH={'Договоримся'}/>
                 <FooterCard idIcon={'number3White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Быстро и без рисков решим вашу задачу'} textH={'Решим'}/>
             </GroupFooterCard>
-            <Button  width={'238px'} height = {'48px'} text={'Связаться с нами'}
+            <Button  width={isMobile ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
                      borderRadius={'12px'} iconId={'tgIconForWhiteButton'} background={theme.colors.fontColorWhite}
                      widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'} color={`${theme.colors.fontPrimary}`}
                      gap={'12px'}
@@ -50,6 +50,13 @@ const StyledFooter = styled.footer `
   margin-bottom: 120px;
   @media (max-width: 426px) {
     flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
   }
   
 `;
@@ -60,6 +67,7 @@ const GroupFooterCard = styled.div `
   margin-bottom: 62px;
   @media (max-width: 426px) {
     flex-direction: column;
+    width: 311px;
   }
 `;
 const StyledH4 = styled.div `
@@ -69,4 +77,10 @@ const StyledH4 = styled.div `
   line-height: 56px;
   margin-bottom: 60px;
   color: ${theme.colors.fontColorWhite};
+  @media (max-width: 426px) {
+    text-align: left;
+    font-size: 32px;
+    line-height: 40px;
+
+  }
 `
