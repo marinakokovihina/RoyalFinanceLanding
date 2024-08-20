@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Header} from "./layout/header/Header";
+import {StyledWrapper} from "./components/wrapper/WrapperStyled";
+import {MainPage} from "./layout/MainPage/MainPage";
+import {PageForDifference} from "./layout/SecondPage/PageForDifference";
+import {ThirdPage} from "./layout/ThirdPage/ThirdPage";
+import {FourthPage} from "./layout/FourthPage/FourthPage";
+import {FifthPage} from "./layout/FifithPage/FifthPage";
+import {SixthPage} from "./layout/SixthPage/SixthPage";
+import {SeventhPage} from "./layout/SeventhPage/SeventhPage";
+import {Footer} from "./layout/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <StyledWrapper align={"center"} justify={"center"} direction={"column"}>
+          <Header/>
+          <MainPage/>
+          <PageForDifference/>
+          <ThirdPage/>
+          <FourthPage/>
+          <FifthPage/>
+          <SixthPage/>
+          <SeventhPage/>
+          <Footer/>
+      </StyledWrapper>
   );
 }
-
+//TODO ВЫНЕСТИ ВСЕ СВГШКИ В ОТДЕЛЬНЫЙ ФАЙЛ
+//todo ДОБАВИТЬ ФАВИКОНКУ РОЯЛ ФИНАНС
+//todo ПОМЕНЯТЬ ДЕФОЛТНЫЙ ЯЗЫК НА РУССКИЙ
 export default App;

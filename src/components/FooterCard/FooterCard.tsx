@@ -1,0 +1,48 @@
+import React from 'react';
+import styled from "styled-components";
+import {Icon} from "../Icon/Icon";
+import {theme} from "../../styles/Theme";
+
+
+type FooterCardProps = {
+    idIcon ?: string,
+    width?: string,
+    height?: string,
+    viewBox?: string,
+    textH?: string,
+    textP?: string
+}
+export const FooterCard = (props: FooterCardProps) => {
+    return (
+        <StyledFooterCard>
+            <Icon IconId={`${props.idIcon}`} height={props.height} width={props.width} viewBox={props.viewBox}/>
+            <StyledH6>{props.textH}</StyledH6>
+            <StyledP>{props.textP}</StyledP>
+        </StyledFooterCard>
+    );
+};
+
+const StyledFooterCard = styled.div `
+  background: #FFFFFF26;
+  width: 390px;
+  height: 194px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  gap: 16px;
+  color: ${theme.colors.fontColorWhite};
+`;
+const StyledH6 = styled.h6 `
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+`;
+const StyledP = styled.p `
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+`;

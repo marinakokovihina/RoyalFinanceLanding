@@ -1,0 +1,21 @@
+import React from 'react';
+import styled from "styled-components";
+
+export const StyledH5 = styled.h5`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 80px;
+  text-align: left;
+
+  @media  (max-width: 426px) {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 350px;
+    text-align: left;
+    margin-bottom: 40px;
+
+  }
+  
+`;
