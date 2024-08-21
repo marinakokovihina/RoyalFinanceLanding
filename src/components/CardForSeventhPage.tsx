@@ -2,6 +2,7 @@ import React from 'react';
 import {theme} from "../styles/Theme";
 import styled from "styled-components";
 import {Icon} from "./Icon/Icon";
+import Photo1 from "./../assets/img/screenShot1.png"
 type CardForSeventhPageProps = {
     iconId1?: string,
     height1?: string,

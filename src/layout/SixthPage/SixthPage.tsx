@@ -2,7 +2,6 @@ import React from 'react';
 import {StyledH5} from "../../components/StyledH5/StyledH5";
 import {SpanBlue} from "../../components/BlueSpan/BlueSpan";
 import styled from "styled-components";
-import {CardForFourthPage} from "../../components/CardForFourthPage/CardForFourthPage";
 import {CardForSixthPage} from "../../components/CardForSixthPage/CardForSixthPage";
 import {theme} from "../../styles/Theme";
 import {useMediaQuery} from "react-responsive";

@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "IBM Plex Sans";
     background-color: ${theme.colors.bg};
     color: ${theme.colors.fontPrimary};
+    overflow-x: hidden; /* Скрывает горизонтальную прокрутку */
 
   }
   

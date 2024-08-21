@@ -16,7 +16,7 @@ type CardForThirdPageProps = {
 export const CardForThirdPage = (props: CardForThirdPageProps) => {
     return (
         <CardForThirdPageStyledDiv heightDiv={props.heightDiv}>
-            <SvgWrapperStyled top='-40px' left='20px'>
+            <SvgWrapperStyled top='-20%' left='20px'>
                 <Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>
             </SvgWrapperStyled>
             <StyledCardItemsThirdPageDiv>

@@ -6,6 +6,7 @@ import {Icon} from "../../components/Icon/Icon";
 import {CardForFifthPage} from "../../components/CardForFifthPage/CardForFifthPage";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
+import MapOfWorld from  "../../assets/img/map.png"
 
 export const FifthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -23,6 +24,7 @@ export const FifthPage = () => {
                     <CardForFifthPage/>
                 </LeftColumn>
                 <RightColumn>
+
                     <Icon IconId={'mapOfWorld'} width={isMobile ? '351' : '746'} height={isMobile ? '242' :'516'} viewBox={'0 0 746 516'}/>
                 </RightColumn>
             </Container>

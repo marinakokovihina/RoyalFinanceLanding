@@ -16,7 +16,7 @@ export const SeventhPage = () => {
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
         <SeventhPageStyled>
-            <SvgWrapperStyled display={'none'} top={'5800px'} left={'80%'} >
+            <SvgWrapperStyled display={isMobile ? "none" : 'block'} top={'5800px'} left={'80%'} >
                 <Icon IconId={'circleForSeventhPage'} viewBox={'0 0 302 474'} width={'302'} height={'474'}/>
             </SvgWrapperStyled>
                 <StyledH5><SpanBlue>Настраиваемая форма</SpanBlue>  оплаты</StyledH5>

@@ -4,8 +4,11 @@ import {SpanBlue} from "../../components/BlueSpan/BlueSpan";
 import {Icon} from "../../components/Icon/Icon";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {GroupOfCardForPageForDifference} from "../../components/CardForMain/GroupOfCardForPageForDifference";
+import {useMediaQuery} from "react-responsive";
 
 export const PageForDifference = () => {
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
     return (
         <WrapperForDifferenceStyled>
             <StyledH4>В чем <SpanBlue>наше отличие</SpanBlue> от других?</StyledH4>
@@ -18,7 +21,7 @@ export const PageForDifference = () => {
                     <StyledH4Mob>В чем <SpanBlue>наше отличие</SpanBlue><br/>от других?</StyledH4Mob>
                 </RightColumn>
         </PageForDifferenceStyled>
-            <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={'none'}>
+            <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={isMobile ? 'none' : "block"}>
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
         </WrapperForDifferenceStyled>
