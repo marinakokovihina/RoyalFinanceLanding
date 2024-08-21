@@ -25,7 +25,12 @@ export const FooterCard = (props: FooterCardProps) => {
 };
 
 const Text = styled.div `
-
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 426px) {
     display: flex;
     flex-direction: column;

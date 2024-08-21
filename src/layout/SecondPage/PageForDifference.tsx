@@ -22,8 +22,6 @@ export const PageForDifference = () => {
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
         </WrapperForDifferenceStyled>
-
-
     );
 };
 

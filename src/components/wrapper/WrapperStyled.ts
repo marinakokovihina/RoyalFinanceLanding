@@ -11,7 +11,6 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
   font-family: 'IBM Plex Sans';
   position: relative;
   overflow-x: hidden;
-  overflow-y: scroll;
   z-index: 2;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "flex-start"};

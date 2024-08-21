@@ -54,7 +54,7 @@ const StyledHeader = styled.header`
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 2;
   @media (max-width: 426px) {
-    width: 100vw;
+    width: 100%;
     gap: 24px;
     justify-content: start;
     height: 64px;
