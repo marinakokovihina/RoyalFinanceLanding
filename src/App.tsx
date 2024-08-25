@@ -11,8 +11,10 @@ import {SeventhPage} from "./layout/SeventhPage/SeventhPage";
 import {Footer} from "./layout/Footer/Footer";
 
 function App() {
+
   return (
-      <StyledWrapper align={"center"} justify={"center"} direction={"column"}>
+
+      <StyledWrapper align={'center'} justify={"center"} direction={"column"}>
           <Header/>
           <MainPage/>
           <PageForDifference/>

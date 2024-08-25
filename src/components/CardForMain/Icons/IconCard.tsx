@@ -15,7 +15,7 @@ export type IconCardTetherProps = {
 }
 
 export const IconCardTether = () => {
-    const isMobile = useMediaQuery({ maxWidth: 400 });
+    const isMobile = useMediaQuery({ maxWidth: 426 });
 
     return (
         <StyledIconCard>

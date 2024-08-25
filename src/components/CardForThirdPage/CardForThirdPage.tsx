@@ -37,11 +37,15 @@ const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
      border: 1px solid rgba(65, 104, 241, 0.08);
      backdrop-filter: blur(40px);
      border-radius: 20px;
-  @media (max-width: 426px) {
-    flex-direction: column;
-    gap: 40px;
-    width: 351px;
-   
+      @media (max-width: 426px) {
+        flex-direction: column;
+        gap: 40px;
+        width: 351px;
+       
+    
+      }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 336px;
 
   }
 `;
@@ -57,11 +61,13 @@ const StyledCardItemsThirdPageDiv = styled.div `
   @media (max-width: 426px) {
     flex-direction: column;
     gap: 12px;
-
+    max-width: 95%;
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 336px;
     max-width: 95%;
 
-    
-  
+
   }
 `;
 const CardForThirdPageH5Styled = styled.h5 `
@@ -75,6 +81,9 @@ const CardForThirdPageH5Styled = styled.h5 `
     margin-bottom: 0px;
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 20px;
+    }
 `;
 const CardForThirdPagePStyled = styled.p `
   font-style: normal;
@@ -83,6 +92,10 @@ const CardForThirdPagePStyled = styled.p `
   line-height: 23px;
   color: ${theme.colors.fontColorSecondary};
   @media (max-width: 426px) {
+    font-size: 18px;
+
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
     font-size: 18px;
 
   }

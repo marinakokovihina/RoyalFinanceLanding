@@ -13,6 +13,8 @@ export const SeventhPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const def = '311px';
     const def2 = '388px'
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
         <SeventhPageStyled>
@@ -24,7 +26,7 @@ export const SeventhPage = () => {
                 <StyledWrapper>
                 <TextWrapper>
                     <StyledH6>Процесс оплаты для P2P переводов</StyledH6>
-                    <StyledP>Мы предлагаем собственную форму оплаты для переводов между физ. лицами,<br/> которая позволяет быстро и удобно переводить средства</StyledP>
+                    <StyledP>Мы предлагаем собственную форму оплаты для переводов между физ. лицами, которая позволяет быстро и удобно переводить средства</StyledP>
                 </TextWrapper>
 
 
@@ -36,15 +38,17 @@ export const SeventhPage = () => {
                     <CardForSeventhPage iconId1={'number2'} textForTopCard={'Перевод средств на счет получателя'}
                                         height1={'36'} width1={'36'} viewBox1={'0 0 36 36'}
                                         iconId2={'thirdImg'} viewBox2={'0 0 276 349'} width2={isMobile ? def : '276'} height2={isMobile ? def2 :'349'}
-                    /><CardForSeventhPage iconId1={'number3'} textForTopCard={'Апелляции'}
+                    />
+                    <CardForSeventhPage iconId1={'number3'} textForTopCard={'Апелляции'}
                                         height1={'36'} width1={'36'} viewBox1={'0 0 36 36'}
                                         iconId2={'thirdImg'} viewBox2={'0 0 276 349'} width2={isMobile ? def : '276'} height2={isMobile ? def2 :'349'}
                     />
+                    <CustomDivForSeventhPage display={isTablet ? 'flex' : 'none'}/>
                 </CardWrapper>
 
             </StyledWrapper>
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage/>
+                    <CustomDivForSeventhPage display={isTablet ? 'none' : 'flex'}/>
 
                 </StyledDivForBeidge>
             </Wrapper>
@@ -59,6 +63,11 @@ const SeventhPageStyled = styled.div `
     margin-top: 120px;
     padding-left: 12px;
     
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+  margin-top: 160px;
+    width: 90%;
+    margin-bottom: 160px;
   }
  
   
@@ -79,17 +88,23 @@ const CardWrapper = styled.div `
   gap: 40px;
   @media (max-width: 426px) {
     flex-direction: column;
-    
-    
-    
-    
 }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
 `
 const TextWrapper = styled.div `
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (min-width: 427px) and (max-width: 1024px) {
+    gap: 24px;
+
+  }
 `;
 
 const StyledH6 = styled.h6`
@@ -97,7 +112,10 @@ const StyledH6 = styled.h6`
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 20px;
 
+  }
 `;
 
 const StyledP = styled.p `
@@ -105,7 +123,11 @@ const StyledP = styled.p `
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: ${theme.colors.fontColorSecondary}
+  color: ${theme.colors.fontColorSecondary};
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 18px;
+
+  }
 `;
 const StyledWrapper = styled.div `
   box-sizing: border-box;
@@ -122,5 +144,9 @@ const StyledWrapper = styled.div `
   @media (max-width: 426px) {
     width: 351px;
     height: auto;
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    height: auto;
+
   }
 `;

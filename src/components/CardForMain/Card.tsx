@@ -24,7 +24,7 @@ export const Card = (props: CardProps) => {
     return (
         <StyledCard heightDiv={props.heightDiv} widthDiv={props.widthDiv} maxWidthP = {props.maxWidthP}
                     maxWidthH = {props.maxWidthH}
-            background={props.background} boxShadow={props.boxShadow} backdropFilter={props.backdropFilter}
+                    background={props.background} boxShadow={props.boxShadow} backdropFilter={props.backdropFilter}
                     textColor={props.textColor} textColorP={props.textP}>
             <WrapperStyledCard>
                 <>
@@ -40,7 +40,7 @@ export const Card = (props: CardProps) => {
     );
 };
 const TextDiv = styled.div `
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 12px;
 `
@@ -92,6 +92,12 @@ const StyledH5 = styled.h5 <CardProps>`
     max-width:${props => props.maxWidthH || '100%'};
     line-height: 28px;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 20px;
+    padding-top: 12px;
+
+
+  }
 `
 
 const StyledP = styled.p <CardProps>  `
@@ -104,6 +110,11 @@ const StyledP = styled.p <CardProps>  `
     font-size: 18px;
     line-height: 23px;
     max-width:${props => props.maxWidthP || '100%'};
+
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 18px;
+    width: 90%;
 
   }
 `

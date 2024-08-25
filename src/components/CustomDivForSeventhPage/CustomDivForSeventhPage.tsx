@@ -2,10 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {CardForCustomDiv} from "./CardForCustomDiv";
-
-export const CustomDivForSeventhPage = () => {
+type CustomDivForSeventhPageProps = {
+    display?: string,
+}
+export const CustomDivForSeventhPage = (props: CustomDivForSeventhPageProps) => {
     return (
-        <StyledDiv>
+        <StyledDiv display={props.display}>
             <StyledH4>Кастомизация формы оплаты</StyledH4>
             <StyledP>Настройка платежной страницы под ваши цели и нужды клиентов</StyledP>
             <GroupOfCard>
@@ -58,9 +60,9 @@ const StyledP = styled.p`
   }
 
 `
-const StyledDiv = styled.div `
+const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
   text-align: left;
-  display: flex;
+  display: ${props => props.display || 'flex'};
   flex-direction: column;
   align-items: flex-start;
   padding: 20px;
@@ -78,7 +80,11 @@ const StyledDiv = styled.div `
 
 
   }
-  
+  @media (min-width: 427px) and (max-width: 1024px) {
+    height: 513px;
+
+  }
+
 
 `;
 const Item1 = styled.div `

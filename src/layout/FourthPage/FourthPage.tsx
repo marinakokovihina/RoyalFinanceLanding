@@ -9,7 +9,8 @@ import {useMediaQuery} from "react-responsive";
 
 
 export const FourthPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
         <FourthPageStyled>
@@ -30,7 +31,7 @@ export const FourthPage = () => {
                                    textH5={'Отсутствие роллинга и холдинга средств'} background={theme.colors.colorForCardGreen}/>
             </LeftColumn>
             <RightColumn>
-                <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : '601'} width={isMobile ? '240' :'601'}/>
+                <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336': '601'} width={isMobile ? '240': isTablet ? '336' :'601'}/>
                 <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
 
             </RightColumn>
@@ -43,7 +44,12 @@ const FourthPageStyled = styled.div `
   text-align: left;
   @media (max-width: 426px) {
     margin-top: 120px;
-    padding-left: 12px;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    margin-top: 160px;
+
   }
 
 `
@@ -54,8 +60,12 @@ padding: 0;
   @media (max-width: 426px) {
     flex-direction: column-reverse;
     gap: 0;
+    max-width: 351px;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: column-reverse;
 
+  }
 `;
 const LeftColumn = styled.div`
   display: grid;
@@ -67,12 +77,25 @@ const LeftColumn = styled.div`
 
     flex-direction: column;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;  }
 `;
 const RightColumn = styled.div`
   @media (max-width: 426px) {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 40px;
+    justify-content: center;
+
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+
   }
 `;
 const StyledH5 = styled.h5`
@@ -86,6 +109,10 @@ const StyledH5 = styled.h5`
       
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: none;
+
+  }
 `;
 const StyledH5Mob = styled.h5`
   
@@ -97,8 +124,14 @@ const StyledH5Mob = styled.h5`
     font-weight: 600;
     font-size: 32px;
     line-height: 40px;
-    max-width: 90%;
     margin-bottom: 40px;
+
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 40px;
+    max-width: 50%;
+    display: block;
+
 
   }
 `;

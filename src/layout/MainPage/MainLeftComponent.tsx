@@ -10,7 +10,8 @@ export const MainLeftComponent = () => {
             <StyledH2>Платежная система</StyledH2>
             <StyledH3>Прием платежей и вывод средств</StyledH3>
             <StyledP>Принимайте платежи на сайтах и других интернет-проектах, используя различные методы оплаты, и получайте гарантированные выплаты в любой точке мира</StyledP>
-            <Button  width={'238px'} height = {'48px'} text={'Связаться с нами'}
+            <Button onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+                width={'238px'} height = {'48px'} text={'Связаться с нами'}
                      borderRadius={'12px'} iconId={'tgIcon'} background={'linear-gradient(270deg, #4168F1 30%, #3846BE 100%)'}
                      widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'} color={`${theme.colors.fontColorWhite}`}
                      gap={'12px'}
@@ -29,6 +30,7 @@ const StyledMainLeftComponent = styled.div `
     padding-left: 12px;
     padding-right: 12px;
     margin-bottom: 100px;
+    align-items: center;
   }
 `
 const StyledH2 = styled.h2 `
@@ -57,6 +59,11 @@ const StyledH3 = styled.h2`
     margin-bottom: 40px;
 
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 56px;
+    line-height: 68px;
+
+  }
 `
 const StyledP = styled.p`
   max-width: 444px;
@@ -69,5 +76,9 @@ const StyledP = styled.p`
   margin-bottom: 114px;
   @media (max-width: 426px) {
     margin-bottom: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-bottom: 40px;
+
   }
 `

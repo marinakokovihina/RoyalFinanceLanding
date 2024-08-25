@@ -32,8 +32,7 @@ import {MainRightComponent} from "../../layout/MainPage/MainRightComponent";
 //     </StyledMain>
 // );
 export const Logo = () => {
-    const isMobile = useMediaQuery({ maxWidth: 400 });
-
+    const isMobile = useMediaQuery({ maxWidth: 426 });
     return (
         <StyledLogo>
             <StyledIcon>
@@ -65,7 +64,9 @@ const StyledLogo = styled.header `
     align-items: center;
   @media (max-width: 426px) {
     gap: 12px;
-
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    margin-right: 159px;
   }
 
 `

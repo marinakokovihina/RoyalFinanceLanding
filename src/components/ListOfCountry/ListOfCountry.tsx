@@ -64,7 +64,10 @@ const Container = styled.div`
     width: 351px;
     height: auto;
   }
- 
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 100%;
+
+  }
 
 
 `;
@@ -80,7 +83,8 @@ const ListOfButtons = styled.div`
 //TODO ПОФИКСИТЬ КНОПКИ
     grid-template-columns: repeat(2, 1fr);
   }
-
+  @media (min-width: 427px) and (max-width: 1024px) {
+  }
 `;
 
 const Button = styled.button<{ active: boolean }>`

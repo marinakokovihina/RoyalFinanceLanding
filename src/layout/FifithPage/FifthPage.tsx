@@ -6,10 +6,10 @@ import {Icon} from "../../components/Icon/Icon";
 import {CardForFifthPage} from "../../components/CardForFifthPage/CardForFifthPage";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
-import MapOfWorld from  "../../assets/img/map.png"
 
 export const FifthPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
         <FifthPageStyled>
@@ -25,7 +25,7 @@ export const FifthPage = () => {
                 </LeftColumn>
                 <RightColumn>
 
-                    <Icon IconId={'mapOfWorld'} width={isMobile ? '351' : '746'} height={isMobile ? '242' :'516'} viewBox={'0 0 746 516'}/>
+                    <Icon IconId={'mapOfWorld'} width={isMobile ? '351' : isTablet ? '696' : '746'} height={isMobile ? '242': isTablet ? '481' :'516'} viewBox={'0 0 746 516'}/>
                 </RightColumn>
             </Container>
         </FifthPageStyled>
@@ -47,8 +47,14 @@ export const FifthPage = () => {
     display: none;
 
   }
-  
-`;
+   @media (min-width: 427px) and (max-width: 1024px) {
+     font-size: 40px;
+      width: 90%;
+     margin-bottom: 60px;
+
+   }
+
+ `;
 const StyledH5Mob = styled.h5`
   font-style: normal;
   font-weight: 600;
@@ -73,6 +79,10 @@ margin-top: 240px;
   @media (max-width: 426px) {
     padding-left: 12px;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    margin-top: 160px;
+
+  }
 `;
 const Container = styled.div `
 display: flex;
@@ -84,15 +94,26 @@ display: flex;
     
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+  }
 `;
 const LeftColumn = styled.div `
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @media (min-width: 427px) and (max-width: 1024px) {
+    align-items: center;
+    width: 100%;
+  }
+  
+
 `;
 const RightColumn = styled.div `
   @media (max-width: 426px) {
-margin-left: -15px;
-
+    margin-left: -15px; 
+    width: 100%;
   }
 `;

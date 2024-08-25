@@ -32,11 +32,16 @@ const RegionDiv = styled.div `
     width: 351px;
     max-height: 671px;
   }
+  
 `
 const RegionP = styled.div`
   padding-bottom: 6px;
   flex-direction: row;
   display: flex;
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 400px;
+
+  }
 `;
 const SpanAbbreviation = styled.div `
   font-style: normal;

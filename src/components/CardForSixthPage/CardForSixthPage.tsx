@@ -44,6 +44,10 @@ const CardForFourthPageStyled = styled.div<CardForFourthPageProps>`
     padding: 16px;
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 336px;
+    height: 269px;
+  }
 `;
 const TextContainer = styled.div`
   @media (max-width: 426px) {
@@ -63,6 +67,7 @@ const StyledH5 = styled.h5 <CardForFourthPageProps>`
     margin-top: 0px;
 
   }
+  
 `;
 const StyledP = styled.p <CardForFourthPageProps>`
   color: ${props => props.colorTextP};

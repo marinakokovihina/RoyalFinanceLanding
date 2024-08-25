@@ -25,7 +25,7 @@ export const CardUp = (props: CardForMainProps) => {
         <StyledCardForMain height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} display={props.display}>
                 <IconCardTether />
-                <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Надежный прием <br/>и вывод средств</StyledH4>
+                <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Сохранность ваших средств</StyledH4>
                 <StyledP colorP = {theme.colors.fontColorWhite}>Гарантируем защиту <br/>ваших финансовых операций</StyledP>
         </StyledCardForMain>
     );
@@ -49,6 +49,10 @@ export const StyledCardForMain = styled.div <CardForMainProps>`
     padding-left: 16px;
     padding-top: 16px;
 
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    
   }
 `
 export const StyledH4 = styled.h4<CardForMainProps>`

@@ -18,12 +18,12 @@ export const ThirdPage = () => {
                 <StyledH5ThirdPage> Решаем <SpanBlue> любые задачи </SpanBlue></StyledH5ThirdPage>
             </IconDiv>
             <Container>
-            <LeftColumn>
-                <Icon IconId={'goodMan'} height={'308'} width={'308'} viewBox={'0 0 308 308'}/>
-                <StyledH5ThirdPageMob> Решаем <SpanBlue> любые задачи </SpanBlue> </StyledH5ThirdPageMob>
-            </LeftColumn>
+                <LeftColumn>
+                    <Icon IconId={'goodMan'} height={'308'} width={'308'} viewBox={'0 0 308 308'}/>
+                    <StyledH5ThirdPageMob> Решаем <SpanBlue> любые задачи </SpanBlue> </StyledH5ThirdPageMob>
+                </LeftColumn>
 
-            <RightColumn>
+                <RightColumn>
                 <GroupOfCardForThirdPage>
                    <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId='game' textH5='Ключи для игр' textP='Покупка ключей на любых игровых платформах, независимо от территориальных ограничений'
                             height='80' width='80' viewBox='0 0 80 80'
@@ -54,7 +54,12 @@ const Container = styled.div`
     gap: 40px;
 
   }
-  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 80px;
+
+  }
+
 `;
 const LeftColumn = styled.div`
   display: flex;
@@ -62,10 +67,25 @@ const LeftColumn = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 426px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+
   }
 `;
-const RightColumn = styled.div``;
+const RightColumn = styled.div`
+  @media (max-width: 426px) {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+`;
 const GroupOfCardForThirdPage = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -89,6 +109,12 @@ const StyledH5ThirdPage = styled.h5 `
   @media (max-width: 426px) {
     display: none;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: auto;
+    display: none;
+
+
+  }
 `;
 const StyledH5ThirdPageMob = styled.h5 `
  
@@ -106,16 +132,29 @@ const StyledH5ThirdPageMob = styled.h5 `
     max-width: 350px;
     
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: block;
+    font-size: 40px;
+
+
+  }
 `;
 const ThirdSection = styled.div `
   @media (max-width: 426px) {
-  
+    margin-left: 12px;
+    display: flex;
+    
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    align-items: flex-start;
+    max-width: 760px;
+    margin-top: 160px;
   }
 `;
 const IconDiv = styled.div `
 
   @media (max-width: 426px) {
-    
-   
+
+
   } 
 `

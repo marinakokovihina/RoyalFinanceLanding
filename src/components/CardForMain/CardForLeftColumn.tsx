@@ -1,5 +1,5 @@
 import React from 'react';
-import {CardForMainProps, StyledCardForMain} from "./CardUp";
+import {CardForMainProps} from "./CardUp";
 import {Icon} from "../Icon/Icon";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
@@ -10,13 +10,40 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
         <StyledCardForMain height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
             <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
-            <StyledH4>Вывод Tether — <SpanBlue>T+0</SpanBlue> </StyledH4>
-            <StyledP>Выводы без комиссий  в течение 30 минут</StyledP>
+            <Text>
+                <StyledH4>Вывод Tether — <SpanBlue>T+0</SpanBlue> </StyledH4>
+                <StyledP>Выводы без комиссий  в течение 30 минут</StyledP>
+            </Text>
+
         </StyledCardForMain>
     );
 };;
+const Text = styled.div `
+`
+const StyledCardForMain = styled.div <CardForMainProps>`
+  height: ${props => props.height || '300px'} ;
+  width:  ${props => props.width || '300px'} ;
+  background: ${props => props.background || ''};
+  border-radius: 20px;
+  border: 1px solid #F1F1F4;
+  display: ${props => props.display || 'flex'} ;
+  flex-direction: column;
+  z-index: 2;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: left;
+  @media (max-width: 426px) {
+    padding-left: 16px;
+    padding-top: 16px;
 
-
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: row;
+    gap: 32px;
+  }
+`
 const StyledH4 = styled.h4 `
   font-weight: 600;
   margin-top: 24px;
@@ -27,10 +54,12 @@ const StyledH4 = styled.h4 `
   @media (max-width: 426px) {
     margin-top: 20px;
     font-size: 20px;
-
     flex-direction: column;
     align-items: flex-start;
 
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 0px;
   }
 
 `
@@ -46,6 +75,10 @@ const StyledP = styled.p `
     align-items: flex-start;
     max-width: 100%;
 
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 0px;
+    max-width: 100%;
   }
   
 `

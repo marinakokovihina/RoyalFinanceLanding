@@ -11,8 +11,8 @@ export const CardBottom = (props: CardForMainProps) => {
             <StyledCardForMain height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <IconCardFast />
-                <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Быстрая обработка платежей</StyledH4>
-                <StyledP colorP = {theme.colors.fontColorWhite}>Зачисляем баланс по каждой сделке, конвертируем заявки по текущему курсу, либо ведем расчет в фиате</StyledP>
+                <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Автоматическая обработка платежей</StyledH4>
+                <StyledP colorP = {theme.colors.fontColorWhite}>Сделка фиксируется в течение 3 минут с момента оплаты вашим клиентом</StyledP>
             </StyledCardForMain>
     );
 };

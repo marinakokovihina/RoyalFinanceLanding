@@ -5,6 +5,11 @@
         </svg>
 
     </g>
+    <g id = 'closeMenu'>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 22L16 10L28 22" stroke="#1B1B22" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </g>
     <g id = "Logo">
         <path d="M0 0L6.54545 6.54547V27.8182H14.7273V21.2727L21.2727 27.8182V34.3637H0V0Z" fill="#3846BE"/>
         <path d="M36 36L29.4545 29.4546L29.4545 8.18183L21.2727 8.18183L21.2727 14.7273L14.7273 8.18183L14.7273 1.63638L36 1.63638L36 36Z" fill="#3846BE"/>

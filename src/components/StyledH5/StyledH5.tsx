@@ -16,5 +16,9 @@ export const StyledH5 = styled.h5`
     margin-bottom: 40px;
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    font-size: 40px;
   
+  }
+
 `;

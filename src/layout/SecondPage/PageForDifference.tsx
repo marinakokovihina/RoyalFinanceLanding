@@ -7,7 +7,7 @@ import {GroupOfCardForPageForDifference} from "../../components/CardForMain/Grou
 import {useMediaQuery} from "react-responsive";
 
 export const PageForDifference = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 426 });
 
     return (
         <WrapperForDifferenceStyled>
@@ -18,9 +18,11 @@ export const PageForDifference = () => {
                 </LeftColumn>
                 <RightColumn>
                     <Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>
-                    <StyledH4Mob>В чем <SpanBlue>наше отличие</SpanBlue><br/>от других?</StyledH4Mob>
+                    <StyledH4Mob>В чем <SpanBlue>наше отличие </SpanBlue>от других?</StyledH4Mob>
                 </RightColumn>
         </PageForDifferenceStyled>
+            {/*todo расширить на весь экран надпись
+            */}
             <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={isMobile ? 'none' : "block"}>
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
@@ -36,9 +38,17 @@ const WrapperForDifferenceStyled = styled.div `
   margin-bottom: 240px;
   @media (max-width: 426px) {
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 0px;
 
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+    max-width: 750px;
   }
 `
 const PageForDifferenceStyled = styled.div `
@@ -51,6 +61,15 @@ const PageForDifferenceStyled = styled.div `
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
+    align-items: flex-start;
+    max-width: 351px;
+  }
+  
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: flex-start;
   }
 `
 const StyledH4Mob = styled.h4 `
@@ -62,6 +81,14 @@ const StyledH4Mob = styled.h4 `
     line-height: 40px ;
     
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: block;
+    font-size: 40px;
+    line-height: 40px ;
+    width: 100%;
+    padding-top: 47px;
+
+  }
 `;
   const StyledH4 = styled.h4 `
   margin-bottom: 80px;
@@ -71,10 +98,17 @@ const StyledH4Mob = styled.h4 `
     display: none;
     flex-direction: column-reverse;
   }
+    @media (min-width: 427px) and (max-width: 1024px) {
+      display: none;
 
+    }
 `
 const LeftColumn  = styled.div `
-  
+  @media (max-width: 426px) {
+    display: flex;
+align-items: center;
+    
+  }
 `
 const RightColumn = styled.div `
   display: flex;
@@ -85,7 +119,11 @@ const RightColumn = styled.div `
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: start;
+    align-items: flex-start;
   }
-  
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
 `

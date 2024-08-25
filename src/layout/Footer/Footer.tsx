@@ -8,11 +8,12 @@ import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 
 export const Footer = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
         <>
-            <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top = {'6630px'} left={'-7%'}>
+            <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none ' : 'block'} top = {'6630px'} left={'-7%'}>
                 <Icon IconId={'iconsForFooter'} height={'538'} width={'785'} viewBox={'0 0 785 538'}/>
             </SvgWrapperStyled>
 
@@ -23,7 +24,8 @@ export const Footer = () => {
                 <FooterCard idIcon={'number2White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Обсудим детали сотрудничества на выгодных для обоих сторон условиях'} textH={'Договоримся'}/>
                 <FooterCard idIcon={'number3White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Быстро и без рисков решим вашу задачу'} textH={'Решим'}/>
             </GroupFooterCard>
-            <Button  width={isMobile ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
+            <Button onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+                    width={isMobile ? '311px' : isTablet ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
                      borderRadius={'12px'} iconId={'tgIconForWhiteButton'} background={theme.colors.fontColorWhite}
                      widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'} color={`${theme.colors.fontPrimary}`}
                      gap={'12px'}
@@ -50,7 +52,7 @@ const StyledFooter = styled.footer `
   margin-bottom: 120px;
   @media (max-width: 426px) {
     flex-direction: column;
-    width: 90%;
+    width: 351px;
     height: auto;
     margin-top: 120px;
     padding: 20px;
@@ -58,7 +60,12 @@ const StyledFooter = styled.footer `
     margin-bottom: 50px;
 
   }
-  
+  @media (min-width: 427px) and (max-width: 1024px) {
+    margin-top: 0;
+    width: 696px;
+    height: auto;
+
+  }
 `;
 const GroupFooterCard = styled.div `
   display: flex;
@@ -68,6 +75,11 @@ const GroupFooterCard = styled.div `
   @media (max-width: 426px) {
     flex-direction: column;
     width: 311px;
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    flex-direction: column;
+
+
   }
 `;
 const StyledH4 = styled.div `

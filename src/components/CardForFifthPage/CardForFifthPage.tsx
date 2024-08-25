@@ -29,6 +29,9 @@ const CardForFifthPageStyled = styled.div`
     padding: 16px;
 
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 100%;
+  }
 `
 const StyledH5 = styled.h5`
   font-style: normal;
@@ -38,6 +41,7 @@ const StyledH5 = styled.h5`
   @media (max-width: 426px) {
     font-size: 18px;
   }
+  
   ;
 `
 const StyledH6 = styled.h6`

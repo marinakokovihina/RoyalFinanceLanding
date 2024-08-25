@@ -45,6 +45,11 @@ const TopCard = styled.div`
       width: 311px;
       height: 101px;
   }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    width: 308px;
+    
+
+  }
 `
 
 const StyledP = styled.p `

@@ -9,6 +9,8 @@ import {useMediaQuery} from "react-responsive";
 export const SixthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const defaultHeight = '273px';
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+
     return (
         <SixthPageStyled>
             <StyledH5>Широкий выбор <SpanBlue>способов оплаты</SpanBlue></StyledH5>
@@ -44,6 +46,11 @@ const SixthPageStyled = styled.div `
       margin-top: 120px;
       padding-left: 12px;
     }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    margin-top: 160px;
+    width: 90%;
+
+  }
 `;
 const CardsListforSixthPage = styled.div `
 display: flex;
@@ -52,5 +59,10 @@ display: flex;
   margin-top: 80px;
   @media (max-width: 426px) {
     flex-direction: column;
+  }
+  @media (min-width: 427px) and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
   }
 `;
