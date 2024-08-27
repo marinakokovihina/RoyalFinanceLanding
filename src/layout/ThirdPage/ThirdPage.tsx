@@ -5,6 +5,7 @@ import {SpanBlue} from "../../components/BlueSpan/BlueSpan";
 import {Icon} from "../../components/Icon/Icon";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const ThirdPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -14,31 +15,67 @@ export const ThirdPage = () => {
             <IconDiv>
                 <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top='2055px'>
                     <Icon IconId='circleForMan' height='748' width='298' viewBox='0 0 298 748'/>
-                </SvgWrapperStyled>
+                </SvgWrapperStyled
+                ><ScrollAnimation   animateIn="animate__fadeInUp"
+                                    animateOnce={true}
+                                    duration={1}
+                                    delay={300}
+                                    offset={10}  >
                 <StyledH5ThirdPage> Решаем <SpanBlue> любые задачи </SpanBlue></StyledH5ThirdPage>
+            </ScrollAnimation>
             </IconDiv>
             <Container>
                 <LeftColumn>
+                    <ScrollAnimation   animateIn="animate__fadeInUp"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={300}
+                                       offset={10}  >
                     <Icon IconId={'goodMan'} height={'308'} width={'308'} viewBox={'0 0 308 308'}/>
+                    </ScrollAnimation>
                     <StyledH5ThirdPageMob> Решаем <SpanBlue> любые задачи </SpanBlue> </StyledH5ThirdPageMob>
                 </LeftColumn>
 
                 <RightColumn>
                 <GroupOfCardForThirdPage>
+                    <ScrollAnimation   animateIn="animate__fadeInUp"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={300}
+                                       offset={10}  >
                    <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId='game' textH5='Ключи для игр' textP='Покупка ключей на любых игровых платформах, независимо от территориальных ограничений'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
+                    </ScrollAnimation>
+                    <ScrollAnimation   animateIn="animate__fadeInUp"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={300}
+                                       offset={10}  >
                     <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId='services' textH5='Подписки на сервисы' textP='Оплата подписок на сервисы, непринимающие оплату на территории вашей страны'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
+                    </ScrollAnimation>
+                    <ScrollAnimation   animateIn="animate__fadeInUp"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={500}
+                                       offset={10}  >
                     <CardForThirdPage heightDiv={isMobile ? '166px' :'170px' } iconId='gameCards' textH5='Гемблинг'
                                       textP='Переводы в сфере азартных игр (онлайн-казино, покер, слоты)'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
+                    </ScrollAnimation>
+                    <ScrollAnimation   animateIn="animate__fadeInUp"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={500}
+                                       offset={10}  >
                     <CardForThirdPage  heightDiv={isMobile ? '166px' :'170px' } iconId='marketing' textH5='Оплата рекламы'
                                       textP='Безопасные переводы для оплаты рекламных компаний'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
+                    </ScrollAnimation>
                 </GroupOfCardForThirdPage>
             </RightColumn>
         </Container>

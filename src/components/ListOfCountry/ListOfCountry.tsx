@@ -65,7 +65,7 @@ const Container = styled.div`
     height: auto;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
-    width: 100%;
+    width: 700px;
 
   }
 

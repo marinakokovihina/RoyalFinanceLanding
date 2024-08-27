@@ -39,7 +39,6 @@ const StyledH4 = styled.h4`
   @media (max-width: 426px) {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 24px;
     max-width: 100%;
 
 
@@ -55,7 +54,6 @@ const StyledP = styled.p`
   @media (max-width: 426px) {
     font-size: 18px;
     line-height: 23px;
-    margin-bottom: 24px;
 
   }
 
@@ -76,8 +74,7 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
     height: 248px;
     gap: 24px;
     padding: 16px;
-    display: block;
-
+    
 
   }
   @media (min-width: 427px) and (max-width: 1024px) {

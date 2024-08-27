@@ -5,6 +5,7 @@ import {SpanGreen} from "../../components/GreenSpan/GreenSpan";
 import {theme} from "../../styles/Theme";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
+import ScrollAnimation from "react-animate-on-scroll";
 
 
 
@@ -14,25 +15,61 @@ export const FourthPage = () => {
 
     return (
         <FourthPageStyled>
+            <ScrollAnimation   animateIn="animate__fadeInUp"
+                               animateOnce={true}
+                               duration={1}
+                               delay={100}
+                               offset={10}  >
             <StyledH5><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5>
+            </ScrollAnimation>
         <Container>
             <LeftColumn>
+                <ScrollAnimation   animateIn="animate__fadeInTopLeft"
+                                   animateOnce={true}
+                                   duration={1}
+                                   delay={0}
+                                   offset={60}  >
                 <CardForFourthPage iconId={'lock'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontColorWhite} colorTextP={theme.colors.fontColorWhite} textH5={'Надежный прием фиатных средств'}
                                    background={theme.colors.colorForCardGreen} textP={'Безопасные транзакции для вашего бизнеса с поддержкой множества валют '}/>
+                </ScrollAnimation>
+                <ScrollAnimation   animateIn="animate__fadeInTopRight"
+                                   animateOnce={true}
+                                   duration={1}
+                                   delay={0}
+                                   offset={60}  >
                 <CardForFourthPage iconId = {'wallet'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                                    colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary}
                                    textH5={'Холодные кошельки'} background={theme.colors.colorForCardGreyGreen} textP={'Обеспечивают максимальную безопасность для хранения ваших криптовалютных активов'}/>
+                </ScrollAnimation>
+                <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
+                                   animateOnce={true}
+                                   duration={1}
+                                   delay={0}
+                                   offset={40}  >
                 <CardForFourthPage iconId = {'handsWithTether'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary} textH5={'Безопасные выводы для всех клиентов'}
                                    background={theme.colors.colorForCardGreyGreen} textP={'Каждый запрос обрабатывается индивидуально, что позволяет обеспечить максимальную защиту ваших средств.'}/>
-                <CardForFourthPage iconId={'TPlusZero'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
+                </ScrollAnimation>
+                <ScrollAnimation   animateIn="animate__fadeInBottomRight"
+                                   animateOnce={true}
+                                   duration={1}
+                                   delay={0}
+                                   offset={40}  >
+                    <CardForFourthPage iconId={'TPlusZero'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontColorWhite} colorTextP={theme.colors.fontColorWhite} textP={'Быстрый вывод день в день без блокировок и удержания средств на вашем счете '}
                                    textH5={'Отсутствие роллинга и холдинга средств'} background={theme.colors.colorForCardGreen}/>
+                </ScrollAnimation>
             </LeftColumn>
             <RightColumn>
+                <ScrollAnimation   animateIn="animate__fadeIn"
+                                   animateOnce={true}
+                                   duration={1}
+                                   delay={0}
+                                   offset={10}  >
                 <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336': '601'} width={isMobile ? '240': isTablet ? '336' :'601'}/>
-                <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
+                </ScrollAnimation>
+                    <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
 
             </RightColumn>
         </Container>

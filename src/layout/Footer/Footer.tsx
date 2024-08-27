@@ -6,6 +6,7 @@ import {Button} from "../../components/Button/Button";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const Footer = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
@@ -16,7 +17,11 @@ export const Footer = () => {
             <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none ' : 'block'} top = {'6630px'} left={'-7%'}>
                 <Icon IconId={'iconsForFooter'} height={'538'} width={'785'} viewBox={'0 0 785 538'}/>
             </SvgWrapperStyled>
-
+            <ScrollAnimation   animateIn="animate__fadeInUp"
+                               animateOnce={true}
+                               duration={1}
+                               delay={300}
+                               offset={10}  >
         <StyledFooter>
             <StyledH4>Присоединяйтесь к нам</StyledH4>
             <GroupFooterCard>
@@ -31,6 +36,7 @@ export const Footer = () => {
                      gap={'12px'}
             />
         </StyledFooter>
+            </ScrollAnimation>
         </>
     );
 //     TODO добавить свгшки

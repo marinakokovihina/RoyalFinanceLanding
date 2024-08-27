@@ -38,15 +38,19 @@ const StyledMain = styled.main `
   width: 100%;
   min-height: 100%;
   margin-bottom: 240px;
+  margin-top: 160px;
   @media (max-width: 426px) {
-      flex-direction: column;
+        flex-direction: column;
         margin-bottom: 240px;
         align-items: center;
-       max-width: 351px;
+        max-width: 351px;
+        margin-top: 0;
+
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
-    padding-left: 36px;
-    gap: 120px;
+        flex-direction: column;
+        padding-left: 36px;
+        gap: 120px;
+        margin-top: 0;
   }
 `

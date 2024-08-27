@@ -36,17 +36,25 @@ export const Header = () => {
 
 const StyledWrapHeader = styled.div`
   width: 100%;
-  z-index: 2;
-  position: relative;
+  max-width: 1430px;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #FFFFFF80;
   margin-bottom: 80px;
+  
   @media (max-width: 426px) {
     margin-bottom: 80px;
     min-width: 100%;
+    position: relative;
+
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     min-width: 100%;
     padding-left: 0px;
+    position: relative;
+
   }
 `
 const StyledHeader = styled.header`

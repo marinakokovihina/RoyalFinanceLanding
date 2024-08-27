@@ -31,15 +31,21 @@ const RegionDiv = styled.div `
   @media (max-width: 426px) {
     width: 351px;
     max-height: 671px;
+    max-width: max-content;
+
   }
-  
+  @media (min-width: 427px) and (max-width: 1024px) {
+    max-width: fit-content;
+    min-width: 696px;
+  }
+
 `
 const RegionP = styled.div`
   padding-bottom: 6px;
   flex-direction: row;
   display: flex;
   @media (min-width: 427px) and (max-width: 1024px) {
-    width: 400px;
+    width: 300px;
 
   }
 `;
@@ -57,5 +63,8 @@ const SpanName = styled.div `
   font-size: 18px;
   line-height: 23px;
   color: ${theme.colors.fontColorSecondary};
+  @media (min-width: 427px) and (max-width: 1024px) {
+    text-align: left;
 
+  }
 `;

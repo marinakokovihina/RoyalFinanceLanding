@@ -32,6 +32,7 @@ export const MainRightComponent = () => {
 
 const StyledMainRightComponent = styled.div `
     margin-left: 94px;
+  
   @media (max-width: 426px) {
     margin-left: 0;
   }

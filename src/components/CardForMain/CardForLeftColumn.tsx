@@ -4,10 +4,14 @@ import {Icon} from "../Icon/Icon";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {SpanBlue} from "../BlueSpan/BlueSpan";
-
+import {useMediaQuery} from "react-responsive";
+import   "./../../styles/style.css"
 export const CardForLeftColumn = (props: CardForMainProps) => {
+    const isDesktop = useMediaQuery({ minWidth: 1025 });
+
     return (
-        <StyledCardForMain height={props.height} width={props.width} background={props.background} border={props.border}
+        <StyledCardForMain className= { isDesktop ? "animate__animated animate__fadeInDown animate animate__delay-09s" : ''}
+                           height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
             <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
             <Text>
@@ -34,6 +38,9 @@ const StyledCardForMain = styled.div <CardForMainProps>`
   padding-left: 20px;
   padding-top: 20px;
   text-align: left;
+  .animate__delay-0.5s {
+    animation-delay: 0.3s;
+  }
   @media (max-width: 426px) {
     padding-left: 16px;
     padding-top: 16px;

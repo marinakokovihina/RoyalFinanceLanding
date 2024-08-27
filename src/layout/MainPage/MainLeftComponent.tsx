@@ -2,11 +2,16 @@ import React from 'react';
 import {Button} from "../../components/Button/Button";
 import {theme} from "../../styles/Theme";
 import styled from "styled-components";
+import 'animate.css/animate.min.css';
+import {useMediaQuery} from "react-responsive";
+
 
 
 export const MainLeftComponent = () => {
+    const isDesktop = useMediaQuery({ minWidth: 1025 });
+
     return (
-        <StyledMainLeftComponent>
+        <StyledMainLeftComponent className= { isDesktop ? "animate__animated animate__fadeInLeft animate" : ''}>
             <StyledH2>Платежная система</StyledH2>
             <StyledH3>Прием платежей и вывод средств</StyledH3>
             <StyledP>Принимайте платежи на сайтах и других интернет-проектах, используя различные методы оплаты, и получайте гарантированные выплаты в любой точке мира</StyledP>

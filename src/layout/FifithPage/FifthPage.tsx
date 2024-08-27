@@ -6,6 +6,7 @@ import {Icon} from "../../components/Icon/Icon";
 import {CardForFifthPage} from "../../components/CardForFifthPage/CardForFifthPage";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const FifthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
@@ -16,17 +17,41 @@ export const FifthPage = () => {
             <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top={'4161px'}>
                 <Icon IconId={'circleForFifthPage'} height={'703'} width={'471'} viewBox={'0 0 471 703'}/>
             </SvgWrapperStyled>
-            <StyledH5> Международные переводы <SpanBlue> по всей планете</SpanBlue> </StyledH5>
+            <ScrollAnimation   animateIn="animate__fadeIn"
+                               animateOnce={true}
+                               duration={1}
+                               delay={20}
+                               offset={10}>
+                     <StyledH5>Международные переводы <SpanBlue> по всей планете</SpanBlue></StyledH5>
+            </ScrollAnimation>
             <StyledH5Mob> Международные переводы <br/><SpanBlue> по всей планете</SpanBlue> </StyledH5Mob>
             <Container>
                 <LeftColumn>
+                    <ScrollAnimation   animateIn="animate__fadeInTopLeft"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={20}
+                                       offset={100}>
                     <ListOfCountry/>
-                    <CardForFifthPage/>
+                    </ScrollAnimation>
+                    <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={20}
+                                       offset={100}>
+                        <CardForFifthPage/>
+
+                    </ScrollAnimation>
                 </LeftColumn>
                 <RightColumn>
-
+                    <ScrollAnimation   animateIn="animate__fadeIn"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={20}
+                                       offset={100}>
                     <Icon IconId={'mapOfWorld'} width={isMobile ? '351' : isTablet ? '696' : '746'} height={isMobile ? '242': isTablet ? '481' :'516'} viewBox={'0 0 746 516'}/>
-                </RightColumn>
+                    </ScrollAnimation>
+                    </RightColumn>
             </Container>
         </FifthPageStyled>
     );

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {IconCardTether} from "./Icons/IconCard";
 import {useMediaQuery} from "react-responsive";
+import 'animate.css/animate.min.css';
+import   "./../../styles/style.css"
 
 export type CardForMainProps = {
     width?: string,
@@ -20,9 +22,11 @@ export type CardForMainProps = {
     children?: React.ReactNode;
 }
 export const CardUp = (props: CardForMainProps) => {
+    const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <StyledCardForMain height={props.height} width={props.width} background={props.background} border={props.border}
+        <StyledCardForMain className= { isDesktop ? "animate__animated animate__fadeInRight animate animate__delay-07s" : ''}
+            height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} display={props.display}>
                 <IconCardTether />
                 <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Сохранность ваших средств</StyledH4>
@@ -45,6 +49,9 @@ export const StyledCardForMain = styled.div <CardForMainProps>`
   padding-left: 20px;
   padding-top: 20px;
   text-align: left;
+  .animate__delay-0.5s {
+    animation-delay: 0.5s;
+  }
   @media (max-width: 426px) {
     padding-left: 16px;
     padding-top: 16px;

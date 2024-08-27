@@ -12,6 +12,7 @@ root.render(
       <GlobalStyles/>
       <App />
   </React.StrictMode>
+
 );
 
 reportWebVitals();

@@ -5,19 +5,35 @@ import {Icon} from "../../components/Icon/Icon";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {GroupOfCardForPageForDifference} from "../../components/CardForMain/GroupOfCardForPageForDifference";
 import {useMediaQuery} from "react-responsive";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export const PageForDifference = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
         <WrapperForDifferenceStyled>
-            <StyledH4>В чем <SpanBlue>наше отличие</SpanBlue> от других?</StyledH4>
+            <ScrollAnimation   animateIn="animate__fadeIn"
+                               animateOnce={true}
+                               duration={1}
+                               delay={0}
+                               offset={50}  >
+                <StyledH4 >
+                    В чем <SpanBlue>наше отличие</SpanBlue> от других?
+                </StyledH4>
+            </ScrollAnimation>
             <PageForDifferenceStyled>
                 <LeftColumn>
                     <GroupOfCardForPageForDifference/>
                 </LeftColumn>
                 <RightColumn>
+                    <ScrollAnimation   animateIn="animate__fadeIn"
+                                       animateOnce={true}
+                                       duration={1}
+                                       delay={500}
+                                       offset={10}  >
                     <Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>
+                    </ScrollAnimation>
                     <StyledH4Mob>В чем <SpanBlue>наше отличие </SpanBlue>от других?</StyledH4Mob>
                 </RightColumn>
         </PageForDifferenceStyled>

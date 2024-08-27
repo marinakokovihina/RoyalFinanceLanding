@@ -30,7 +30,7 @@ const CardForFifthPageStyled = styled.div`
 
   }
   @media (min-width: 427px) and (max-width: 1024px) {
-    width: 100%;
+    width: 696px;
   }
 `
 const StyledH5 = styled.h5`
