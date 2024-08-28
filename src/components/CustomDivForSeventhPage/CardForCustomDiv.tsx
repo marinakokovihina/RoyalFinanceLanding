@@ -2,6 +2,7 @@ import React from 'react';
 import {Icon} from "../Icon/Icon";
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Image} from "../Image/Image";
 type CardProps = {
     iconId: string,
     height: string,
@@ -15,7 +16,8 @@ export const CardForCustomDiv = (props: CardProps) => {
         <StyledCard widthDiv={props.widthDiv} height={props.height} width={props.width} viewBox={props.viewBox} iconId={props.iconId} text={props.text}
 
         >
-            <Icon IconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>
+            <Image src={props.iconId} height={props.height} width={props.width}/>
+            {/*<Icon IconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>*/}
             <StyledP>{props.text}</StyledP>
         </StyledCard>
     );
