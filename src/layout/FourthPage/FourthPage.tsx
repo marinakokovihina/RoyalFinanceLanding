@@ -29,7 +29,7 @@ export const FourthPage = () => {
                 <ScrollAnimation   animateIn="animate__fadeInTopLeft"
                                    animateOnce={true}
                                    duration={1}
-                                   delay={0}
+                                   delay={1}
                                    offset={60}  >
                 <CardForFourthPage iconId={'lock'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontColorWhite} colorTextP={theme.colors.fontColorWhite} textH5={'Надежный прием фиатных средств'}
@@ -38,7 +38,7 @@ export const FourthPage = () => {
                 <ScrollAnimation   animateIn="animate__fadeInTopRight"
                                    animateOnce={true}
                                    duration={1}
-                                   delay={0}
+                                   delay={1}
                                    offset={60}  >
                 <CardForFourthPage iconId = {'wallet'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                                    colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary}
@@ -47,7 +47,7 @@ export const FourthPage = () => {
                 <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
                                    animateOnce={true}
                                    duration={1}
-                                   delay={0}
+                                   delay={1}
                                    offset={40}  >
                 <CardForFourthPage iconId = {'handsWithTether'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary} textH5={'Безопасные выводы для всех клиентов'}
@@ -56,7 +56,7 @@ export const FourthPage = () => {
                 <ScrollAnimation   animateIn="animate__fadeInBottomRight"
                                    animateOnce={true}
                                    duration={1}
-                                   delay={0}
+                                   delay={1}
                                    offset={40}  >
                     <CardForFourthPage iconId={'TPlusZero'} width={isMobile ? '80' : '100'} height={isMobile ? '80' : '100'} viewBox={'0 0 100 100'}
                     colorTextH5 = {theme.colors.fontColorWhite} colorTextP={theme.colors.fontColorWhite} textP={'Быстрый вывод день в день без блокировок и удержания средств на вашем счете '}
@@ -67,7 +67,7 @@ export const FourthPage = () => {
                 <ScrollAnimation   animateIn="animate__fadeIn"
                                    animateOnce={true}
                                    duration={1}
-                                   delay={0}
+                                   delay={1}
                                    offset={10}  >
                     {!isDesktop && (                        <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  '601'} width={isMobile ? '240': isTablet ? '336'  :'601'}/>
                     )}
