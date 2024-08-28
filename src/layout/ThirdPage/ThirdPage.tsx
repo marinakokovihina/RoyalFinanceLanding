@@ -6,6 +6,11 @@ import {Icon} from "../../components/Icon/Icon";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import game from "../../assets/img/game.png"
+import services from "../../assets/img/game.png"
+import cards from "../../assets/img/game.png"
+import marketing from "../../assets/img/game.png"
+
 
 export const ThirdPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -43,7 +48,7 @@ export const ThirdPage = () => {
                                        duration={1}
                                        delay={300}
                                        offset={10}  >
-                   <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId='game' textH5='Ключи для игр' textP='Покупка ключей на любых игровых платформах, независимо от территориальных ограничений'
+                   <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId={game} textH5='Ключи для игр' textP='Покупка ключей на любых игровых платформах, независимо от территориальных ограничений'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
                     </ScrollAnimation>
@@ -52,7 +57,7 @@ export const ThirdPage = () => {
                                        duration={1}
                                        delay={300}
                                        offset={10}  >
-                    <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId='services' textH5='Подписки на сервисы' textP='Оплата подписок на сервисы, непринимающие оплату на территории вашей страны'
+                    <CardForThirdPage heightDiv={isMobile ? '189px' :'193px' } iconId={services} textH5='Подписки на сервисы' textP='Оплата подписок на сервисы, непринимающие оплату на территории вашей страны'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
                     </ScrollAnimation>
@@ -61,7 +66,7 @@ export const ThirdPage = () => {
                                        duration={1}
                                        delay={500}
                                        offset={10}  >
-                    <CardForThirdPage heightDiv={isMobile ? '166px' :'170px' } iconId='gameCards' textH5='Гемблинг'
+                    <CardForThirdPage heightDiv={isMobile ? '166px' :'170px' } iconId={cards} textH5='Гемблинг'
                                       textP='Переводы в сфере азартных игр (онлайн-казино, покер, слоты)'
                             height='80' width='80' viewBox='0 0 80 80'
                    />
@@ -71,7 +76,7 @@ export const ThirdPage = () => {
                                        duration={1}
                                        delay={500}
                                        offset={10}  >
-                    <CardForThirdPage  heightDiv={isMobile ? '166px' :'170px' } iconId='marketing' textH5='Оплата рекламы'
+                    <CardForThirdPage  heightDiv={isMobile ? '166px' :'170px' } iconId={marketing} textH5='Оплата рекламы'
                                       textP='Безопасные переводы для оплаты рекламных компаний'
                             height='80' width='80' viewBox='0 0 80 80'
                    />

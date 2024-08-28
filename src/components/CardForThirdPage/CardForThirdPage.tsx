@@ -1,8 +1,8 @@
 import React from 'react';
-import {Icon} from "../Icon/Icon";
 import styled from "styled-components";
 import {SvgWrapperStyled} from "../SvgWrapper/SvgWrapper";
 import {theme} from "../../styles/Theme";
+import {Image} from "../Image/Image";
 type CardForThirdPageProps = {
     iconId?: string,
     height?: string,
@@ -17,7 +17,8 @@ export const CardForThirdPage = (props: CardForThirdPageProps) => {
     return (
         <CardForThirdPageStyledDiv heightDiv={props.heightDiv}>
             <SvgWrapperStyled top='-20%' left='20px'>
-                <Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>
+                <Image src={props.iconId} height={props.height} width={props.width}/>
+                {/*<Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>*/}
             </SvgWrapperStyled>
             <StyledCardItemsThirdPageDiv>
                 <CardForThirdPageH5Styled>{props.textH5}</CardForThirdPageH5Styled>
@@ -78,7 +79,7 @@ const CardForThirdPageH5Styled = styled.h5 `
   margin-bottom: 15px;
   @media (max-width: 426px) {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
   }
   @media (min-width: 427px) and (max-width: 1024px) {
