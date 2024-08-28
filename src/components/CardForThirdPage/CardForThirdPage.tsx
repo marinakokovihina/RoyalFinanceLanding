@@ -41,7 +41,8 @@ const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
         flex-direction: column;
         gap: 8px;
         width: 351px;
-    
+        display: flex;
+        align-items: flex-start;
       }
   img{
     margin-top: -10%;
