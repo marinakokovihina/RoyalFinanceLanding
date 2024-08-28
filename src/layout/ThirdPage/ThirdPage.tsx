@@ -190,8 +190,10 @@ const ThirdSection = styled.div `
   @media (min-width: 427px) and (max-width: 1024px) {
     align-items: flex-start;
     max-width: 760px;
-    margin-top: 160px;
+    padding-top: 160px;
   }
+  padding-top: 240px;
+
 `;
 const IconDiv = styled.div `
 

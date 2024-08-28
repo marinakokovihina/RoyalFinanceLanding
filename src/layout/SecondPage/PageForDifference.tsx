@@ -32,6 +32,7 @@ export const PageForDifference = () => {
                                        duration={1}
                                        delay={500}
                                        offset={10}  >
+
                     <Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>
                     </ScrollAnimation>
                     <StyledH4Mob>В чем <SpanBlue>наше отличие </SpanBlue>от других?</StyledH4Mob>
@@ -51,7 +52,7 @@ const WrapperForDifferenceStyled = styled.div `
   font-size: 48px;
   text-align: left;
   line-height: 56px;
-  margin-bottom: 240px;
+  padding-top: 240px;
   @media (max-width: 426px) {
     display: flex;
     align-items: center;

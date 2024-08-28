@@ -37,7 +37,6 @@ const StyledMain = styled.main `
   justify-content: center;
   width: 100%;
   min-height: 100%;
-  margin-bottom: 240px;
   margin-top: 160px;
   @media (max-width: 426px) {
         flex-direction: column;
