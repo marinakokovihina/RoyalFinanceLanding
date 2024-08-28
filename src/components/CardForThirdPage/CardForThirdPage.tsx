@@ -16,8 +16,10 @@ export const CardForThirdPage = (props: CardForThirdPageProps) => {
     return (
         <CardForThirdPageStyledDiv heightDiv={props.heightDiv}>
             {/*<SvgWrapperStyled top='-20%' left='20px'>*/}
+            <Div>
                 <Image src={props.iconId} height={props.height} width={props.width}/>
-                {/*<Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>*/}
+
+            </Div>  {/*<Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>*/}
             {/*</SvgWrapperStyled>*/}
             <StyledCardItemsThirdPageDiv>
                 <CardForThirdPageH5Styled>{props.textH5}</CardForThirdPageH5Styled>
@@ -26,6 +28,11 @@ export const CardForThirdPage = (props: CardForThirdPageProps) => {
         </CardForThirdPageStyledDiv>
     );
 };
+const Div = styled.div `
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+`
 const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
     display: flex;
      flex-direction: column;
@@ -41,8 +48,7 @@ const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
         flex-direction: column;
         gap: 8px;
         width: 351px;
-        display: flex;
-        align-items: flex-start;
+       
       }
   img{
     margin-top: -10%;
