@@ -2,6 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {CardForCustomDiv} from "./CardForCustomDiv";
+import pencil from "./../../assets/img/pencil.png"
+import picture from "./../../assets/img/picture.png"
+import email from "./../../assets/img/email.png"
+
+
 type CustomDivForSeventhPageProps = {
     display?: string,
 }
@@ -11,17 +16,17 @@ export const CustomDivForSeventhPage = (props: CustomDivForSeventhPageProps) => 
             <StyledH4>Кастомизация формы оплаты</StyledH4>
             <StyledP>Настройка платежной страницы под ваши цели и нужды клиентов</StyledP>
             <GroupOfCard>
-                <CardForCustomDiv widthDiv={'143px'} iconId={'picture'} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
-                <CardForCustomDiv widthDiv={'156px'} iconId={'pencil '} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
-                <CardForCustomDiv widthDiv={'260px'} iconId={'email '} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
+                <CardForCustomDiv widthDiv={'143px'} iconId={picture} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
+                <CardForCustomDiv widthDiv={'156px'} iconId={pencil} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
+                <CardForCustomDiv widthDiv={'260px'} iconId={email} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
             </GroupOfCard>
             <GroupOfCardMob>
                 <Item1>
-                    <CardForCustomDiv widthDiv={'135px'} iconId={'picture'} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
-                    <CardForCustomDiv widthDiv={'148px'} iconId={'pencil '} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
+                    <CardForCustomDiv widthDiv={'135px'} iconId={picture} viewBox={'0 0 20 21'} height={'21'} width={'20'} text={'Логотип'} />
+                    <CardForCustomDiv widthDiv={'148px'} iconId={pencil} viewBox={'0 0 22 21'} height={'21'} width={'22'} text={'Название'}/>
                   </Item1>
                 <Item2>
-                    <CardForCustomDiv widthDiv={'252px'} iconId={'email '} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
+                    <CardForCustomDiv widthDiv={'252px'} iconId={email} viewBox={'0 0 20 21'} height={'20'} width={'21'} text={'Контакты поддержки'}/>
                 </Item2>
             </GroupOfCardMob>
         </StyledDiv>
