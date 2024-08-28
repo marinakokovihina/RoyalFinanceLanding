@@ -10,8 +10,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 export const SixthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const defaultHeight = '273px';
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
-    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
+    // const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    // const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
 
     return (
         <SixthPageStyled>
@@ -78,7 +78,7 @@ const SixthPageStyled = styled.div `
     margin-top: 240px;
     @media (max-width: 426px) {
       margin-top: 120px;
-      padding-left: 0px;
+      padding-left: 0;
     }
   @media (min-width: 427px) and (max-width: 1024px) {
     margin-top: 160px;

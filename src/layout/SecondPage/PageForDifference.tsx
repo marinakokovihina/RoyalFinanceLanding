@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 export const PageForDifference = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isDesktop = useMediaQuery({ minWidth: 1025 });
+    // const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
         <WrapperForDifferenceStyled id = "possibilities">
@@ -56,14 +56,14 @@ const WrapperForDifferenceStyled = styled.div `
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     max-width: 750px;
   }
 `

@@ -2,7 +2,6 @@ import React from 'react';
 import {theme} from "../styles/Theme";
 import styled from "styled-components";
 import {Icon} from "./Icon/Icon";
-import Photo1 from "./../assets/img/screenShot1.png"
 import {Image} from "./Image/Image";
 type CardForSeventhPageProps = {
     iconId1?: string,
@@ -66,9 +65,7 @@ const StyledP = styled.p `
 const BottomCard = styled.div `
 
 `
-const Photo = styled.img `
 
-`
 const CardForSeventhPageStyled = styled.div`
     display: flex;
   flex-direction: column;

@@ -11,7 +11,6 @@ export const Header = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
     const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
     const isDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1440 });
-    const isBigDesktop = useMediaQuery({ minWidth: 1441 });
     return (
         <StyledWrapHeader>
             <StyledHeader>
@@ -53,7 +52,7 @@ const StyledWrapHeader = styled.div`
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     min-width: 100%;
-    padding-left: 0px;
+    padding-left: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -76,13 +75,13 @@ const StyledHeader = styled.header`
     justify-content: start;
     height: 64px;
     padding-top: 16px;
-    padding-left: 0px;
+    padding-left: 0;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     width: 100%;
     justify-content: start;
     gap: 10px;
-    padding-left: 0px;
+    padding-left: 0;
 
 
 
@@ -91,8 +90,7 @@ const StyledHeader = styled.header`
     gap: 30px;
   width: 100%;
   justify-content: start;
-  gap: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
   @media (min-width: 1800px) {
     margin-left: -7%;

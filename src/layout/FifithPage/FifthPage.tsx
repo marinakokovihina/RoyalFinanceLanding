@@ -11,7 +11,7 @@ import {Image} from "../../components/Image/Image";
 import Map from "../../assets/img/Map.png"
 export const FifthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    // const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
         <FifthPageStyled id = "regions">
@@ -104,7 +104,7 @@ const StyledH5Mob = styled.h5`
 const FifthPageStyled = styled.div `
 margin-top: 240px;
   @media (max-width: 426px) {
-    padding-left: 0px;
+    padding-left: 0;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     margin-top: 160px;
