@@ -39,7 +39,8 @@ const StyledWrapHeader = styled.div`
   z-index: 99;
   position: fixed;
   top: 0;
-  
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px); 
   left: 0;
   margin-bottom: 80px;
   
@@ -67,8 +68,7 @@ const StyledHeader = styled.header`
   gap: 106px;
   max-height: 80px;
   max-width: 1296px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(40px);  z-index: 2;
+  
   @media (max-width: 426px) {
     width: 100%;
     gap: 24px;
