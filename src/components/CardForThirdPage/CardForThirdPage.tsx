@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {SvgWrapperStyled} from "../SvgWrapper/SvgWrapper";
 import {theme} from "../../styles/Theme";
 import {Image} from "../Image/Image";
 type CardForThirdPageProps = {
@@ -16,10 +15,10 @@ type CardForThirdPageProps = {
 export const CardForThirdPage = (props: CardForThirdPageProps) => {
     return (
         <CardForThirdPageStyledDiv heightDiv={props.heightDiv}>
-            <SvgWrapperStyled top='-20%' left='20px'>
+            {/*<SvgWrapperStyled top='-20%' left='20px'>*/}
                 <Image src={props.iconId} height={props.height} width={props.width}/>
                 {/*<Icon IconId={`${props.iconId}`} width={props.width} height={props.height} viewBox={props.viewBox}/>*/}
-            </SvgWrapperStyled>
+            {/*</SvgWrapperStyled>*/}
             <StyledCardItemsThirdPageDiv>
                 <CardForThirdPageH5Styled>{props.textH5}</CardForThirdPageH5Styled>
                 <CardForThirdPagePStyled>{props.textP}</CardForThirdPagePStyled>
@@ -31,7 +30,7 @@ const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
     display: flex;
      flex-direction: column;
      align-items: flex-start;
-     gap: 24px;
+     gap: 10px;
      width: 404px;
      height: ${props => props.heightDiv};
      background: linear-gradient(72.48deg, #F0F2FF 0%, #FAFBFF 100%);
@@ -40,20 +39,23 @@ const CardForThirdPageStyledDiv = styled.div <CardForThirdPageProps>`
      border-radius: 20px;
       @media (max-width: 426px) {
         flex-direction: column;
-        gap: 40px;
+        gap: 8px;
         width: 351px;
-       
     
       }
+  img{
+    margin-top: -10%;
+    margin-left: 20px;
+  }
   @media (min-width: 427px) and (max-width: 1024px) {
     width: 336px;
-
+    gap: 8px;
   }
 `;
 
 const StyledCardItemsThirdPageDiv = styled.div `
     display: flex;
-  margin-top: 60px;
+  margin-top: 0;
   max-width: 85%;
   padding-left: 20px;
   justify-content: left;
@@ -63,11 +65,13 @@ const StyledCardItemsThirdPageDiv = styled.div `
     flex-direction: column;
     gap: 12px;
     max-width: 95%;
+    margin-top: 0;
+
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     width: 336px;
     max-width: 95%;
-
+    margin-top: 0;
 
   }
 `;

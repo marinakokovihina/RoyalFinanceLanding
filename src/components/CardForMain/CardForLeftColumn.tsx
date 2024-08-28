@@ -21,7 +21,7 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
 
         </StyledCardForMain>
     );
-};;
+};
 const Text = styled.div `
 `
 const StyledCardForMain = styled.div <CardForMainProps>`
@@ -70,7 +70,7 @@ const StyledH4 = styled.h4 `
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
 `
@@ -88,7 +88,11 @@ const StyledP = styled.p `
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 0px;
+    margin-top: 0;
+    max-width: 100%;
+  }
+  @media (min-width: 427px) and (max-width: 767px) {
+    margin-top: 0;
     max-width: 100%;
   }
   
