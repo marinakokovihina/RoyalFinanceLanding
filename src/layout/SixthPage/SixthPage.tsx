@@ -87,18 +87,20 @@ const SixthPageStyled = styled.div `
   }
 `;
 const CardsListforSixthPage = styled.div `
-display: flex;
+  display: flex;
   flex-direction: row;
   gap: 24px;
   margin-top: 80px;
-  @media (max-width: 426px) {
+  @media (min-width: 0px) and (max-width: 426px) {
     flex-direction: column;
+    display: flex;
+
   }
   @media (min-width: 427px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
-  }@media (min-width: 102px) and (max-width: 1439px) {
+  }@media (min-width: 1023px) and (max-width: 1439px) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
