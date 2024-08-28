@@ -43,6 +43,11 @@ const StyledH4 = styled.h4`
 
 
   }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 20px;
+    max-width: 100%;
+
+  }
 `
 const StyledP = styled.p`
  
@@ -57,6 +62,10 @@ const StyledP = styled.p`
 
   }
 
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    font-size: 18px;
+
+  }
 `
 const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
   text-align: left;
@@ -77,8 +86,12 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
     
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 1023px) {
     height: 513px;
+
+  }@media (min-width: 1024px) and (max-width: 1439px) {
+    height: 205px;
+  width: 632px;
 
   }
 
@@ -106,6 +119,10 @@ const GroupOfCard = styled.div `
     gap: 16px;
   @media (max-width: 426px) {
     display: none;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+   flex-direction: row;
+
   }
 
 

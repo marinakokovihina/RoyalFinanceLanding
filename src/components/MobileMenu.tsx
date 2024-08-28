@@ -75,16 +75,27 @@ const StyledMobileMenu = styled.div`
     padding-left: 10px;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
+    padding: 16px 12px;
+    flex-direction: row;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-right: 32px;
-    padding-left: 12px;
-    //margin-top: 40%;
-    //min-width: 768px;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
     background-color: ${theme.colors.fontColorWhite};
     
   }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+  svg{
+    margin-left: -1%;
+  }
+    @media (min-width: 1024px) and (max-width: 1440px) {
+      background: ${theme.colors.fontColorWhite};
+
+
+    }
+  }
+  
+ 
 `;
 
 const StyledPopUp = styled.div`
@@ -109,6 +120,10 @@ const StyledPopUp = styled.div`
     margin-top: 25%;
 
 
+
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin-top: 19%;
 
   }
 `;

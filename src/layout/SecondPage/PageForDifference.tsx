@@ -12,7 +12,7 @@ export const PageForDifference = () => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <WrapperForDifferenceStyled>
+        <WrapperForDifferenceStyled id = "possibilities">
             <ScrollAnimation   animateIn="animate__fadeIn"
                                animateOnce={true}
                                duration={1}

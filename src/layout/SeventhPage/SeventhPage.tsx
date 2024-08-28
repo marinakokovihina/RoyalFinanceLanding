@@ -9,11 +9,16 @@ import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import FirstImg from "../../assets/img/Perevod1.png"
+import SecondImg from "../../assets/img/Perevod2.png"
+import ThirdImg from "../../assets/img/Perevod3.png"
 
 export const SeventhPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
     const def = '311px';
     const def2 = '388px'
+    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
+
     const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1023 });
 
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
@@ -45,18 +50,18 @@ export const SeventhPage = () => {
 
                 <CardWrapper>
                     <CardForSeventhPage iconId1={'number1'} textForTopCard={'Ввод номера карты, суммы платежа и банка получателя'}
-                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'}
-                                        iconId2={'firstImageForSeventhPage'} viewBox2={'0 0 276 349'} width2={isMobile ? def :'276'} height2={isMobile ? def2 :'349'}
+                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={FirstImg}
+                                        viewBox2={'0 0 276 349'} width2={isMobile ? def :'276px'} height2={isMobile ? def2 :'349px'}
                     />
                     <CardForSeventhPage iconId1={'number2'} textForTopCard={'Перевод средств на счет получателя'}
-                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'}
-                                        iconId2={'thirdImg'} viewBox2={'0 0 276 349'} width2={isMobile ? def : '276'} height2={isMobile ? def2 :'349'}
+                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={SecondImg}
+                                        viewBox2={'0 0 276 349'} width2={isMobile ? def : '276px'} height2={isMobile ? def2 :'349px'}
                     />
                     <CardForSeventhPage iconId1={'number3'} textForTopCard={'Апелляции'}
-                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'}
-                                        iconId2={'thirdImg'} viewBox2={'0 0 276 349'} width2={isMobile ? def : '276'} height2={isMobile ? def2 :'349'}
+                                        height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={ThirdImg}
+                                         viewBox2={'0 0 276 349'} width2={isMobile ? def : '276px'} height2={isMobile ? def2 :'349px'}
                     />
-                    <CustomDivForSeventhPage display={!isTablet && !isMobile ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={!isTablet && !isMobile && !isDesktop ? 'flex' : 'none'} />
                 </CardWrapper>
             </StyledWrapper>
                 </ScrollAnimation>
@@ -66,7 +71,7 @@ export const SeventhPage = () => {
                                    delay={300}
                                    offset={10}  >
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage display={isTablet || isMobile ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={isDesktop||isTablet || isMobile ? 'flex' : 'none'} />
 
                 </StyledDivForBeidge>
                 </ScrollAnimation>
@@ -78,14 +83,19 @@ export const SeventhPage = () => {
 
 const SeventhPageStyled = styled.div `
     margin-top: 240px;
+  margin-left: -20%;
   @media (max-width: 426px) {
     margin-top: 120px;
-    padding-left: 12px;
-    
+    padding-left: 0px;
+    margin-left: 0;
+
+
   }
   @media (min-width: 427px) and (max-width: 1024px) {
   margin-top: 160px;
     width: 90%;
+    margin-left: 0;
+
     margin-bottom: 160px;
   }
  
@@ -98,8 +108,15 @@ const SeventhPageStyled = styled.div `
     display: flex;
     flex-direction: column;
   }
-  
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    display: flex;
+    flex-direction: column;
+  }
+
 `;const StyledDivForBeidge = styled.div `
+  @media (min-width: 1024px) and (max-width: 1439px) {
+   display: flex;
+  }
 `;
 const CardWrapper = styled.div `
   display: flex;
@@ -110,11 +127,16 @@ const CardWrapper = styled.div `
     flex-direction: column;
     align-items: center;
     gap: 30px;}
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    flex-direction: row;
+    gap: 25px;
+  }
+  @media (min-width: 427px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
   }
+  
 
 `
 const TextWrapper = styled.div `

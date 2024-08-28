@@ -11,6 +11,7 @@ export const SixthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const defaultHeight = '273px';
     const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
 
     return (
         <SixthPageStyled>
@@ -77,7 +78,7 @@ const SixthPageStyled = styled.div `
     margin-top: 240px;
     @media (max-width: 426px) {
       margin-top: 120px;
-      padding-left: 12px;
+      padding-left: 0px;
     }
   @media (min-width: 427px) and (max-width: 1024px) {
     margin-top: 160px;
@@ -93,9 +94,13 @@ display: flex;
   @media (max-width: 426px) {
     flex-direction: column;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
-  }
+  }@media (min-width: 102px) and (max-width: 1439px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+  
 `;

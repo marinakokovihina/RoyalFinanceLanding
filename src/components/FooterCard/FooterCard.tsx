@@ -39,6 +39,10 @@ const Text = styled.div `
   @media (min-width: 427px) and (max-width: 1024px) {
     
   }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    flex-direction: column;
+
+  }
 
 `
 
@@ -64,6 +68,12 @@ const StyledFooterCard = styled.div `
     width: 632px;
     height: 130px;
     flex-direction: row;
+
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+   width: 274px;
+    flex-direction: column;
+    height: 232px;
 
   }
 `;

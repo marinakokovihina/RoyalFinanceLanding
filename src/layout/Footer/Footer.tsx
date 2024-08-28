@@ -22,7 +22,7 @@ export const Footer = () => {
                                duration={1}
                                delay={300}
                                offset={10}  >
-        <StyledFooter>
+            <StyledFooter>
             <StyledH4>Присоединяйтесь к нам</StyledH4>
             <GroupFooterCard>
                 <FooterCard idIcon={'number1White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Пообщаемся и поймем, как решить задачу с учетом ваших обстоятельств'} textH={'Обсудим'}/>
@@ -72,6 +72,9 @@ const StyledFooter = styled.footer `
     height: auto;
 
   }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    width: 936px;
+  }
 `;
 const GroupFooterCard = styled.div `
   display: flex;
@@ -86,6 +89,9 @@ const GroupFooterCard = styled.div `
     flex-direction: column;
 
 
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    flex-direction: row;
   }
 `;
 const StyledH4 = styled.div `

@@ -16,7 +16,7 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
             <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
             <Text>
                 <StyledH4>Вывод Tether — <SpanBlue>T+0</SpanBlue> </StyledH4>
-                <StyledP>Выводы без комиссий  в течение 30 минут</StyledP>
+                <StyledP>Отсутствие роллинга и холдинга средств</StyledP>
             </Text>
 
         </StyledCardForMain>
@@ -48,6 +48,10 @@ const StyledCardForMain = styled.div <CardForMainProps>`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row;
+    gap: 32px;
+  }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    flex-direction: column ;
     gap: 32px;
   }
 `

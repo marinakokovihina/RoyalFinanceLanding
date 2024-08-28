@@ -44,13 +44,22 @@ const CardForFourthPageStyled = styled.div<CardForFourthPageProps>`
     padding: 16px;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 1023px) {
     width: 336px;
     height: 269px;
+  }
+  @media (min-width: 1023px) and (max-width: 1439px) {
+    width: 456px;
+    height: 153px;
+    flex-direction: row;
+  gap: 32px
   }
 `;
 const TextContainer = styled.div`
   @media (max-width: 426px) {
+  }
+  @media (min-width: 1023px) and (max-width: 1439px) {
+   max-width: 60%;
   }
 `;
 const StyledH5 = styled.h5 <CardForFourthPageProps>`
@@ -64,6 +73,10 @@ const StyledH5 = styled.h5 <CardForFourthPageProps>`
   @media (max-width: 426px) {
     font-size: 20px;
     line-height: 28px;
+    margin-top: 0px;
+
+  }
+  @media (min-width: 1023px) and (max-width: 1439px) {
     margin-top: 0px;
 
   }

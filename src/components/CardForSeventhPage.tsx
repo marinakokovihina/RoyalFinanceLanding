@@ -3,12 +3,13 @@ import {theme} from "../styles/Theme";
 import styled from "styled-components";
 import {Icon} from "./Icon/Icon";
 import Photo1 from "./../assets/img/screenShot1.png"
+import {Image} from "./Image/Image";
 type CardForSeventhPageProps = {
     iconId1?: string,
     height1?: string,
     width1?: string,
     viewBox1?: string,
-    iconId2?: string,
+    src?: string,
     height2?: string,
     width2?: string,
     viewBox2?: string,
@@ -24,7 +25,7 @@ export const CardForSeventhPage = (props:  CardForSeventhPageProps) => {
                 <StyledP>{props.textForTopCard}</StyledP>
             </TopCard>
             <BottomCard>
-                <Icon IconId={`${props.iconId2}`} viewBox={props.viewBox2} height={props.height2} width={props.width2}/>
+                <Image src={props.src} width={props.width2} height={props.height2}/>
             </BottomCard>
         </CardForSeventhPageStyled>
     );
@@ -45,11 +46,16 @@ const TopCard = styled.div`
       width: 311px;
       height: 101px;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 1023px) {
     width: 308px;
     
 
-  }
+  } @media (min-width: 1024px) and (max-width: 1439px) {
+    width: 272px;
+  height: 101px;
+
+
+}
 `
 
 const StyledP = styled.p `

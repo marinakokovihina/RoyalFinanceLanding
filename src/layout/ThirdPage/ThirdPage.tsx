@@ -11,7 +11,7 @@ export const ThirdPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
-        <ThirdSection>
+        <ThirdSection id = "features">
             <IconDiv>
                 <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top='2055px'>
                     <Icon IconId='circleForMan' height='748' width='298' viewBox='0 0 298 748'/>

@@ -25,4 +25,10 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
     @media (min-width: 322px) and (max-width: 767px){
     width: auto;    
   }
+  @media (min-width: 1024px) and (max-width: 1440px){
+min-width: 1024px;  }
+  @media (min-width: 1800px) {
+  overflow-x: hidden;
+  }
+  
 `

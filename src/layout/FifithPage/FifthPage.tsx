@@ -7,13 +7,14 @@ import {CardForFifthPage} from "../../components/CardForFifthPage/CardForFifthPa
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import {Image} from "../../components/Image/Image";
+import Map from "../../assets/img/Map.png"
 export const FifthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
     const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
-        <FifthPageStyled>
+        <FifthPageStyled id = "regions">
             <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top={'4161px'}>
                 <Icon IconId={'circleForFifthPage'} height={'703'} width={'471'} viewBox={'0 0 471 703'}/>
             </SvgWrapperStyled>
@@ -49,7 +50,8 @@ export const FifthPage = () => {
                                        duration={1}
                                        delay={20}
                                        offset={100}>
-                    <Icon IconId={'mapOfWorld'} width={isMobile ? '351' : isTablet ? '696' : '746'} height={isMobile ? '242': isTablet ? '481' :'516'} viewBox={'0 0 746 516'}/>
+                        <Image src={Map} height={isMobile ? '242px' : '516px'} width={isMobile ? '351px' : '746px'}/>
+                    {/*<Icon IconId={'mapOfWorld'} width={isMobile ? '351' : isTablet ? '696' : '746'} height={isMobile ? '242': isTablet ? '481' :'516'} viewBox={'0 0 746 516'}/>*/}
                     </ScrollAnimation>
                     </RightColumn>
             </Container>
@@ -102,7 +104,7 @@ const StyledH5Mob = styled.h5`
 const FifthPageStyled = styled.div `
 margin-top: 240px;
   @media (max-width: 426px) {
-    padding-left: 12px;
+    padding-left: 0px;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     margin-top: 160px;
@@ -138,7 +140,7 @@ const LeftColumn = styled.div `
 `;
 const RightColumn = styled.div `
   @media (max-width: 426px) {
-    margin-left: -15px; 
+    //margin-left: -15px; 
     width: 100%;
   }
 `;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 export const ListOfCountry = () => {
-    const [activeRegion, setActiveRegion] = useState<string | null>('asia');
+    const [activeRegion, setActiveRegion] = useState<string | null>('sng');
 
     const region = (region: string) => {
         setActiveRegion(region);
@@ -14,28 +14,22 @@ export const ListOfCountry = () => {
         <Container>
             <ListOfButtons>
             <Button
-                active={activeRegion === 'asia'}
-                onClick={() => region('asia')}
+                active={activeRegion === 'sng'}
+                onClick={() => region('sng')}
             >
-                Азия
+                СНГ
             </Button>
             <Button
-                active={activeRegion === 'europe'}
-                onClick={() => region('europe')}
+                active={activeRegion === 'another'}
+                onClick={() => region('another')}
             >
-                Европа
+                Другие страны
             </Button>
             <Button
-                active={activeRegion === 'america'}
-                onClick={() => region('america')}
+                active={activeRegion === 'evro'}
+                onClick={() => region('evro')}
             >
-                Америка
-            </Button>
-            <Button
-                active={activeRegion === 'oceania'}
-                onClick={() => region('oceania')}
-            >
-                Океания
+                ЕС
             </Button>
             </ListOfButtons>
 

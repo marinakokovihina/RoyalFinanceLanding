@@ -61,6 +61,7 @@ export const StyledCardForMain = styled.div <CardForMainProps>`
     flex-direction: column;
     
   }
+  
 `
 export const StyledH4 = styled.h4<CardForMainProps>`
   font-weight: 600;
@@ -75,6 +76,12 @@ export const StyledH4 = styled.h4<CardForMainProps>`
     line-height: 28px;
 
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+
+  }
 `
 export const StyledP = styled.p<CardForMainProps>`
   color: ${props => props.colorP};
@@ -82,6 +89,10 @@ export const StyledP = styled.p<CardForMainProps>`
   font-size: 18px;
   line-height: 23.4px;
   max-width: 267px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 18px;
+
+  }
 
 `
 

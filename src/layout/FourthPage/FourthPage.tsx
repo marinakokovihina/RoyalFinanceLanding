@@ -6,15 +6,17 @@ import {theme} from "../../styles/Theme";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 
 
 
 export const FourthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1023 });
+    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
 
     return (
-        <FourthPageStyled>
+        <FourthPageStyled id = "safety">
             <ScrollAnimation   animateIn="animate__fadeInUp"
                                animateOnce={true}
                                duration={1}
@@ -67,8 +69,13 @@ export const FourthPage = () => {
                                    duration={1}
                                    delay={0}
                                    offset={10}  >
-                <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336': '601'} width={isMobile ? '240': isTablet ? '336' :'601'}/>
+                    {!isDesktop && (                        <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  '601'} width={isMobile ? '240': isTablet ? '336'  :'601'}/>
+                    )}
+                    <SvgWrapperStyled display ={isDesktop ?'block' :'none'} top={'3728px'} left={'60%'}>
+                        <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  isDesktop ? '600' : '601'} width={isMobile ? '240': isTablet ? '336' :isDesktop ? '600' :'601'}/>
+                    </SvgWrapperStyled>
                 </ScrollAnimation>
+
                     <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
 
             </RightColumn>
@@ -117,6 +124,11 @@ const LeftColumn = styled.div`
   @media (min-width: 427px) and (max-width: 1024px) {
     align-items: center;
     justify-content: center;
+    margin-left: 5%;  } 
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    align-items: center;
+    max-width: 60%;
+    justify-content: center;
     margin-left: 5%;  }
 `;
 const RightColumn = styled.div`
@@ -134,6 +146,7 @@ const RightColumn = styled.div`
     align-items: center;
 
   }
+  
 `;
 const StyledH5 = styled.h5`
   font-style: normal;
@@ -168,6 +181,12 @@ const StyledH5Mob = styled.h5`
     font-size: 40px;
     max-width: 50%;
     display: block;
+
+
+  }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    max-width: 100%;
+    font-size: 48px;
 
 
   }

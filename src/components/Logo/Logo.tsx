@@ -68,5 +68,9 @@ const StyledLogo = styled.header `
   @media (min-width: 427px) and (max-width: 1024px) {
     margin-right: 159px;
   }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin-right: 395px;
+
+  }
 
 `
