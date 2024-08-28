@@ -7,9 +7,9 @@ import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
 import game from "../../assets/img/game.png"
-import services from "../../assets/img/game.png"
-import cards from "../../assets/img/game.png"
-import marketing from "../../assets/img/game.png"
+import services from "../../assets/img/services.png"
+import cards from "../../assets/img/cards.png"
+import marketing from "../../assets/img/marketing.png"
 
 
 export const ThirdPage = () => {
