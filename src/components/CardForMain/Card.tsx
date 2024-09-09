@@ -56,7 +56,7 @@ const WrapperStyledCard = styled.div `
     margin: 0;
     padding: 0;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: row;
     padding-top: 16px;
@@ -85,14 +85,14 @@ const StyledH5 = styled.h5 <CardProps>`
   font-size: 24px;
   padding-top: 20px;
   line-height: 32px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
     max-width:${props => props.maxWidthH || '100%'};
     line-height: 28px;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 20px;
     padding-top: 12px;
 
@@ -106,13 +106,13 @@ const StyledP = styled.p <CardProps>  `
   color: ${props => props.textColorP};
   line-height: 23.4px;
   
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 18px;
     line-height: 23px;
     max-width:${props => props.maxWidthP || '100%'};
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 18px;
     width: 90%;
 

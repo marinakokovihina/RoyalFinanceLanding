@@ -9,8 +9,9 @@ import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
 import {Image} from "../../components/Image/Image";
 import Map from "../../assets/img/Map.png"
+import {animationMode} from "../../store/type";
 export const FifthPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     // const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
 
     return (
@@ -19,7 +20,7 @@ export const FifthPage = () => {
                 <Icon IconId={'circleForFifthPage'} height={'703'} width={'471'} viewBox={'0 0 471 703'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeIn"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={20}
                                offset={10}>
@@ -29,14 +30,14 @@ export const FifthPage = () => {
             <Container>
                 <LeftColumn>
                     <ScrollAnimation   animateIn="animate__fadeInTopLeft"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={20}
                                        offset={100}>
                     <ListOfCountry/>
                     </ScrollAnimation>
                     <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={20}
                                        offset={100}>
@@ -46,12 +47,11 @@ export const FifthPage = () => {
                 </LeftColumn>
                 <RightColumn>
                     <ScrollAnimation   animateIn="animate__fadeIn"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={20}
                                        offset={100}>
                         <Image src={Map} height={isMobile ? '242px' : '516px'} width={isMobile ? '351px' : '746px'}/>
-                    {/*<Icon IconId={'mapOfWorld'} width={isMobile ? '351' : isTablet ? '696' : '746'} height={isMobile ? '242': isTablet ? '481' :'516'} viewBox={'0 0 746 516'}/>*/}
                     </ScrollAnimation>
                     </RightColumn>
             </Container>
@@ -66,7 +66,7 @@ export const FifthPage = () => {
   margin-bottom: 80px;
   text-align: left;
   display: block;
-  @media  (max-width: 426px) {
+  @media  (max-width: 767px) {
     font-size: 32px;
     line-height: 40px;
     max-width: 350px;
@@ -74,7 +74,7 @@ export const FifthPage = () => {
     display: none;
 
   }
-   @media (min-width: 427px) and (max-width: 1024px) {
+   @media (min-width: 768px) and (max-width: 1024px) {
      font-size: 40px;
       width: 90%;
      margin-bottom: 60px;
@@ -91,22 +91,22 @@ const StyledH5Mob = styled.h5`
   text-align: left;
   display: none;
 
-  @media  (max-width: 426px) {
+  @media  (max-width: 767px) {
     font-size: 32px;
     line-height: 40px;
     max-width: 350px;
     display: block;
-
     text-align: left;
   }
   
 `;
 const FifthPageStyled = styled.div `
-margin-top: 240px;
-  @media (max-width: 426px) {
+  padding-top: 120px;
+  margin-top: 120px;
+  @media (max-width: 430px) {
     padding-left: 0;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 431px) and (max-width: 1024px) {
     margin-top: 160px;
 
   }
@@ -116,12 +116,12 @@ display: flex;
   position: relative;
   margin-top: 80px;
   gap: 24px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column-reverse;
     
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 431px) and (max-width: 1024px) {
     flex-direction: column-reverse;
     align-items: center;
     width: 90%;
@@ -131,7 +131,7 @@ const LeftColumn = styled.div `
   display: flex;
   flex-direction: column;
   gap: 24px;
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 430px) and (max-width: 1024px) {
     align-items: center;
     width: 100%;
   }
@@ -139,7 +139,7 @@ const LeftColumn = styled.div `
 
 `;
 const RightColumn = styled.div `
-  @media (max-width: 426px) {
+  @media (max-width: 430px) {
     //margin-left: -15px; 
     width: 100%;
   }

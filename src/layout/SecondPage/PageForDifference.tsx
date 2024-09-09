@@ -6,18 +6,21 @@ import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {GroupOfCardForPageForDifference} from "../../components/CardForMain/GroupOfCardForPageForDifference";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from 'react-animate-on-scroll';
+import {animationMode} from "../../store/type";
 
 export const PageForDifference = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     // const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
         <WrapperForDifferenceStyled id = "possibilities">
-            <ScrollAnimation   animateIn="animate__fadeIn"
-                               animateOnce={true}
-                               duration={1}
-                               delay={0}
-                               offset={50}  >
+            <ScrollAnimation
+                animateIn="animate__fadeIn"
+                animateOnce={animationMode}
+                duration={5}
+                delay={0}
+                offset={10}
+            >
                 <StyledH4 >
                     В чем <SpanBlue>наше отличие</SpanBlue> от других?
                 </StyledH4>
@@ -28,10 +31,9 @@ export const PageForDifference = () => {
                 </LeftColumn>
                 <RightColumn>
                     <ScrollAnimation   animateIn="animate__fadeIn"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
-                                       delay={500}
-                                       offset={10}  >
+                                       >
 
                     <Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>
                     </ScrollAnimation>
@@ -52,20 +54,24 @@ const WrapperForDifferenceStyled = styled.div `
   font-size: 48px;
   text-align: left;
   line-height: 56px;
-  padding-top: 240px;
-  @media (max-width: 426px) {
+  padding-top: 120px;
+  margin-top: 120px;
+  @media (max-width: 767px) {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 0;
-
+    padding-top: 60px;
+    margin-top: 60px;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1024px) {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 0;
     max-width: 750px;
+    padding-top: 60px;
+    margin-top: 60px;
   }
 `
 const PageForDifferenceStyled = styled.div `
@@ -74,7 +80,7 @@ const PageForDifferenceStyled = styled.div `
   gap: 134px;
   font-size: 48px;
   line-height: 56px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
@@ -82,7 +88,7 @@ const PageForDifferenceStyled = styled.div `
     max-width: 351px;
   }
   
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
@@ -92,13 +98,13 @@ const PageForDifferenceStyled = styled.div `
 const StyledH4Mob = styled.h4 `
   display: none;
 
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: block;
     font-size: 32px;
     line-height: 40px ;
     
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     display: block;
     font-size: 40px;
     line-height: 40px ;
@@ -111,11 +117,11 @@ const StyledH4Mob = styled.h4 `
   margin-bottom: 80px;
   display: block;
 
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: none;
     flex-direction: column-reverse;
   }
-    @media (min-width: 427px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
       display: none;
 
     }
@@ -132,13 +138,13 @@ const RightColumn = styled.div `
   z-index: 10;
   align-items: center;
   justify-content: center;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 40px;
     align-items: flex-start;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
 

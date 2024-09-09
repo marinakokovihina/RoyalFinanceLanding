@@ -31,6 +31,7 @@ const StyledMainLeftComponent = styled.div `
   max-width: 566px;
   justify-content: left;
   text-align: left;
+  margin-left: 5%;
   @media (max-width: 426px) {
     padding-left: 12px;
     padding-right: 12px;
@@ -58,7 +59,7 @@ const StyledH3 = styled.h2`
   line-height: 76px;
   color: ${theme.colors.fontPrimary};
   margin-bottom: 60px;
-  @media (max-width: 426px) {
+  @media (max-width: 430px) {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 40px;
@@ -79,8 +80,9 @@ const StyledP = styled.p`
   line-height: 26px;
   color: ${theme.colors.fontPrimary};
   margin-bottom: 114px;
-  @media (max-width: 426px) {
+  @media (max-width: 430px) {
     margin-bottom: 40px;
+    
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-bottom: 40px;

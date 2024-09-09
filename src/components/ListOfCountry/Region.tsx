@@ -28,13 +28,13 @@ const RegionDiv = styled.div `
   margin: 20px 24px 20px 20px;
   flex-wrap: wrap;
   flex-direction: column;
-  @media (max-width: 426px) {
+  @media (max-width: 430px) {
     width: 351px;
     max-height: 671px;
     max-width: max-content;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 431px) and (max-width: 1024px) {
     max-width: fit-content;
     min-width: 696px;
   }
@@ -44,7 +44,7 @@ const RegionP = styled.div`
   padding-bottom: 6px;
   flex-direction: row;
   display: flex;
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 430px) and (max-width: 1024px) {
     width: 300px;
 
   }
@@ -63,7 +63,7 @@ const SpanName = styled.div `
   font-size: 18px;
   line-height: 23px;
   color: ${theme.colors.fontColorSecondary};
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 430px) and (max-width: 1024px) {
     text-align: left;
 
   }

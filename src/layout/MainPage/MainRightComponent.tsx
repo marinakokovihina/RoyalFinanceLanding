@@ -9,21 +9,21 @@ import {useMediaQuery} from "react-responsive";
 
 
 export const MainRightComponent = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1023 });
-    const isDesktop = useMediaQuery({ minWidth: 1024, maxWidth: 1440 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+    const isDesktop = useMediaQuery({ minWidth: 1024 });
 
     return (
         <StyledMainRightComponent>
             <StyledCardGroup>
-                <CardForLeftColumn height={isMobile ? '210px' : isTablet ? '112px' : isDesktop ? '230px' : '226px'} width={isMobile ? '351px' : isTablet ? '696px' : isDesktop ? '392px' : '307px'} background='#FFFFFF80;' border='1px solid #F1F1F4'
+                <CardForLeftColumn height={isMobile ? '210px' : isTablet ? '112px' : '226px'} width={isMobile ? '351px' : isTablet ? '696px' : '307px'} background='#FFFFFF80;' border='1px solid #F1F1F4'
                     boxShadow='inset 0px 0px 12px rgba(255, 255, 255, 0.08)' backdropFilter='blur(7.5px)'
                 />
                 <GroupCards>
                     <CardUp
-                        background={theme.colors.colorForCardGreen} width={isMobile ? '351px': isTablet ? '336px' :isDesktop ? '392px' : '305px'} height={isMobile ? '252px' : isTablet ? '264px' :isDesktop ? '230px' : '272px'} colorH4={theme.colors.fontColorWhite}
+                        background={theme.colors.colorForCardGreen} width={isMobile ? '351px': isTablet ? '336px' : '305px'} height={isMobile ? '252px' : isTablet ? '264px'  : '272px'} colorH4={theme.colors.fontColorWhite}
                         colorP={theme.colors.fontColorWhite}/>
-                    <CardBottom background={theme.colors.colorForCardBlue} width={isMobile ? '351px' : isTablet ? '336px' : isDesktop ? '392px' :'307px'} height={isMobile ? '232px' : isTablet ? '264px'  :isDesktop ? '230px' : '280px'}/>
+                    <CardBottom background={theme.colors.colorForCardBlue} width={isMobile ? '351px' : isTablet ? '336px' :'307px'} height={isMobile ? '232px' : isTablet ? '264px'   : '280px'}/>
                 </GroupCards>
             </StyledCardGroup >
         </StyledMainRightComponent>
@@ -32,13 +32,15 @@ export const MainRightComponent = () => {
 
 
 const StyledMainRightComponent = styled.div `
-    margin-left: 94px;
-  
-  @media (max-width: 426px) {
-    margin-left: 0;
+    margin-left: 6%;
+  margin-right: 2%;
+
+
+  @media (max-width: 767px) {
+    margin-top: 40px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-
+    
     margin-left: 0;
   }
 `
@@ -47,7 +49,7 @@ const StyledCardGroup = styled.div `
   gap: 24px;
   align-items: center;
   justify-content: center;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     
     flex-direction: column;
     align-items: center;
@@ -64,16 +66,17 @@ const GroupCards = styled.div `
   display: flex;
   flex-direction: column;
   gap: 24px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column-reverse;
     align-items: center;
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: row;
+    flex-direction: column;
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
+    flex-direction: row;
+
   }
 `

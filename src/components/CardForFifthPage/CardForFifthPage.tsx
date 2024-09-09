@@ -20,7 +20,7 @@ const CardForFifthPageStyled = styled.div`
   color: ${theme.colors.fontColorWhite};
   border-radius: 20px;
   padding: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: 351px;
     height: 118px;
     display: flex;
@@ -29,7 +29,7 @@ const CardForFifthPageStyled = styled.div`
     padding: 16px;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     width: 696px;
   }
 `
@@ -38,7 +38,7 @@ const StyledH5 = styled.h5`
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 18px;
   }
   
@@ -50,7 +50,7 @@ const StyledH6 = styled.h6`
   font-size: 18px;
   line-height: 32px;
 
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;

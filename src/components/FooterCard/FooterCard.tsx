@@ -31,13 +31,14 @@ const Text = styled.div `
   gap: 16px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     max-width: 80%;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
-    
+  @media (min-width: 768px) and (max-width: 1024px) {
+    flex-direction: column;
+
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
     flex-direction: column;
@@ -58,13 +59,13 @@ const StyledFooterCard = styled.div `
   padding: 20px;
   gap: 16px;
   color: ${theme.colors.fontColorWhite};
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: 95%;
     flex-direction: row;
     height: auto;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     width: 632px;
     height: 130px;
     flex-direction: row;

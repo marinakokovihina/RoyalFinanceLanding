@@ -8,15 +8,15 @@ import {MobileMenu} from "../../components/MobileMenu";
 import {useMediaQuery} from "react-responsive";
 
 export const Header = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
     const isDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1440 });
     return (
         <StyledWrapHeader>
             <StyledHeader>
                 <MobileMenu/>
                 <Logo />
-                <Menu display={isMobile ? 'none' : isTablet ? 'none' : isDesktop ? 'none': 'block'}/>
+                <Menu display={isMobile ? 'none' : isTablet ? 'none' : 'block'}/>
                 <Button   onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
                           width={isTablet ?  ' 234px' :'335px'} height = {'48px'}
                           text={'Связаться с нами'} borderRadius={'12px'}
@@ -34,29 +34,31 @@ export const Header = () => {
 };
 
 const StyledWrapHeader = styled.div`
-  width: 100%;
   //max-width: 1430px;
   z-index: 99;
   position: fixed;
+  width: 100%;
   top: 0;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(40px); 
   left: 0;
   margin-bottom: 80px;
   
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     margin-bottom: 80px;
-    min-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     min-width: 100%;
     padding-left: 0;
     position: fixed;
     top: 0;
     left: 0;
+    //max-width: 100vw;
+
   }
 `
 const StyledHeader = styled.header`
@@ -67,7 +69,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   gap: 106px;
   max-height: 80px;
-  max-width: 1296px;
+  max-width: 90%;
   
   @media (max-width: 426px) {
     width: 100%;
@@ -77,18 +79,18 @@ const StyledHeader = styled.header`
     padding-top: 16px;
     padding-left: 0;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 768px) {
     width: 100%;
     justify-content: start;
-    gap: 10px;
+    gap: 30px;
     padding-left: 0;
 
 
 
 
-  } @media (min-width: 1024px) and (max-width: 1439px) {
+  } @media (min-width: 769px) and (max-width: 1439px) {
     gap: 30px;
-  width: 100%;
+  width: 90%;
   justify-content: start;
   padding-left: 0;
 }

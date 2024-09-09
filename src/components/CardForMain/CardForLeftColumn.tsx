@@ -41,7 +41,7 @@ const StyledCardForMain = styled.div <CardForMainProps>`
   .animate__delay-0.5s {
     animation-delay: 0.3s;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     padding-left: 16px;
     padding-top: 16px;
 
@@ -62,7 +62,7 @@ const StyledH4 = styled.h4 `
   margin-bottom: 12px;
   line-height: 32px;
   color: ${theme.colors.fontPrimary};
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     margin-top: 20px;
     font-size: 20px;
     flex-direction: column;
@@ -82,7 +82,7 @@ const StyledP = styled.p `
     line-height: 23px;
     max-width: 200px;
 
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     align-items: flex-start;
     max-width: 100%;
 
@@ -91,7 +91,7 @@ const StyledP = styled.p `
     margin-top: 0;
     max-width: 100%;
   }
-  @media (min-width: 427px) and (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 767px) {
     margin-top: 0;
     max-width: 100%;
   }

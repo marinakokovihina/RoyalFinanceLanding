@@ -6,9 +6,10 @@ import {CardForSixthPage} from "../../components/CardForSixthPage/CardForSixthPa
 import {theme} from "../../styles/Theme";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import {animationMode} from "../../store/type";
 
 export const SixthPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     const defaultHeight = '273px';
     // const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
     // const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
@@ -16,7 +17,7 @@ export const SixthPage = () => {
     return (
         <SixthPageStyled>
             <ScrollAnimation   animateIn="animate__fadeIn"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={20}
                                offset={100}>
@@ -25,7 +26,7 @@ export const SixthPage = () => {
 
             <CardsListforSixthPage>
                 <ScrollAnimation   animateIn="animate__fadeInUp"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={200}
                                    offset={100}>
@@ -36,7 +37,7 @@ export const SixthPage = () => {
                 />
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInUp"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={200}
                                    offset={100}>
@@ -47,7 +48,7 @@ export const SixthPage = () => {
                 />
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInUp"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={200}
                                    offset={100}>
@@ -58,7 +59,7 @@ export const SixthPage = () => {
                 />
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInUp"
-                                                      animateOnce={true}
+                                                      animateOnce={animationMode}
                                                       duration={1}
                                                       delay={200}
                                                       offset={100}>
@@ -76,11 +77,11 @@ export const SixthPage = () => {
 };
 const SixthPageStyled = styled.div `
     margin-top: 240px;
-    @media (max-width: 426px) {
+    @media (max-width: 768px) {
       margin-top: 120px;
       padding-left: 0;
     }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1024px) {
     margin-top: 160px;
     width: 90%;
 
@@ -91,12 +92,12 @@ const CardsListforSixthPage = styled.div `
   flex-direction: row;
   gap: 24px;
   margin-top: 80px;
-  @media (min-width: 0px) and (max-width: 426px) {
+  @media (min-width: 0px) and (max-width: 767px) {
     flex-direction: column;
     display: flex;
 
   }
-  @media (min-width: 427px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     

@@ -7,18 +7,19 @@ import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
+import {animationMode} from "../../store/type";
 
 
 
 export const FourthPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1023 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
     const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
 
     return (
         <FourthPageStyled id = "safety">
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={100}
                                offset={10}  >
@@ -27,7 +28,7 @@ export const FourthPage = () => {
         <Container>
             <LeftColumn>
                 <ScrollAnimation   animateIn="animate__fadeInTopLeft"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
                                    offset={60}  >
@@ -36,7 +37,7 @@ export const FourthPage = () => {
                                    background={theme.colors.colorForCardGreen} textP={'Безопасные транзакции для вашего бизнеса с поддержкой множества валют '}/>
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInTopRight"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
                                    offset={60}  >
@@ -45,7 +46,7 @@ export const FourthPage = () => {
                                    textH5={'Холодные кошельки'} background={theme.colors.colorForCardGreyGreen} textP={'Обеспечивают максимальную безопасность для хранения ваших криптовалютных активов'}/>
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
                                    offset={40}  >
@@ -54,7 +55,7 @@ export const FourthPage = () => {
                                    background={theme.colors.colorForCardGreyGreen} textP={'Каждый запрос обрабатывается индивидуально, что позволяет обеспечить максимальную защиту ваших средств.'}/>
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInBottomRight"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
                                    offset={40}  >
@@ -65,7 +66,7 @@ export const FourthPage = () => {
             </LeftColumn>
             <RightColumn>
                 <ScrollAnimation   animateIn="animate__fadeIn"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
                                    offset={10}  >
@@ -84,15 +85,17 @@ export const FourthPage = () => {
     );
 };
 const FourthPageStyled = styled.div `
-  padding-top: 240px;
+  padding-top: 120px;
+  margin-top: 120px;
   text-align: left;
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
     margin-top: 120px;
     display: flex;
     align-items: center;
   }
-  @media (min-width: 446px) and (max-width: 1024px) {
-    margin-top: 160px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 80px;
+    padding-top: 80px;
 
   }
 
@@ -101,12 +104,12 @@ const Container = styled.div `
 padding: 0;
   display: flex;
   gap: 96px;
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
     flex-direction: column-reverse;
     gap: 0;
     max-width: 351px;
   }
-  @media (min-width: 446px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column-reverse;
 
   }
@@ -115,13 +118,13 @@ const LeftColumn = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
     display: flex;
     gap: 24px;
 
     flex-direction: column;
   }
-  @media (min-width: 446px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     align-items: center;
     justify-content: center;
     margin-left: 5%;  } 
@@ -132,7 +135,7 @@ const LeftColumn = styled.div`
     margin-left: 5%;  }
 `;
 const RightColumn = styled.div`
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -140,7 +143,7 @@ const RightColumn = styled.div`
     justify-content: center;
 
   }
-  @media (min-width: 446px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row-reverse;
     display: flex;
     align-items: center;
@@ -154,7 +157,7 @@ const StyledH5 = styled.h5`
   font-size: 48px;
   line-height: 56px;
   margin-bottom: 60px;
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
    display: none; 
       
 
@@ -168,7 +171,7 @@ const StyledH5Mob = styled.h5`
   
   display: none;
 
-  @media (max-width: 445px) {
+  @media (max-width: 767px) {
     display: block;
     font-style: normal;
     font-weight: 600;
@@ -177,7 +180,7 @@ const StyledH5Mob = styled.h5`
     margin-bottom: 40px;
 
   }
-  @media (min-width: 446px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 40px;
     max-width: 50%;
     display: block;

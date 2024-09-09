@@ -36,7 +36,7 @@ const StyledCard = styled.div <CardProps>`
   flex: none;
   order: 0;
   flex-grow: 0;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     padding: 8px 16px;
     height: 39px;
 

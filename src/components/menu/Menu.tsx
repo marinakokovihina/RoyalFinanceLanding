@@ -50,7 +50,7 @@ const StyledUl = styled.ul `
     cursor: pointer;
   }
   @media (min-width: 1024px) and (max-width: 1440px) {
-    background: ${theme.colors.fontColorWhite};
+    // background: ${theme.colors.fontColorWhite};
 
 
   }

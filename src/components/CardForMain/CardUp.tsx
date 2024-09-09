@@ -52,7 +52,7 @@ export const StyledCardForMain = styled.div <CardForMainProps>`
   .animate__delay-0.5s {
     animation-delay: 0.5s;
   }
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     padding-left: 16px;
     padding-top: 16px;
 
@@ -70,7 +70,7 @@ export const StyledH4 = styled.h4<CardForMainProps>`
   margin-bottom: 12px;
   margin-top: 24px;
   color: ${props => props.colorH4};
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     margin-top: 20px;
     font-size: 20px;
     line-height: 28px;

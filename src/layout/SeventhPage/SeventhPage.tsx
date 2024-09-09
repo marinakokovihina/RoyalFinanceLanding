@@ -12,14 +12,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 import FirstImg from "../../assets/img/Perevod1.png"
 import SecondImg from "../../assets/img/Perevod2.png"
 import ThirdImg from "../../assets/img/Perevod3.png"
+import {animationMode} from "../../store/type";
 
 export const SeventhPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     const def = '311px';
     const def2 = '388px'
-    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
+    const isDesktop = useMediaQuery({ minWidth: 1024 });
 
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1023 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
@@ -28,7 +29,7 @@ export const SeventhPage = () => {
                 <Icon IconId={'circleForSeventhPage'} viewBox={'0 0 302 474'} width={'302'} height={'474'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInLeft"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={300}
                                offset={10}  >
@@ -37,7 +38,7 @@ export const SeventhPage = () => {
 
             <Wrapper>
                 <ScrollAnimation   animateIn="animate__fadeInLeft"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={300}
                                    offset={10}  >
@@ -66,12 +67,12 @@ export const SeventhPage = () => {
             </StyledWrapper>
                 </ScrollAnimation>
                 <ScrollAnimation   animateIn="animate__fadeInRight"
-                                   animateOnce={true}
+                                   animateOnce={animationMode}
                                    duration={1}
                                    delay={300}
                                    offset={10}  >
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage display={isDesktop||isTablet || isMobile ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={isDesktop || isTablet || isMobile ? 'flex' : 'none'} />
 
                 </StyledDivForBeidge>
                 </ScrollAnimation>
@@ -83,19 +84,18 @@ export const SeventhPage = () => {
 
 const SeventhPageStyled = styled.div `
     margin-top: 240px;
-  margin-left: -20%;
-  @media (max-width: 426px) {
+    //margin-left: -20%;
+  @media (max-width: 767px) {
     margin-top: 120px;
     padding-left: 0px;
     margin-left: 0;
 
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
-  margin-top: 160px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 160px;
     width: 90%;
     margin-left: 0;
-
     margin-bottom: 160px;
   }
  
@@ -104,14 +104,11 @@ const SeventhPageStyled = styled.div `
   display: flex;
   flex-direction: row;
   gap: 40px;
-  @media (max-width: 426px) {
+  @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;
   }
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    display: flex;
-    flex-direction: column;
-  }
+  
 
 `;const StyledDivForBeidge = styled.div `
   @media (min-width: 1024px) and (max-width: 1439px) {
@@ -122,7 +119,7 @@ const CardWrapper = styled.div `
   display: flex;
   flex-direction: row;
   gap: 40px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     max-width: 351px;
     flex-direction: column;
     align-items: center;
@@ -131,7 +128,7 @@ const CardWrapper = styled.div `
     flex-direction: row;
     gap: 25px;
   }
-  @media (min-width: 427px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -184,11 +181,11 @@ const StyledWrapper = styled.div `
   background: ${theme.colors.fontColorWhite};
   border: 1px solid #F1F1F4;
   border-radius: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: 351px;
     height: auto;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     height: auto;
 
   }

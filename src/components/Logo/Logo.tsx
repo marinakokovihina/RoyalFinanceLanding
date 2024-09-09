@@ -5,7 +5,7 @@ import {theme} from "../../styles/Theme";
 import {useMediaQuery} from "react-responsive";
 
 export const Logo = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     return (
         <StyledLogo>
             <StyledIcon>
@@ -35,14 +35,14 @@ const StyledLogo = styled.header `
     display: flex;
     gap: 24px;
     align-items: center;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     gap: 12px;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
-    margin-right: 159px;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-right: auto;
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
-    margin-right: 395px;
+    margin-right: auto;
 
   }
 

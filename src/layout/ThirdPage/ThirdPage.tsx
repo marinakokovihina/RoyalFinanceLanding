@@ -10,10 +10,11 @@ import game from "../../assets/img/game.png"
 import services from "../../assets/img/services.png"
 import cards from "../../assets/img/cards.png"
 import marketing from "../../assets/img/marketing.png"
+import {animationMode} from "../../store/type";
 
 
 export const ThirdPage = () => {
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
         <ThirdSection id = "features">
@@ -22,7 +23,7 @@ export const ThirdPage = () => {
                     <Icon IconId='circleForMan' height='748' width='298' viewBox='0 0 298 748'/>
                 </SvgWrapperStyled
                 ><ScrollAnimation   animateIn="animate__fadeInUp"
-                                    animateOnce={true}
+                                    animateOnce={animationMode}
                                     duration={1}
                                     delay={300}
                                     offset={10}  >
@@ -32,7 +33,7 @@ export const ThirdPage = () => {
             <Container>
                 <LeftColumn>
                     <ScrollAnimation   animateIn="animate__fadeInUp"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={300}
                                        offset={10}  >
@@ -44,7 +45,7 @@ export const ThirdPage = () => {
                 <RightColumn>
                 <GroupOfCardForThirdPage>
                     <ScrollAnimation   animateIn="animate__fadeInUp"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={300}
                                        offset={10}  >
@@ -53,7 +54,7 @@ export const ThirdPage = () => {
                    />
                     </ScrollAnimation>
                     <ScrollAnimation   animateIn="animate__fadeInUp"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={300}
                                        offset={10}  >
@@ -62,7 +63,7 @@ export const ThirdPage = () => {
                    />
                     </ScrollAnimation>
                     <ScrollAnimation   animateIn="animate__fadeInUp"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={500}
                                        offset={10}  >
@@ -72,7 +73,7 @@ export const ThirdPage = () => {
                    />
                     </ScrollAnimation>
                     <ScrollAnimation   animateIn="animate__fadeInUp"
-                                       animateOnce={true}
+                                       animateOnce={animationMode}
                                        duration={1}
                                        delay={500}
                                        offset={10}  >
@@ -91,7 +92,7 @@ export const ThirdPage = () => {
 const Container = styled.div`
   display: flex;
   gap: 134px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     gap: 40px;
 
@@ -108,13 +109,13 @@ const LeftColumn = styled.div`
   
   align-items: center;
   justify-content: center;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
    
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
@@ -122,7 +123,7 @@ const LeftColumn = styled.div`
   }
 `;
 const RightColumn = styled.div`
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -132,7 +133,7 @@ const GroupOfCardForThirdPage = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 80px 40px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -148,10 +149,10 @@ const StyledH5ThirdPage = styled.h5 `
   font-size: 48px;
   line-height: 56px;
   margin-bottom: 80px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: none;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1024px) {
     width: auto;
     display: none;
 
@@ -162,7 +163,7 @@ const StyledH5ThirdPageMob = styled.h5 `
  
   display: none;
   
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: block;
     font-size: 32px;
     padding-top: 40px;
@@ -174,7 +175,7 @@ const StyledH5ThirdPageMob = styled.h5 `
     max-width: 350px;
     
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1023px) {
     display: block;
     font-size: 40px;
 
@@ -185,14 +186,17 @@ const ThirdSection = styled.div `
   @media (max-width: 426px) {
     margin-left: 12px;
     display: flex;
-    
+    padding-top: 60px;
+    margin-top: 60px;
   }
   @media (min-width: 427px) and (max-width: 1024px) {
     align-items: flex-start;
     max-width: 760px;
-    padding-top: 160px;
+    padding-top: 60px;
+    margin-top: 60px;
   }
-  padding-top: 240px;
+  padding-top: 120px;
+  margin-top: 120px;
 
 `;
 const IconDiv = styled.div `

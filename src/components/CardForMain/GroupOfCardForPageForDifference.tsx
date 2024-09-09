@@ -4,21 +4,22 @@ import {theme} from "../../styles/Theme";
 import styled from "styled-components";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import {animationMode} from "../../store/type";
 
 export const GroupOfCardForPageForDifference = () => {
     const BackgroundViolet = 'linear-gradient(270deg, rgba(56, 70, 190, 0.75) 0%, #3846BE 100%)';
     const BackgroundLightViolet = 'linear-gradient(72.48deg, #CDD5FE 0%, #E7ECFD 70%)';
     const BackgroundGrey = 'linear-gradient(72.48deg, #F0F2FF 0%, #FAFBFF 100%)';
-    const isMobile = useMediaQuery({ maxWidth: 426 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
     const defaultWidth = '404px'
     const defaultHeight = '227px'
     const mobileWidth = '351px'
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
     return (
         <StyledGroupOfCards>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={500}
                                offset={50}  >
@@ -33,7 +34,7 @@ export const GroupOfCardForPageForDifference = () => {
 
             </ScrollAnimation>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={500}
                                offset={50}  >
@@ -46,7 +47,7 @@ export const GroupOfCardForPageForDifference = () => {
             />
             </ScrollAnimation>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={700}
                                offset={10}  >
@@ -60,7 +61,7 @@ export const GroupOfCardForPageForDifference = () => {
             />
             </ScrollAnimation>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={700}
                                offset={10}  >
@@ -73,7 +74,7 @@ export const GroupOfCardForPageForDifference = () => {
             />
             </ScrollAnimation>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={900}
                                offset={10}  >
@@ -88,7 +89,7 @@ export const GroupOfCardForPageForDifference = () => {
             />
             </ScrollAnimation>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={900}
                                offset={10}  >
@@ -110,7 +111,7 @@ const StyledGroupOfCards = styled.div `
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 32px 36px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     display: flex;
     margin-bottom: 120px;

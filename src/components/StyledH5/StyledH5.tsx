@@ -8,7 +8,7 @@ export const StyledH5 = styled.h5`
   margin-bottom: 80px;
   text-align: left;
 
-  @media  (max-width: 426px) {
+  @media  (max-width: 767px) {
     font-size: 32px;
     line-height: 40px;
     max-width: 350px;
@@ -16,7 +16,7 @@ export const StyledH5 = styled.h5`
     margin-bottom: 40px;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 40px;
   
   }

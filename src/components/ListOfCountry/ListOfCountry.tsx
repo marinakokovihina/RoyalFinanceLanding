@@ -54,11 +54,11 @@ const Container = styled.div`
   background: #FFFFFF;
   border: 1px solid #F1F1F4;
   border-radius: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: 351px;
     height: auto;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     width: 700px;
 
   }
@@ -71,13 +71,13 @@ const ListOfButtons = styled.div`
   gap:16px;
   margin-top: 20px;
   margin-left: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: grid;
     width: auto;
 //TODO ПОФИКСИТЬ КНОПКИ
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 431px) and (max-width: 1024px) {
   }
 `;
 
@@ -91,7 +91,7 @@ const Button = styled.button<{ active: boolean }>`
   border: 1px solid #F1F1F4;
   border-radius: 24px;
   cursor: pointer;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: auto;
   }
 `;

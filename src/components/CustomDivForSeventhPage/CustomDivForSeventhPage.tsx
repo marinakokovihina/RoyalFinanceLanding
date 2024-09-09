@@ -41,7 +41,7 @@ const StyledH4 = styled.h4`
   font-size: 24px;
   line-height: 32px;
   color: ${theme.colors.fontColorWhite};
-  @media (max-width: 426px) {
+  @media (max-width: 1023px) {
     font-size: 20px;
     line-height: 28px;
     max-width: 100%;
@@ -61,13 +61,13 @@ const StyledP = styled.p`
   font-size: 18px;
   line-height: 23px;
   color: ${theme.colors.fontColorWhite};
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 18px;
     line-height: 23px;
 
   }
 
-  @media (min-width: 1024px) and (max-width: 1439px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 18px;
 
   }
@@ -83,7 +83,7 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
   height: 382px;
   background: ${theme.colors.colorForCardBlue};
   border-radius: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     width: 351px;
     height: 248px;
     gap: 24px;
@@ -91,7 +91,7 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
     
 
   }
-  @media (min-width: 427px) and (max-width: 1023px) {
+  @media (min-width: 767px) and (max-width: 1023px) {
     height: 513px;
 
   }@media (min-width: 1024px) and (max-width: 1439px) {
@@ -112,7 +112,7 @@ const Item2 = styled.div ``
 const GroupOfCardMob = styled.div `
 
   display: none;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -122,9 +122,9 @@ const GroupOfCard = styled.div `
     display: flex;
     flex-direction: column;
     gap: 16px;
-  @media (max-width: 426px) {
-    display: none;
-  }
+      @media (max-width: 767px) {
+        display: none;
+      }
   @media (min-width: 1024px) and (max-width: 1439px) {
    flex-direction: row;
 

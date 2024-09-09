@@ -7,10 +7,11 @@ import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
+import {animationMode} from "../../store/type";
 
 export const Footer = () => {
-    const isMobile = useMediaQuery({ maxWidth: 426 });
-    const isTablet = useMediaQuery({ minWidth: 427, maxWidth: 1024 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
     return (
         <>
@@ -18,7 +19,7 @@ export const Footer = () => {
                 <Icon IconId={'iconsForFooter'} height={'538'} width={'785'} viewBox={'0 0 785 538'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInUp"
-                               animateOnce={true}
+                               animateOnce={animationMode}
                                duration={1}
                                delay={300}
                                offset={10}  >
@@ -56,7 +57,7 @@ const StyledFooter = styled.footer `
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 120px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     width: 351px;
     height: auto;
@@ -66,7 +67,7 @@ const StyledFooter = styled.footer `
     margin-bottom: 50px;
 
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 0;
     width: 696px;
     height: auto;
@@ -81,11 +82,11 @@ const GroupFooterCard = styled.div `
   flex-direction: row;
   gap: 24px;
   margin-bottom: 62px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     width: 311px;
   }
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
 
 
@@ -101,7 +102,7 @@ const StyledH4 = styled.div `
   line-height: 56px;
   margin-bottom: 60px;
   color: ${theme.colors.fontColorWhite};
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     text-align: left;
     font-size: 32px;
     line-height: 40px;
