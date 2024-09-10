@@ -69,6 +69,7 @@ const StyledHeader = styled.header`
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
+  
   align-items: center;
   justify-content: space-between;
   gap: 106px;
