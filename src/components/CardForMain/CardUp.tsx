@@ -5,6 +5,8 @@ import {IconCardTether} from "./Icons/IconCard";
 import {useMediaQuery} from "react-responsive";
 import 'animate.css/animate.min.css';
 import   "./../../styles/style.css"
+import {animationMode} from "../../store/type";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export type CardForMainProps = {
     width?: string,
@@ -25,7 +27,7 @@ export const CardUp = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <StyledCardForMain className= { isDesktop ? "animate__animated animate__fadeInRight animate animate__delay-07s" : ''}
+        <StyledCardForMain
             height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} display={props.display}>
                 <IconCardTether />

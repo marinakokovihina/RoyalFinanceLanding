@@ -11,7 +11,8 @@ export const MainLeftComponent = () => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <StyledMainLeftComponent className= { isDesktop ? "animate__animated animate__fadeInLeft animate" : ''}>
+
+        <StyledMainLeftComponent>
             <StyledH2>Платежная система</StyledH2>
             <StyledH3>Прием платежей и вывод средств</StyledH3>
             <StyledP>Принимайте платежи на сайтах и других интернет-проектах, используя различные методы оплаты, и получайте гарантированные выплаты в любой точке мира</StyledP>
@@ -31,9 +32,9 @@ const StyledMainLeftComponent = styled.div `
   max-width: 566px;
   justify-content: left;
   text-align: left;
-  margin-left: 5%;
+  //margin-left: 5%;
   @media (max-width: 426px) {
-    padding-left: 12px;
+    padding-left:0px;
     padding-right: 12px;
     margin-bottom: 100px;
     align-items: center;

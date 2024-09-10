@@ -24,7 +24,7 @@ export const CardForSeventhPage = (props:  CardForSeventhPageProps) => {
                 <StyledP>{props.textForTopCard}</StyledP>
             </TopCard>
             <BottomCard>
-                <Image src={props.src} width={props.width2} height={props.height2}/>
+                <Image radius={'20px'} src={props.src} width={props.width2} height={props.height2}/>
             </BottomCard>
         </CardForSeventhPageStyled>
     );
@@ -70,6 +70,6 @@ const CardForSeventhPageStyled = styled.div`
     display: flex;
   flex-direction: column;
   gap: 20px;
-
+  border-radius: 20px;
 `
 

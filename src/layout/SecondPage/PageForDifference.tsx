@@ -53,6 +53,7 @@ const WrapperForDifferenceStyled = styled.div `
   font-weight: 600;
   font-size: 48px;
   text-align: left;
+  margin-left: 2%;
   line-height: 56px;
   padding-top: 120px;
   margin-top: 120px;

@@ -37,6 +37,7 @@ const StyledMainRightComponent = styled.div `
 
 
   @media (max-width: 767px) {
+    margin-left: 0;
     margin-top: 40px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -66,7 +67,7 @@ const GroupCards = styled.div `
   display: flex;
   flex-direction: column;
   gap: 24px;
-  @media (max-width: 767px) {
+  @media (max-width: 430px) {
     flex-direction: column-reverse;
     align-items: center;
 

@@ -87,6 +87,8 @@ export const FourthPage = () => {
 const FourthPageStyled = styled.div `
   padding-top: 120px;
   margin-top: 120px;
+  margin-left: 2%;
+
   text-align: left;
   @media (max-width: 767px) {
     margin-top: 120px;

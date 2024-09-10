@@ -183,6 +183,8 @@ const StyledH5ThirdPageMob = styled.h5 `
   }
 `;
 const ThirdSection = styled.div `
+  margin-left: 2%;
+
   @media (max-width: 426px) {
     margin-left: 12px;
     display: flex;
