@@ -19,8 +19,8 @@ export const ThirdPage = () => {
     return (
         <ThirdSection id = "features">
             <IconDiv>
-                <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top='2055px'>
-                    <Icon IconId='circleForMan' height='748' width='298' viewBox='0 0 298 748'/>
+                <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top='2055px' left={'-15%'}>
+                    <Icon IconId='circleForMan' height='748' width='538' viewBox='0 0 538 748'/>
                 </SvgWrapperStyled
                 ><ScrollAnimation   animateIn="animate__fadeInUp"
                                     animateOnce={animationMode}

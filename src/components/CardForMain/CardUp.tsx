@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {IconCardTether} from "./Icons/IconCard";
@@ -7,6 +7,7 @@ import 'animate.css/animate.min.css';
 import   "./../../styles/style.css"
 import {animationMode} from "../../store/type";
 import ScrollAnimation from "react-animate-on-scroll";
+import {animate} from "framer-motion";
 
 export type CardForMainProps = {
     width?: string,
@@ -24,16 +25,26 @@ export type CardForMainProps = {
     children?: React.ReactNode;
 }
 export const CardUp = (props: CardForMainProps) => {
-    const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <StyledCardForMain
+        <ScrollAnimation
+            animateIn="animate__fadeInRight"
+            animateOnce={animationMode}
+            duration={1}
+            delay={1}
+            offset={10}
+            initiallyVisible={true}
+        >
+        <StyledCardForMain className= { "animate__animated animate__fadeInRight" }
             height={props.height} width={props.width} background={props.background} border={props.border}
-                           boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} display={props.display}>
+                           boxShadow={props.boxShadow} backdropFilter={props.backdropFilter}
+
+            display={props.display}>
                 <IconCardTether />
                 <StyledH4 colorH4 = {theme.colors.fontColorWhite}>Сохранность ваших средств</StyledH4>
                 <StyledP colorP = {theme.colors.fontColorWhite}>Гарантируем защиту <br/>ваших финансовых операций</StyledP>
         </StyledCardForMain>
+        </ScrollAnimation>
     );
 };
 

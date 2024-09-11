@@ -9,11 +9,11 @@ import {FifthPage} from "./layout/FifithPage/FifthPage";
 import {SixthPage} from "./layout/SixthPage/SixthPage";
 import {SeventhPage} from "./layout/SeventhPage/SeventhPage";
 import {Footer} from "./layout/Footer/Footer";
+import {GlobalStyles} from "./styles/globalStyles";
 
 function App() {
 
   return (
-
       <StyledWrapper align={'center'} justify={"center"} direction={"column"}>
           <Header/>
           <MainPage/>

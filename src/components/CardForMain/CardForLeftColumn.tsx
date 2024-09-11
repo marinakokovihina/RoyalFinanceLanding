@@ -6,20 +6,31 @@ import {theme} from "../../styles/Theme";
 import {SpanBlue} from "../BlueSpan/BlueSpan";
 import {useMediaQuery} from "react-responsive";
 import   "./../../styles/style.css"
+import {animationMode} from "../../store/type";
+import ScrollAnimation from "react-animate-on-scroll";
 export const CardForLeftColumn = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
-        <StyledCardForMain className= { isDesktop ? "animate__animated animate__fadeInDown animate animate__delay-09s" : ''}
-                           height={props.height} width={props.width} background={props.background} border={props.border}
-                           boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
-            <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
-            <Text>
-                <StyledH4>Вывод Tether — <SpanBlue>T+0</SpanBlue> </StyledH4>
-                <StyledP>Отсутствие роллинга и холдинга средств</StyledP>
-            </Text>
+        <ScrollAnimation
+            animateIn="animate__fadeInDown"
+            animateOnce={animationMode}
+            duration={1}
+            delay={1}
+            offset={10}
+            initiallyVisible={true}
+        >
+            <StyledCardForMain className= { "animate__animated animate__fadeInDown animate " }
+                               height={props.height} width={props.width} background={props.background} border={props.border}
+                               boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
+                <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
+                <Text>
+                    <StyledH4>Вывод Tether — <SpanBlue>T+0</SpanBlue> </StyledH4>
+                    <StyledP>Отсутствие роллинга и холдинга средств</StyledP>
+                </Text>
 
-        </StyledCardForMain>
+            </StyledCardForMain>
+        </ScrollAnimation>
     );
 };
 const Text = styled.div `

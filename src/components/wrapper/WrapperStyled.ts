@@ -10,6 +10,7 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
   display: flex;
   position: relative;
   z-index: 2;
+  margin-left: 3%;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "flex-start"};
   align-items: ${props => props.align || "stretch"};

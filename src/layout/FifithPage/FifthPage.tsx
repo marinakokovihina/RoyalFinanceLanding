@@ -16,7 +16,7 @@ export const FifthPage = () => {
 
     return (
         <FifthPageStyled id = "regions">
-            <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top={'4161px'}>
+            <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top={'4161px'} left={'-10%'}>
                 <Icon IconId={'circleForFifthPage'} height={'703'} width={'471'} viewBox={'0 0 471 703'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeIn"
