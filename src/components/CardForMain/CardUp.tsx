@@ -25,7 +25,7 @@ export type CardForMainProps = {
     children?: React.ReactNode;
 }
 export const CardUp = (props: CardForMainProps) => {
-    const isMobile = useMediaQuery({ maxWidth: 1440 });
+    const isMobile = useMediaQuery({ maxWidth: 1439 });
 
     return (
         <ScrollAnimation

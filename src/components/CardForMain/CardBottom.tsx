@@ -9,7 +9,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export const CardBottom = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
-    const isMobile = useMediaQuery({ maxWidth: 1440 });
+    const isMobile = useMediaQuery({ maxWidth: 1439 });
 
     return (
         <ScrollAnimation

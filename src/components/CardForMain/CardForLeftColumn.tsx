@@ -10,7 +10,7 @@ import {animationMode} from "../../store/type";
 import ScrollAnimation from "react-animate-on-scroll";
 export const CardForLeftColumn = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
-    const isMobile = useMediaQuery({ maxWidth: 1440 });
+    const isMobile = useMediaQuery({ maxWidth: 1439 });
 
     return (
         <ScrollAnimation
