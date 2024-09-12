@@ -40,7 +40,6 @@ const StyledMainRightComponent = styled.div `
     margin-top: 40px;
 
     margin-right: 0%;
-    margin-left: 5%;
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
