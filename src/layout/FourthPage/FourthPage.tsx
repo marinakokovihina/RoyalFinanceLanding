@@ -15,7 +15,7 @@ import {Image} from "../../components/Image/Image";
 
 export const FourthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const isMobilePlus = useMediaQuery({ maxWidth: 1023 });
+    const isMobilePlus = useMediaQuery({ maxWidth: 1025 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1439 });
     const isDesktop = useMediaQuery({ minWidth: 768 });
 

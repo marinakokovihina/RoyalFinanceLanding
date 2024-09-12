@@ -10,18 +10,18 @@ import {animationMode} from "../../store/type";
 import ScrollAnimation from "react-animate-on-scroll";
 export const CardForLeftColumn = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
-    const isMobile = useMediaQuery({ maxWidth: 1023 });
+    const isMobile = useMediaQuery({ maxWidth: 1440 });
 
     return (
         <ScrollAnimation
-            animateIn={isMobile ? '' : "animate__fadeInDown"}
+            animateIn={isMobile ? 'animate__fadeIn' : "animate__fadeInDown"}
             animateOnce={animationMode}
             duration={2}
             delay={2}
             offset={10}
             initiallyVisible={true}
         >
-            <StyledCardForMain className= {isMobile ? "" :  "animate__animated animate__fadeInDown animate " }
+            <StyledCardForMain className= {isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInDown animate " }
                                height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>

@@ -35,6 +35,7 @@ const StyledLogo = styled.header `
     display: flex;
     gap: 24px;
     align-items: center;
+   margin-right: auto;
   @media (max-width: 767px) {
     gap: 12px;
   }

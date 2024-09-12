@@ -11,6 +11,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export const MainLeftComponent = () => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
+    const Tab = useMediaQuery({maxWidth: 1400})
 
     return (
         <ScrollAnimation
@@ -21,7 +22,7 @@ export const MainLeftComponent = () => {
             offset={10}
             initiallyVisible={true}
         >
-            <StyledMainLeftComponent className= { "animate__animated animate__fadeInLeft  " }>
+            <StyledMainLeftComponent className= {Tab ? 'animate__animated animate__fadeIn' : "animate__animated animate__fadeInLeft  " }>
                 <StyledH2>Платежная система</StyledH2>
                 <StyledH3>Прием платежей и вывод средств</StyledH3>
                 <StyledP>Принимайте платежи на сайтах и других интернет-проектах, используя различные методы оплаты, и получайте гарантированные выплаты в любой точке мира</StyledP>

@@ -10,6 +10,7 @@ export const MainPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1399 });
     const isBigDesktop = useMediaQuery({ minWidth: 1400 });
+    const Tab = useMediaQuery({maxWidth: 1400})
     return (
         <StyledMain>
             <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={isBigDesktop ? '167px' : '240px'} left={'-3%'}>

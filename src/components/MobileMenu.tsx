@@ -13,7 +13,7 @@ export const MobileMenu = () => {
         setIsPopUpVisible(!isPopUpVisible);
     }
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1025 });
     return (
         <StyledMobileMenu>
             <Icon onClick={clickPopUp} IconId={'MobileMenu'} viewBox={'0 0 32 32'} width={'32'} height={'32'} />
@@ -76,7 +76,8 @@ const MenuBar = styled.div`
   @media (min-width: 427px) and (max-width: 768px) {
     width: 100%;
     gap: 7%;
-    justify-content: start;    margin-left: 5%;
+    justify-content: start; 
+    margin-left: 5%;
     align-items: center;
 
   }
@@ -147,7 +148,6 @@ const StyledPopUp = styled.div`
 
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
-    margin-top: 19%;
 
   }
 `;

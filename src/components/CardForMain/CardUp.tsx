@@ -25,10 +25,11 @@ export type CardForMainProps = {
     children?: React.ReactNode;
 }
 export const CardUp = (props: CardForMainProps) => {
-    const isMobile = useMediaQuery({ maxWidth: 1023 });
+    const isMobile = useMediaQuery({ maxWidth: 1440 });
+
     return (
         <ScrollAnimation
-            animateIn={isMobile ? "" : "animate__fadeInRight"}
+            animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInRight"}
             animateOnce={animationMode}
             duration={2}
             delay={2}
