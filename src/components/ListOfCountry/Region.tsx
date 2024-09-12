@@ -35,8 +35,9 @@ const RegionDiv = styled.div `
 
   }
   @media (min-width: 431px) and (max-width: 1024px) {
-    max-width: fit-content;
-    min-width: 696px;
+    max-width: 100%;
+    //min-width: 696px;
+    width: 351px;
   }
 
 `
@@ -45,7 +46,7 @@ const RegionP = styled.div`
   flex-direction: row;
   display: flex;
   @media (min-width: 430px) and (max-width: 1024px) {
-    width: 300px;
+    //width: 300px;
 
   }
 `;
@@ -63,8 +64,8 @@ const SpanName = styled.div `
   font-size: 18px;
   line-height: 23px;
   color: ${theme.colors.fontColorSecondary};
-  @media (min-width: 430px) and (max-width: 1024px) {
-    text-align: left;
-
-  }
+  //@media (min-width: 430px) and (max-width: 1024px) {
+  //  text-align: left;
+  //
+  //}
 `;

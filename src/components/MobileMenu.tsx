@@ -23,7 +23,7 @@ export const MobileMenu = () => {
                         <Icon onClick={clickPopUp} IconId={'closeMenu'} viewBox={'0 0 32 32'} width={'32'} height={'32'} />
                         <Logo />
                         <Button  onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
-                                 width={isTablet ?  ' 234px' :'335px'} height = {'48px'}
+                                 width={isTablet ?  ' 234px' : isMobile ? 'auto'  :'335px'} height = {'48px'}
                                  text={'Связаться с нами'} borderRadius={'12px'} iconId={'tgIcon'}
                                  background={'linear-gradient(270deg, #4168F1 30%, #3846BE 100%)'}
                                  widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'}
@@ -53,17 +53,38 @@ const NavBar = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+  border-radius: 20px;
   width: 100%;
+  @media (min-width: 427px) and (max-width: 1023px) {
+    width: 100%;
+    margin-left: 3%;
+    
+
+  }
 `;
 const MenuBar = styled.div`
-  padding: 16px 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   flex-direction: row;
   display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 24px;
-  @media (min-width: 427px) and (max-width: 1024px) {
-    padding-left: 25px;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0;
+  @media (min-width: 427px) and (max-width: 768px) {
+    width: 100%;
+    gap: 7%;
+    justify-content: start;    margin-left: 5%;
+    align-items: center;
+
+  }
+  @media (min-width: 769px) and (max-width: 1439px) {
+    gap: 8%;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: start;
+    padding-left: 0;
   }
 `;
 //todo fix menu
@@ -73,22 +94,15 @@ const StyledMobileMenu = styled.div`
     display: block;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    padding: 16px 30px;
-    flex-direction: row;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 24px;
-    // background-color: ${theme.colors.fontColorWhite};
-    
+    display: block;
+
+
   }
   @media (min-width: 1024px)  {
   svg{
     margin-left: -1%;
   }
     @media (min-width: 1024px) and (max-width: 1440px) {
-      //background: ${theme.colors.fontColorWhite};
-
 
     }
   }
@@ -105,16 +119,16 @@ const StyledPopUp = styled.div`
     left: 0;
     width: 100%;
     background: ${theme.colors.fontColorWhite};
-    //width: 100%;
     border-radius: 20px;
     height: 384px;
+    
     z-index: 3;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     padding-left: 0;
     max-height: 372px;
     min-width: 100%;
-    z-index: 44;
+    z-index: 999;
     //margin-top: 25%;
     display: flex;
     position: absolute;
@@ -124,8 +138,7 @@ const StyledPopUp = styled.div`
     width: 100%;
     background: ${theme.colors.fontColorWhite};
     border-radius: 20px;
-    height: 384px;
-]
+    height: 300px;
 
   }
   @media (min-width: 1024px) and (max-width: 1439px) {

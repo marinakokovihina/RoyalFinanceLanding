@@ -37,23 +37,30 @@ const ScrollToTop = () => {
         </StyledDiv>
     );
 };
-const StyledButton = styled.button `
+const StyledButton = styled.div `
   position: fixed;
   bottom: 30px;
   right: 30px;
+  
   background: rgba(56, 70, 190, 1);
   color: #f4f4f5;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  
+  height: 55px;
   border-radius: 100%;
-  font-size: 25px;
+  font-size: 28px;
   cursor: pointer;
   border: none;
-  z-index:999;
+  z-index:998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 2px 5px rgba(146, 144, 248, 0.3);
 `
 const StyledDiv = styled.div `
- 
+ display: flex;
+  align-items: center;
+  justify-content: center;
   
 `
 

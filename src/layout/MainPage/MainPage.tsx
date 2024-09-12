@@ -21,8 +21,8 @@ export const MainPage = () => {
             <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'-5%'} left={'65%'} fill={'none'}>
                     <Icon IconId={'frameWithCirclesRightSmall'} height={"700"} width={"820"} viewBox={"0 0 800 700"}/>
             </SvgWrapperStyled>
-            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'-4%'} left={'50%'} fill={'none'}>
-                    <Icon IconId={'frameWithCirclesRightBig'} height={"730"} width={"950"} viewBox={"0 0 904 807"}/>
+            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'-5%'} left={'60%'} fill={'none'}>
+                    <Icon IconId={'frameWithCirclesRightBig'} height={"730"} width={"600"} viewBox={"0 0 904 807"}/>
             </SvgWrapperStyled>
 
             <MainLeftComponent/>
@@ -42,7 +42,7 @@ const StyledMain = styled.main `
         margin-bottom: 240px;
         align-items: center;
         max-width: 351px;
-    margin-top: 160px;
+        margin-top: 160px;
   }
   
   @media (min-width: 427px) and (max-width: 767px) {
@@ -54,6 +54,7 @@ const StyledMain = styled.main `
   }
   @media (min-width: 768px) and (max-width: 1024px) {
         flex-direction: column;
+    align-items: flex-start;
         padding-left: 36px;
         gap: 120px;
         margin-top: 160px;

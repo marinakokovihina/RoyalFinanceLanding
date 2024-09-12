@@ -39,7 +39,7 @@ const StyledLogo = styled.header `
     gap: 12px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    margin-right: auto;
+    //margin-right: auto;
   }
   @media (min-width: 1024px) and (max-width: 1439px) {
     margin-right: auto;

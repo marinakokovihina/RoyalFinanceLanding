@@ -10,6 +10,7 @@ type SvgWrapperProps = {
 
 export const SvgWrapperStyled = styled.div<SvgWrapperProps> `
     position: absolute;
+  
     display:${props => props.display || 'block'};
     left: ${props => props.left || '0'};
     top: ${props => props.top || '0'};

@@ -88,11 +88,9 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
     height: 248px;
     gap: 24px;
     padding: 16px;
-    
-
   }
   @media (min-width: 767px) and (max-width: 1023px) {
-    height: 513px;
+    height: 100%;
 
   }@media (min-width: 1024px) and (max-width: 1439px) {
     height: 205px;

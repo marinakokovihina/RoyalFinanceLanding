@@ -13,14 +13,14 @@ export const CardBottom = (props: CardForMainProps) => {
 
     return (
         <ScrollAnimation
-            animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInLeft"}
+            animateIn={isMobile ? "" : "animate__fadeInLeft"}
             animateOnce={animationMode}
-            duration={1}
-            delay={1}
+            duration={2}
+            delay={2}
             offset={10}
             initiallyVisible={true}
         >
-            <StyledCardForMain className= { isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInLeft"}
+            <StyledCardForMain className= { isMobile ? "" :  "animate__animated animate__fadeInLeft"}
                                 height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <IconCardFast />

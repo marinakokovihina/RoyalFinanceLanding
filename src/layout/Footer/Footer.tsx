@@ -54,9 +54,13 @@ const StyledFooter = styled.footer `
   display: flex;
   border-radius: 40px;
   flex-direction: column;
+  text-align: -webkit-left;
+
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 120px;
+  -webkit-justify-content: flex-start;
+  -webkit-align-items: flex-start;
   @media (max-width: 767px) {
     flex-direction: column;
     width: 351px;
@@ -73,9 +77,7 @@ const StyledFooter = styled.footer `
     height: auto;
 
   }
-  @media (min-width: 1024px) and (max-width: 1439px) {
-    width: 936px;
-  }
+ 
 `;
 const GroupFooterCard = styled.div `
   display: flex;
@@ -98,6 +100,7 @@ const GroupFooterCard = styled.div `
 const StyledH4 = styled.div `
   font-style: normal;
   font-weight: 600;
+
   font-size: 48px;
   line-height: 56px;
   margin-bottom: 60px;

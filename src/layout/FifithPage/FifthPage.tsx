@@ -108,7 +108,7 @@ const FifthPageStyled = styled.div `
   }
   @media (min-width: 431px) and (max-width: 1024px) {
     margin-top: 160px;
-
+    padding-left: 0;
   }
 `;
 const Container = styled.div `

@@ -18,13 +18,15 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
   @media (min-width: 768px) and (max-width: 1024px) {
     width: max-content;
     max-width: 766px;
+    margin-left: 0;
+
   }
   @media (max-width: 321px) {
-  width: fit-content;
+  width: auto;
   }
     @media (min-width: 322px) and (max-width: 767px){
-    //width: auto;
-      width: fit-content;
+    width: auto;
+    //  width: fit-content;
 
     }
   @media (min-width: 1024px) and (max-width: 1440px){

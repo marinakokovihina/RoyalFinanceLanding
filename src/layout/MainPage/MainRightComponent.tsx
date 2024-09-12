@@ -32,17 +32,16 @@ export const MainRightComponent = () => {
 
 
 const StyledMainRightComponent = styled.div `
-    margin-left: 6%;
-  margin-right: 2%;
+    //margin-left: 6%;
+   margin-right: 2%;
 
 
   @media (max-width: 767px) {
-    margin-left: 0;
     margin-top: 40px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     
-    margin-left: 0;
+    //margin-left: 0;
   }
 `
 const StyledCardGroup = styled.div `
@@ -67,16 +66,16 @@ const GroupCards = styled.div `
   display: flex;
   flex-direction: column;
   gap: 24px;
-  @media (max-width: 430px) {
+  @media (max-width: 767px) {
     flex-direction: column-reverse;
     align-items: center;
 
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    flex-direction: column;
-
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  //@media (min-width: 768px) and (max-width: 1023px) {
+  //  flex-direction: column;
+  //
+  //}
+  @media (min-width: 768px) and (max-width: 1023px) {
     flex-direction: row;
 
   }

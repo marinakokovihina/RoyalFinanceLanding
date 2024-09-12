@@ -14,14 +14,14 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
 
     return (
         <ScrollAnimation
-            animateIn={isMobile ? '"animate__fadeIn' : "animate__fadeInDown"}
+            animateIn={isMobile ? '' : "animate__fadeInDown"}
             animateOnce={animationMode}
             duration={2}
             delay={2}
             offset={10}
             initiallyVisible={true}
         >
-            <StyledCardForMain className= {isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInDown animate " }
+            <StyledCardForMain className= {isMobile ? "" :  "animate__animated animate__fadeInDown animate " }
                                height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
@@ -60,11 +60,10 @@ const StyledCardForMain = styled.div <CardForMainProps>`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row;
-    gap: 32px;
+    //gap: 32px;
   }
   @media (min-width: 1024px) and (max-width: 1440px) {
     flex-direction: column ;
-    gap: 32px;
   }
 `
 const StyledH4 = styled.h4 `
@@ -106,6 +105,8 @@ const StyledP = styled.p `
   @media (min-width: 768px) and (max-width: 767px) {
     margin-top: 0;
     max-width: 100%;
+    //align-items: flex-start;
+
   }
   
 `

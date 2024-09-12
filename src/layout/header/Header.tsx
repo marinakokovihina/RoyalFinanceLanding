@@ -34,7 +34,6 @@ export const Header = () => {
 };
 
 const StyledWrapHeader = styled.div`
-  //max-width: 1430px;
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -63,21 +62,17 @@ const StyledWrapHeader = styled.div`
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px); 
     left: 0;
-    //max-width: 100vw;
-
   }
 `
 const StyledHeader = styled.header`
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
-  
   align-items: center;
   justify-content: space-between;
   gap: 106px;
   max-height: 80px;
   max-width: 90%;
-  
   @media (max-width: 426px) {
     width: 100%;
     gap: 24px;
@@ -89,14 +84,14 @@ const StyledHeader = styled.header`
   @media (min-width: 427px) and (max-width: 768px) {
     width: 100%;
     justify-content: start;
-    gap: 30px;
+    gap: 8%;
     padding-left: 0;
 
 
 
 
   } @media (min-width: 769px) and (max-width: 1439px) {
-    gap: 30px;
+    gap: 8%;
   width: 90%;
   justify-content: start;
   padding-left: 0;

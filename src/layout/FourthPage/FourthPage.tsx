@@ -15,12 +15,13 @@ import {Image} from "../../components/Image/Image";
 
 export const FourthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobilePlus = useMediaQuery({ maxWidth: 1023 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
     const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
 
     return (
         <FourthPageStyled id = "safety">
-            <ScrollAnimation   animateIn="animate__fadeInUp"
+            <ScrollAnimation   animateIn={isMobilePlus ?  'animate__fadeIn' : "animate__fadeInUp"}
                                animateOnce={animationMode}
                                duration={1}
                                delay={100}
@@ -29,7 +30,7 @@ export const FourthPage = () => {
             </ScrollAnimation>
         <Container>
             <LeftColumn>
-                <ScrollAnimation   animateIn="animate__fadeInTopLeft"
+                <ScrollAnimation   animateIn={isMobilePlus ?  'animate__fadeIn' :"animate__fadeInTopLeft"}
                                    animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
@@ -38,7 +39,7 @@ export const FourthPage = () => {
                     colorTextH5 = {theme.colors.fontColorWhite} colorTextP={theme.colors.fontColorWhite} textH5={'Надежный прием фиатных средств'}
                                    background={theme.colors.colorForCardGreen} textP={'Безопасные транзакции для вашего бизнеса с поддержкой множества валют '}/>
                 </ScrollAnimation>
-                <ScrollAnimation   animateIn="animate__fadeInTopRight"
+                <ScrollAnimation   animateIn={isMobilePlus ?  'animate__fadeIn' :"animate__fadeInTopRight"}
                                    animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
@@ -47,7 +48,8 @@ export const FourthPage = () => {
                                    colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary}
                                    textH5={'Холодные кошельки'} background={theme.colors.colorForCardGreyGreen} textP={'Обеспечивают максимальную безопасность для хранения ваших криптовалютных активов'}/>
                 </ScrollAnimation>
-                <ScrollAnimation   animateIn="animate__fadeInBottomLeft"
+                <ScrollAnimation
+                    animateIn={isMobilePlus ?  'animate__fadeIn' :"animate__fadeInBottomLeft"}
                                    animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
@@ -56,7 +58,7 @@ export const FourthPage = () => {
                     colorTextH5 = {theme.colors.fontPrimary} colorTextP={theme.colors.fontColorSecondary} textH5={'Безопасные выводы для всех клиентов'}
                                    background={theme.colors.colorForCardGreyGreen} textP={'Каждый запрос обрабатывается индивидуально, что позволяет обеспечить максимальную защиту ваших средств.'}/>
                 </ScrollAnimation>
-                <ScrollAnimation   animateIn="animate__fadeInBottomRight"
+                <ScrollAnimation   animateIn={isMobilePlus ?  'animate__fadeIn' :"animate__fadeInBottomRight"}
                                    animateOnce={animationMode}
                                    duration={1}
                                    delay={1}
@@ -81,8 +83,7 @@ export const FourthPage = () => {
                         {/*<Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  isDesktop ? '600' : '601'} width={isMobile ? '240': isTablet ? '336' :isDesktop ? '600' :'601'}/>*/}
                     </SvgWrapperStyled>
                 </ScrollAnimation>
-
-                    <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
+                <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
 
             </RightColumn>
         </Container>
@@ -153,6 +154,8 @@ const RightColumn = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row-reverse;
     display: flex;
+    justify-content: space-around;
+    gap: 0px;
     align-items: center;
 
   }
@@ -189,7 +192,7 @@ const StyledH5Mob = styled.h5`
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 40px;
-    max-width: 50%;
+    max-width: 35%;
     display: block;
 
 

@@ -16,6 +16,9 @@ import {animationMode} from "../../store/type";
 
 export const SeventhPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobilePlus = useMediaQuery({ maxWidth: 1023 });
+
+
     const def = '311px';
     const def2 = '388px'
     const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -25,7 +28,7 @@ export const SeventhPage = () => {
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
         <SeventhPageStyled>
-            <SvgWrapperStyled display={isMobile ? "none" : 'block'} top={'5800px'} left={'80%'} >
+            <SvgWrapperStyled display={isMobilePlus ? "none" : 'block'} top={'5800px'} left={'80%'} >
                 <Icon IconId={'circleForSeventhPage'} viewBox={'0 0 302 474'} width={'302'} height={'474'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInLeft"
@@ -56,13 +59,13 @@ export const SeventhPage = () => {
                     />
                     <CardForSeventhPage iconId1={'number2'} textForTopCard={'Перевод средств на счет получателя'}
                                         height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={SecondImg}
-                                        viewBox2={'0 0 276 349'} width2={isMobile ? def : '276px'} height2={isMobile ? def2 :'349px'}
+                                        viewBox2={'0 0 276 349'} width2={isMobile ? def  :'276px'} height2={isMobile ? def2  :'349px'}
                     />
                     <CardForSeventhPage iconId1={'number3'} textForTopCard={'Апелляции'}
                                         height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={ThirdImg}
                                          viewBox2={'0 0 276 349'} width2={isMobile ? def : '276px'} height2={isMobile ? def2 :'349px'}
                     />
-                    <CustomDivForSeventhPage display={!isTablet && !isMobile && !isDesktop ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={ !isDesktop ? 'flex' : 'none'} />
                 </CardWrapper>
             </StyledWrapper>
                 </ScrollAnimation>
@@ -72,7 +75,7 @@ export const SeventhPage = () => {
                                    delay={300}
                                    offset={10}  >
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage display={isDesktop || isTablet || isMobile ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={isDesktop || !isTablet || isMobile ? 'flex' : 'none'} />
 
                 </StyledDivForBeidge>
                 </ScrollAnimation>
@@ -124,7 +127,7 @@ const CardWrapper = styled.div `
     flex-direction: column;
     align-items: center;
     gap: 30px;}
-  @media (min-width: 1024px) and (max-width: 1439px) {
+  @media (min-width: 1024px)  {
     flex-direction: row;
     gap: 25px;
   }
@@ -176,17 +179,17 @@ const StyledWrapper = styled.div `
   align-items: flex-start;
   padding: 20px;
   gap: 40px;
-  width: 950px;
-  height: 667.17px;
+  width: 100%;
+  max-width: 950px;
+  height: auto;
   background: ${theme.colors.fontColorWhite};
   border: 1px solid #F1F1F4;
   border-radius: 20px;
   @media (max-width: 767px) {
-    width: 351px;
+    width: 100%;
     height: auto;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     height: auto;
-
   }
 `;

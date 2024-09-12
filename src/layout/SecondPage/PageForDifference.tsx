@@ -11,6 +11,7 @@ import {Image} from "../../components/Image/Image";
 import man from "../../assets/img/ManForSecondPage.png"
 export const PageForDifference = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({maxWidth: 1023})
     // const isDesktop = useMediaQuery({ minWidth: 1025 });
 
     return (
@@ -44,7 +45,7 @@ export const PageForDifference = () => {
         </PageForDifferenceStyled>
             {/*todo расширить на весь экран надпись
             */}
-            <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={isMobile ? 'none' : "block"}>
+            <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={isMobile ? 'none' : isTablet ? 'none' : "block"}>
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
         </WrapperForDifferenceStyled>
@@ -71,6 +72,8 @@ const WrapperForDifferenceStyled = styled.div `
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 0;
+
     margin-bottom: 0;
     max-width: 750px;
     padding-top: 60px;

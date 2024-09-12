@@ -28,10 +28,10 @@ export const CardUp = (props: CardForMainProps) => {
     const isMobile = useMediaQuery({ maxWidth: 1023 });
     return (
         <ScrollAnimation
-            animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInRight"}
+            animateIn={isMobile ? "" : "animate__fadeInRight"}
             animateOnce={animationMode}
-            duration={1}
-            delay={1}
+            duration={2}
+            delay={2}
             offset={10}
             initiallyVisible={true}
         >
@@ -104,6 +104,8 @@ export const StyledP = styled.p<CardForMainProps>`
   max-width: 267px;
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 18px;
+    max-width: 267px;
+
 
   }
 

@@ -91,7 +91,7 @@ const StyledP = styled.p`
   line-height: 26px;
   color: ${theme.colors.fontPrimary};
   margin-bottom: 114px;
-  @media (max-width: 430px) {
+  @media (max-width: 767px) {
     margin-bottom: 40px;
     
   }
