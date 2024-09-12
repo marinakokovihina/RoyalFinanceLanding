@@ -11,6 +11,8 @@ import services from "../../assets/img/services.png"
 import cards from "../../assets/img/cards.png"
 import marketing from "../../assets/img/marketing.png"
 import {animationMode} from "../../store/type";
+import {Image} from "../../components/Image/Image";
+import man from "../../assets/img/ManForThirdPage.png"
 
 
 export const ThirdPage = () => {
@@ -26,7 +28,7 @@ export const ThirdPage = () => {
                                     animateOnce={animationMode}
                                     duration={1}
                                     delay={300}
-                                    offset={10}  >
+                                    offset={20}  >
                 <StyledH5ThirdPage> Решаем <SpanBlue> любые задачи </SpanBlue></StyledH5ThirdPage>
             </ScrollAnimation>
             </IconDiv>
@@ -36,8 +38,8 @@ export const ThirdPage = () => {
                                        animateOnce={animationMode}
                                        duration={1}
                                        delay={300}
-                                       offset={10}  >
-                    <Icon IconId={'goodMan'} height={'308'} width={'308'} viewBox={'0 0 308 308'}/>
+                                       offset={20}  >
+                        <Image src={man} width={'308'} height={'308'}/>
                     </ScrollAnimation>
                     <StyledH5ThirdPageMob> Решаем <SpanBlue> любые задачи </SpanBlue> </StyledH5ThirdPageMob>
                 </LeftColumn>

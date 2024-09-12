@@ -7,7 +7,8 @@ import {GroupOfCardForPageForDifference} from "../../components/CardForMain/Grou
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from 'react-animate-on-scroll';
 import {animationMode} from "../../store/type";
-
+import {Image} from "../../components/Image/Image";
+import man from "../../assets/img/ManForSecondPage.png"
 export const PageForDifference = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     // const isDesktop = useMediaQuery({ minWidth: 1025 });
@@ -19,7 +20,7 @@ export const PageForDifference = () => {
                 animateOnce={animationMode}
                 duration={5}
                 delay={0}
-                offset={10}
+                offset={20}
             >
                 <StyledH4 >
                     В чем <SpanBlue>наше отличие</SpanBlue> от других?
@@ -35,7 +36,8 @@ export const PageForDifference = () => {
                                        duration={1}
                                        >
 
-                    <Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>
+                        <Image src={man} height={'306'} width={'306'}/>
+                    {/*<Icon IconId={'man'} width={'306'} viewBox={'0 0 306 306'} height={'306'}/>*/}
                     </ScrollAnimation>
                     <StyledH4Mob>В чем <SpanBlue>наше отличие </SpanBlue>от других?</StyledH4Mob>
                 </RightColumn>

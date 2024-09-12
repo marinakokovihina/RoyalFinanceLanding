@@ -8,6 +8,8 @@ import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
 import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {animationMode} from "../../store/type";
+import microbe from "../../assets/img/Microbe.png"
+import {Image} from "../../components/Image/Image";
 
 
 
@@ -70,10 +72,13 @@ export const FourthPage = () => {
                                    duration={1}
                                    delay={1}
                                    offset={10}  >
-                    {!isDesktop && (                        <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  '601'} width={isMobile ? '240': isTablet ? '336'  :'601'}/>
+                    {!isDesktop && (
+                        <Image src={microbe} height={isMobile ? '240px' : isTablet ? '336px':  isDesktop ? '600px' : '601px'} width={isMobile ? '240px': isTablet ? '336px' :isDesktop ? '600px' :'601px'}/>
+                        // <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  '601'} width={isMobile ? '240': isTablet ? '336'  :'601'}/>
                     )}
                     <SvgWrapperStyled display ={isDesktop ?'block' :'none'} top={'3728px'} left={'60%'}>
-                        <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  isDesktop ? '600' : '601'} width={isMobile ? '240': isTablet ? '336' :isDesktop ? '600' :'601'}/>
+                       <Image src={microbe} height={isMobile ? '240px' : isTablet ? '336px':  isDesktop ? '600px' : '601px'} width={isMobile ? '240px': isTablet ? '336px' :isDesktop ? '600px' :'601px'}/>
+                        {/*<Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  isDesktop ? '600' : '601'} width={isMobile ? '240': isTablet ? '336' :isDesktop ? '600' :'601'}/>*/}
                     </SvgWrapperStyled>
                 </ScrollAnimation>
 

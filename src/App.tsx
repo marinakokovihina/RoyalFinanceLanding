@@ -10,6 +10,9 @@ import {SixthPage} from "./layout/SixthPage/SixthPage";
 import {SeventhPage} from "./layout/SeventhPage/SeventhPage";
 import {Footer} from "./layout/Footer/Footer";
 import {GlobalStyles} from "./styles/globalStyles";
+import {SvgWrapperStyled} from "./components/SvgWrapper/SvgWrapper";
+import styled from "styled-components";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
@@ -24,6 +27,7 @@ function App() {
           <SixthPage/>
           <SeventhPage/>
           <Footer/>
+          <ScrollToTop/>
       </StyledWrapper>
   );
 }
@@ -31,3 +35,4 @@ function App() {
 //todo ДОБАВИТЬ ФАВИКОНКУ РОЯЛ ФИНАНС
 //todo ПОМЕНЯТЬ ДЕФОЛТНЫЙ ЯЗЫК НА РУССКИЙ
 export default App;
+

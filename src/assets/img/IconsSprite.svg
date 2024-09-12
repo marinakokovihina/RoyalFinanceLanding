@@ -52,7 +52,7 @@
     <g id = "tgIconForWhiteButton">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_714_9058)">
-                <path d="M12 0C8.81812 0 5.76375 1.26506 3.51562 3.51469C1.26518 5.76521 0.000623381 8.81734 0 12C0 15.1813 1.26562 18.2357 3.51562 20.4853C5.76375 22.7349 8.81812 24 12 24C15.1819 24 18.2362 22.7349 20.4844 20.4853C22.7344 18.2357 24 15.1813 24 12C24 8.81869 22.7344 5.76431 20.4844 3.51469C18.2362 1.26506 15.1819 0 12 0Z" fill="url(#paint0_linear_714_9058)"/>
+                <path d="M12 0C8.81812 0 5.76375 1.26506 3.51562 3.51469C1.26518 5.76521 0.000623381 8.81734 0 12C0 15.1813 1.26562 18.2357 3.51562 20.4853C5.76375 22.7349 8.81812 24 12 24C15.1819 24 18.2362 22.7349 20.4844 20.4853C22.7344 18.2357 24 15.1813 24 12C24 8.81869 22.7344 5.76431 20.4844 3.51469C18.2362 1.26506 15.1819 0 12 0Z" fill="rgba(42, 171, 238, 1)"/>
                 <path d="M5.43184 11.8735C8.93059 10.3495 11.2631 9.34472 12.4293 8.85929C15.7631 7.4731 16.455 7.23235 16.9068 7.22419C17.0062 7.2226 17.2275 7.24716 17.3718 7.36388C17.4918 7.46232 17.5256 7.59544 17.5425 7.68891C17.5575 7.78229 17.5781 7.9951 17.5612 8.16122C17.3812 10.0587 16.5993 14.6633 16.2018 16.7887C16.035 17.6879 15.7031 17.9894 15.3825 18.0188C14.685 18.083 14.1562 17.5583 13.4812 17.116C12.4256 16.4236 11.8293 15.9927 10.8037 15.3172C9.61872 14.5364 10.3875 14.1072 11.0625 13.406C11.2387 13.2224 14.31 10.4296 14.3681 10.1763C14.3756 10.1446 14.3831 10.0265 14.3118 9.96422C14.2425 9.90179 14.1393 9.92316 14.0643 9.94004C13.9575 9.96404 12.2718 11.0793 9.00184 13.2856C8.52372 13.6145 8.09059 13.7748 7.70059 13.7663C7.27309 13.7572 6.44809 13.5241 5.83497 13.325C5.08497 13.0807 4.48684 12.9515 4.53934 12.5365C4.56559 12.3205 4.86372 12.0995 5.43184 11.8735Z" fill="white"/>
             </g>
             <defs>
@@ -104,29 +104,28 @@
 <!--<svg width="232" height="607" viewBox="0 0 232 607" fill="none" xmlns="http://www.w3.org/2000/svg">
 -->
     <g id = "frameWithCirclesLeft">
-        <ellipse opacity="0.1" cx="-72" cy="303.5" rx="304" ry="303.5" fill="url(#paint0_radial_714_6104)"/>
+        <ellipse opacity="0.1" cx="-72" cy="303.5" rx="304" ry="303.5" fill="rgba(65, 104, 241, 0.6)"/>
         <defs>
             <radialGradient id="paint0_radial_714_6104" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-72 303.5) rotate(90) scale(303.5 304)">
-                <stop stop-color="#4168F1" stop-opacity="0.12"/>
-                <stop offset="1" stop-color="#4168F1" stop-opacity="0.4"/>
+                <stop stop-color="rgba(65, 104, 241, 0.12)" stop-opacity="0.12"/>
+                <stop offset="1" stop-color="rgba(65, 104, 241, 0.4)" stop-opacity="0.4"/>
             </radialGradient>
         </defs>
     </g>
 <!--   <svg width="141" height="425" viewBox="0 0 141 425" fill="none" xmlns="http://www.w3.org/2000/svg">
  -->
     <g id = "frameWithCirclesLeftSmall">
-        <ellipse opacity="0.1" cx="-72" cy="303.5" rx="304" ry="303.5" fill="url(#paint0_radial_714_6104)"/>
+        <ellipse opacity="0.1" cx="-72" cy="303.5" rx="304" ry="303.5" fill="rgba(65, 104, 241, 0.4)"/>
         <defs>
             <radialGradient id="paint0_radial_714_6104" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-72 303.5) rotate(90) scale(303.5 304)">
-                <stop stop-color="#4168F1" stop-opacity="0.12"/>
-                <stop offset="1" stop-color="#4168F1" stop-opacity="0.4"/>
+                <stop stop-color="rgba(65, 104, 241, 0.12)" stop-opacity="0.12"/>
+                <stop offset="1" stop-color="rgba(65, 104, 241, 0.4)" stop-opacity="0.4"/>
             </radialGradient>
         </defs>
     </g>
     <g id = "frameWithCirclesRightSmall">
-<!--        <svg width="739" height="642" viewBox="0 0 739 642" fill="none" xmlns="http://www.w3.org/2000/svg">-->
             <g opacity="0.15" filter="url(#filter0_b_714_6102)">
-                <ellipse cx="386" cy="256.5" rx="386" ry="385.5" fill="url(#paint0_radial_714_6102)"/>
+                <ellipse cx="386" cy="256.5" rx="386" ry="385.5" fill="rgba(65, 104, 241, 0.5)"/>
             </g>
             <defs>
                 <filter id="filter0_b_714_6102" x="-80" y="-209" width="932" height="931" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -136,8 +135,8 @@
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_714_6102" result="shape"/>
                 </filter>
                 <radialGradient id="paint0_radial_714_6102" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(386 256.5) rotate(90) scale(385.5 386)">
-                    <stop stop-color="#4168F1" stop-opacity="0.15"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.5"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.15)" stop-opacity="0.15"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.5)" stop-opacity="0.5"/>
                 </radialGradient>
             </defs>
     </g>
@@ -273,9 +272,8 @@
             <rect x="2" y="81" width="96" height="7" rx="3.5" fill="#3846BE" fill-opacity="0.5"/>
     </g>
     <g id = "man">
-<!--        <svg width="306" height="306" viewBox="0 0 306 306" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-            <g filter="url(#filter0_bi_714_11098)">
-                <circle cx="153" cy="153" r="153" fill="#3846BE" fill-opacity="0.1"/>
+            <g filter="rgba(56, 70, 190, 0.1)">
+                <circle cx="153" cy="153" r="153" fill="rgba(56, 70, 190, 0.1)" fill-opacity="0.1"/>
             </g>
             <mask id="mask0_714_11098" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="306" height="306">
                 <path d="M306 153C306 287.822 306 287.822 249.193 271.985C222.913 293.258 189.445 306 153 306C116.555 306 83.0871 293.258 56.8069 271.985C0 294.639 0 294.639 0 153C0 68.5004 68.5004 0 153 0C237.5 0 306 68.5004 306 153Z" fill="white"/>
@@ -325,12 +323,11 @@
 `
     </g>
     <g id="circleForPageDifference">
-<!--        <svg width="298" height="747" viewBox="0 0 298 747" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-            <ellipse opacity="0.1" cx="374" cy="373.5" rx="374" ry="373.5" fill="url(#paint0_radial_714_1425)"/>
+            <ellipse opacity="0.1" cx="374" cy="373.5" rx="374" ry="373.5" fill="rgba(65, 104, 241, 0.5)"/>
             <defs>
                 <radialGradient id="paint0_radial_714_1425" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(374 373.5) rotate(90) scale(373.5 374)">
-                    <stop stop-color="#4168F1" stop-opacity="0.12"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.4"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.12)" stop-opacity="0.12"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.4)" stop-opacity="0.4"/>
                 </radialGradient>
             </defs>
 <!--        </svg>-->
@@ -485,15 +482,14 @@
 
     </g>
     <g id="circleForMan">
-        <svg width="538" height="748" viewBox="0 0 538 748" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse opacity="0.1" cx="164" cy="374" rx="374" ry="373.5" fill="url(#paint0_radial_1049_6239)"/>
+            <ellipse cx="164" cy="374" rx="374" ry="373"  fill="rgba(65, 104, 241, 0.3)" style="opacity: 0.1;" />
+
             <defs>
-                <radialGradient id="paint0_radial_1049_6239" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(164 374) rotate(90) scale(373.5 374)">
-                    <stop stop-color="#4168F1" stop-opacity="0.12"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.4"/>
+                <radialGradient id="paint0_radial_1049_6239" cx="0.5" cy="0.5" r="0.5" gradientUnits="userSpaceOnUse" gradientTransform="translate(164 374) rotate(90) scale(373.5 374)" >
+                    <stop stop-color="rgba(65, 104, 241, 0.12)"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.4)" />
                 </radialGradient>
             </defs>
-        </svg>
     </g>
     <g id = "lock">
 <!--        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -533,9 +529,9 @@
 <!--        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">-->
         <path fill-rule="evenodd" clip-rule="evenodd" d="M50 98C76.5097 98 98 76.5097 98 50C98 23.4903 76.5097 2 50 2C23.4903 2 2 23.4903 2 50C2 76.5097 23.4903 98 50 98ZM50 92C73.196 92 92 73.196 92 50C92 26.804 73.196 8 50 8C26.804 8 8 26.804 8 50C8 73.196 26.804 92 50 92Z" fill="white" fill-opacity="0.5"/>
         <circle cx="50" cy="50" r="42" fill="white"/>
-        <path d="M32.7838 43.1094V61.6177H28.4703V43.1094H22V39.3823H39.254V43.1094H32.7838Z" fill="#53AE94"/>
-        <path d="M48.0797 59.6108V53.5263H42.2956V50.2452H48.0797V44.1288H51.7396V50.2452H57.5236V53.5263H51.7396V59.6108H48.0797Z" fill="#53AE94"/>
-        <path d="M69.5037 62C68.0441 62 66.7805 61.7452 65.713 61.2355C64.6456 60.7045 63.7633 59.9506 63.0661 58.9737C62.369 57.9968 61.8461 56.7969 61.4976 55.374C61.1708 53.9511 61.0074 52.3264 61.0074 50.5C61.0074 48.6948 61.1708 47.0808 61.4976 45.6579C61.8461 44.2138 62.369 43.0032 63.0661 42.0263C63.7633 41.0494 64.6456 40.3061 65.713 39.7964C66.7805 39.2655 68.0441 39 69.5037 39C72.4012 39 74.5361 40.0088 75.9086 42.0263C77.3029 44.0439 78 46.8684 78 50.5C78 54.1316 77.3029 56.9561 75.9086 58.9737C74.5361 60.9912 72.4012 62 69.5037 62ZM69.5037 58.464C70.9633 58.464 71.9763 57.9331 72.5428 56.8712C73.131 55.7881 73.4251 54.3333 73.4251 52.5069V48.4931C73.4251 46.6667 73.131 45.2225 72.5428 44.1607C71.9763 43.0776 70.9633 42.536 69.5037 42.536C68.0441 42.536 67.0202 43.0776 66.432 44.1607C65.8655 45.2225 65.5823 46.6667 65.5823 48.4931V52.5069C65.5823 54.3333 65.8655 55.7881 66.432 56.8712C67.0202 57.9331 68.0441 58.464 69.5037 58.464Z" fill="#53AE94"/>
+        <path d="M32.7838 43.1094V61.6177H28.4703V43.1094H22V39.3823H39.254V43.1094H32.7838Z" fill="rgba(83, 174, 148, 1)"/>
+        <path d="M48.0797 59.6108V53.5263H42.2956V50.2452H48.0797V44.1288H51.7396V50.2452H57.5236V53.5263H51.7396V59.6108H48.0797Z" fill="rgba(83, 174, 148, 0.4)"/>
+        <path d="M69.5037 62C68.0441 62 66.7805 61.7452 65.713 61.2355C64.6456 60.7045 63.7633 59.9506 63.0661 58.9737C62.369 57.9968 61.8461 56.7969 61.4976 55.374C61.1708 53.9511 61.0074 52.3264 61.0074 50.5C61.0074 48.6948 61.1708 47.0808 61.4976 45.6579C61.8461 44.2138 62.369 43.0032 63.0661 42.0263C63.7633 41.0494 64.6456 40.3061 65.713 39.7964C66.7805 39.2655 68.0441 39 69.5037 39C72.4012 39 74.5361 40.0088 75.9086 42.0263C77.3029 44.0439 78 46.8684 78 50.5C78 54.1316 77.3029 56.9561 75.9086 58.9737C74.5361 60.9912 72.4012 62 69.5037 62ZM69.5037 58.464C70.9633 58.464 71.9763 57.9331 72.5428 56.8712C73.131 55.7881 73.4251 54.3333 73.4251 52.5069V48.4931C73.4251 46.6667 73.131 45.2225 72.5428 44.1607C71.9763 43.0776 70.9633 42.536 69.5037 42.536C68.0441 42.536 67.0202 43.0776 66.432 44.1607C65.8655 45.2225 65.5823 46.6667 65.5823 48.4931V52.5069C65.5823 54.3333 65.8655 55.7881 66.432 56.8712C67.0202 57.9331 68.0441 58.464 69.5037 58.464Z" fill="rgba(83, 174, 148, 1)"/>
     </g>
     <g id = "spider">
 <!--        < width="601" height="601" viewBox="0 0 601 601" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -1236,16 +1232,16 @@
     </g>
     <g id="circleForFifthPage">
         <svg width="471" height="703" viewBox="0 0 471 703" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.1" cx="145.5" cy="325.5" r="325.5" fill="url(#paint0_radial_714_8238)"/>
-            <circle opacity="0.1" cx="145.5" cy="325.5" r="203.438" fill="url(#paint1_radial_714_8238)"/>
+            <circle opacity="0.1" cx="145.5" cy="325.5" r="325.5" fill="rgba(65, 104, 241, 0.5)"/>
+            <circle opacity="0.1" cx="145.5" cy="325.5" r="203.438" fill="rgba(65, 104, 241, 0.6)"/>
             <defs>
                 <radialGradient id="paint0_radial_714_8238" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145.5 325.5) rotate(90) scale(325.5)">
-                    <stop stop-color="#4168F1" stop-opacity="0.15"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.5"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.15)" stop-opacity="0.15"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.5)" stop-opacity="0.5"/>
                 </radialGradient>
                 <radialGradient id="paint1_radial_714_8238" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(145.5 325.5) rotate(90) scale(203.438)">
-                    <stop stop-color="#4168F1" stop-opacity="0.15"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.5"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.15)" stop-opacity="0.15"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.5)" stop-opacity="0.5"/>
                 </radialGradient>
             </defs>
         </svg>
@@ -1253,16 +1249,16 @@
     </g>
     <g id="circleForSeventhPage">
         <svg width="302" height="474" viewBox="0 0 302 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.1" cx="236.827" cy="236.577" r="236.577" fill="url(#paint0_radial_714_8976)"/>
-            <circle opacity="0.1" cx="236.827" cy="236.577" r="147.861" fill="url(#paint1_radial_714_8976)"/>
+            <circle opacity="0.1" cx="236.827" cy="236.577" r="236.577" fill="rgba(65, 104, 241, 0.5)"/>
+            <circle opacity="0.1" cx="236.827" cy="236.577" r="147.861" fill="rgba(65, 104, 241, 0.7)"/>
             <defs>
                 <radialGradient id="paint0_radial_714_8976" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(236.827 236.577) rotate(90) scale(236.577)">
-                    <stop stop-color="#4168F1" stop-opacity="0.15"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.5"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.15)" stop-opacity="0.15"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.5)" stop-opacity="0.5"/>
                 </radialGradient>
                 <radialGradient id="paint1_radial_714_8976" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(236.827 236.577) rotate(90) scale(147.861)">
-                    <stop stop-color="#4168F1" stop-opacity="0.15"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.5"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.15)" stop-opacity="0.15"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.5)" stop-opacity="0.5"/>
                 </radialGradient>
             </defs>
         </svg>
@@ -1270,16 +1266,16 @@
     </g>
     <g id="iconsForFooter">
         <svg width="785" height="538" viewBox="0 0 785 538" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.15" cx="227" cy="558" r="558" fill="url(#paint0_radial_714_9032)"/>
-            <circle opacity="0.15" cx="227" cy="558" r="348.75" fill="url(#paint1_radial_714_9032)"/>
+            <circle opacity="0.15" cx="227" cy="558" r="558" fill="rgba(65, 104, 241, 0.7)"/>
+            <circle opacity="0.15" cx="227" cy="558" r="348.75" fill="rgba(65, 104, 241, 0.7)"/>
             <defs>
                 <radialGradient id="paint0_radial_714_9032" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(227 558) rotate(90) scale(558)">
-                    <stop stop-color="#4168F1" stop-opacity="0.3"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.7"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.3)" stop-opacity="0.3"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.75)" stop-opacity="0.7"/>
                 </radialGradient>
                 <radialGradient id="paint1_radial_714_9032" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(227 558) rotate(90) scale(348.75)">
-                    <stop stop-color="#4168F1" stop-opacity="0.3"/>
-                    <stop offset="1" stop-color="#4168F1" stop-opacity="0.75"/>
+                    <stop stop-color="rgba(65, 104, 241, 0.3)" stop-opacity="0.3"/>
+                    <stop offset="1" stop-color="rgba(65, 104, 241, 0.7)" stop-opacity="0.75"/>
                 </radialGradient>
             </defs>
         </svg>

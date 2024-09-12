@@ -9,16 +9,18 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export const CardBottom = (props: CardForMainProps) => {
     const isDesktop = useMediaQuery({ minWidth: 1025 });
+    const isMobile = useMediaQuery({ maxWidth: 1023 });
+
     return (
         <ScrollAnimation
-            animateIn="animate__fadeInLeft"
+            animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInLeft"}
             animateOnce={animationMode}
             duration={1}
             delay={1}
             offset={10}
             initiallyVisible={true}
         >
-            <StyledCardForMain className= { "animate__animated animate__fadeInLeft"}
+            <StyledCardForMain className= { isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInLeft"}
                                 height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <IconCardFast />

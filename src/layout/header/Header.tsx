@@ -40,15 +40,16 @@ const StyledWrapHeader = styled.div`
   width: 100%;
   top: 0;
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(40px); 
-  left: 0;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);   left: 0;
   margin-bottom: 80px;
   
   @media (max-width: 767px) {
     margin-bottom: 80px;
     position: fixed;
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px); 
+    backdrop-filter: blur(40px); 
     top: 0;
     left: 0;
     width: 100%;
@@ -59,7 +60,8 @@ const StyledWrapHeader = styled.div`
     position: fixed;
     top: 0;
     background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px); 
     left: 0;
     //max-width: 100vw;
 
