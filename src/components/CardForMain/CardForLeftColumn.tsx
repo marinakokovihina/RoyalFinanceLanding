@@ -16,10 +16,9 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
         <ScrollAnimation
             animateIn={isMobile ? 'animate__fadeIn' : "animate__fadeInDown"}
             animateOnce={animationMode}
-            duration={7}
+            duration={3}
             delay={2}
             offset={10}
-            initiallyVisible={true}
         >
             <StyledCardForMain className= {isMobile ? "" :  "animate__animated animate__fadeInDown animate " }
                                height={props.height} width={props.width} background={props.background} border={props.border}
