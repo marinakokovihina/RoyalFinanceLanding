@@ -60,7 +60,7 @@ const StyledCardForMain = styled.div <CardForMainProps>`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: row;
-    //gap: 32px;
+    gap: 32px;
   }
   @media (min-width: 1024px) and (max-width: 1440px) {
     flex-direction: column ;

@@ -65,6 +65,11 @@ const StyledMain = styled.main `
     margin-top: 160px;
 
   }
-  
+  @media (min-width: 1440px)  {
+    flex-direction: row;
+    margin-top: 160px;
+    gap: 120px;
+  }
+
 
 `
