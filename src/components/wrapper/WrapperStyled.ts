@@ -22,10 +22,13 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
 
   }
   @media (max-width: 321px) {
-  width: auto;
+  width: 100%;
+    margin-left: 5%;
+
   }
     @media (min-width: 322px) and (max-width: 767px){
     width: auto;
+      margin-left: 5%;
     //  width: fit-content;
 
     }

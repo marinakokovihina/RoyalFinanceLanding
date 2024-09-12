@@ -9,7 +9,7 @@ import { useMediaQuery } from 'react-responsive';
 export const MainPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
-    const isBigDesktop = useMediaQuery({ minWidth: 1441 });
+    const isBigDesktop = useMediaQuery({ minWidth: 1400 });
     return (
         <StyledMain>
             <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={isBigDesktop ? '167px' : '240px'} left={'-3%'}>
@@ -18,10 +18,10 @@ export const MainPage = () => {
             <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'110px'} left={'-3%'} fill={'none'}>
                     <Icon IconId={'frameWithCirclesLeftSmall'} height={"608"} width={"426"} viewBox={"0 0 608 426"}/>
             </SvgWrapperStyled>
-            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'-5%'} left={'65%'} fill={'none'}>
+            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={isBigDesktop ? '-3%':'-5%'} left={isBigDesktop ? '69%':'65%'} fill={'none'}>
                     <Icon IconId={'frameWithCirclesRightSmall'} height={"700"} width={"820"} viewBox={"0 0 800 700"}/>
             </SvgWrapperStyled>
-            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : 'block'} top={'-5%'} left={'60%'} fill={'none'}>
+            <SvgWrapperStyled  display={isMobile ? 'none' : isTablet ? 'none' : isBigDesktop ? 'block':'none'} top={isBigDesktop ? '-4%':'-5%'} left={isBigDesktop ? '73%':'65%'} fill={'none'}>
                     <Icon IconId={'frameWithCirclesRightBig'} height={"730"} width={"600"} viewBox={"0 0 904 807"}/>
             </SvgWrapperStyled>
 
@@ -41,8 +41,9 @@ const StyledMain = styled.main `
         flex-direction: column;
         margin-bottom: 240px;
         align-items: center;
-        max-width: 351px;
+        max-width: 100%;
         margin-top: 160px;
+        
   }
   
   @media (min-width: 427px) and (max-width: 767px) {
@@ -54,7 +55,7 @@ const StyledMain = styled.main `
   }
   @media (min-width: 768px) and (max-width: 1024px) {
         flex-direction: column;
-    align-items: flex-start;
+        align-items: flex-start;
         padding-left: 36px;
         gap: 120px;
         margin-top: 160px;

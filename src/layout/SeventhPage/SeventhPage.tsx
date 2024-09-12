@@ -28,7 +28,7 @@ export const SeventhPage = () => {
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
         <SeventhPageStyled>
-            <SvgWrapperStyled display={isMobilePlus ? "none" : 'block'} top={'5800px'} left={'80%'} >
+            <SvgWrapperStyled display={isMobilePlus ? "none" : 'block'} top={'5800px'} left={'84%'} >
                 <Icon IconId={'circleForSeventhPage'} viewBox={'0 0 302 474'} width={'302'} height={'474'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInLeft"
@@ -75,7 +75,7 @@ export const SeventhPage = () => {
                                    delay={300}
                                    offset={10}  >
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage display={isDesktop || !isTablet || isMobile ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={isDesktop ? 'flex' : 'none'} />
 
                 </StyledDivForBeidge>
                 </ScrollAnimation>

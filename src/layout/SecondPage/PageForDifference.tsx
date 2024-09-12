@@ -45,7 +45,7 @@ export const PageForDifference = () => {
         </PageForDifferenceStyled>
             {/*todo расширить на весь экран надпись
             */}
-            <SvgWrapperStyled top={'1070px'} left={'80%'} fill={'none'} display={isMobile ? 'none' : isTablet ? 'none' : "block"}>
+            <SvgWrapperStyled top={'1070px'} left={'84%'} fill={'none'} display={isMobile ? 'none' : isTablet ? 'none' : "block"}>
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
         </WrapperForDifferenceStyled>

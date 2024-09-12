@@ -15,7 +15,7 @@ export const Footer = () => {
 
     return (
         <>
-            <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none ' : 'block'} top = {'6630px'} left={'-7%'}>
+            <SvgWrapperStyled display={isMobile ? 'none' : isTablet ? 'none ' : 'block'} top = {'95%'} left={'-7%'}>
                 <Icon IconId={'iconsForFooter'} height={'538'} width={'785'} viewBox={'0 0 785 538'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInUp"
@@ -58,7 +58,6 @@ const StyledFooter = styled.footer `
 
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 120px;
   -webkit-justify-content: flex-start;
   -webkit-align-items: flex-start;
   @media (max-width: 767px) {
