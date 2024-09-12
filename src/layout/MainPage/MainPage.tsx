@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 export const MainPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1399 });
     const isBigDesktop = useMediaQuery({ minWidth: 1400 });
     return (
         <StyledMain>
@@ -62,6 +62,7 @@ const StyledMain = styled.main `
   }
   @media (min-width: 1024px) and (max-width: 1440px) {
     flex-direction: row;
+    margin-top: 160px;
 
   }
   

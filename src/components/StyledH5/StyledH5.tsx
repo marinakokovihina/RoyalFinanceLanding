@@ -20,5 +20,9 @@ export const StyledH5 = styled.h5`
     font-size: 40px;
   
   }
+  @media (max-width: 321px) {
+    max-width: 310px;
 
+
+  }
 `;

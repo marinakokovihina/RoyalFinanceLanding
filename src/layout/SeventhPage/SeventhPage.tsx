@@ -21,14 +21,14 @@ export const SeventhPage = () => {
 
     const def = '311px';
     const def2 = '388px'
-    const isDesktop = useMediaQuery({ minWidth: 1024 });
-
+    const isDesktop = useMediaQuery({ minWidth: 1023 });
+    const m =  useMediaQuery({ maxWidth: 1440 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
     return (
         <SeventhPageStyled>
-            <SvgWrapperStyled display={isMobilePlus ? "none" : 'block'} top={'5800px'} left={'84%'} >
+            <SvgWrapperStyled display={m ? "none" : 'block'} top={'5800px'} left={'84%'} >
                 <Icon IconId={'circleForSeventhPage'} viewBox={'0 0 302 474'} width={'302'} height={'474'}/>
             </SvgWrapperStyled>
             <ScrollAnimation   animateIn="animate__fadeInLeft"
@@ -93,6 +93,11 @@ const SeventhPageStyled = styled.div `
     padding-left: 0px;
     margin-left: 0;
 
+  
+  }
+  @media (max-width: 321px) {
+    max-width: 310px;
+
 
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -107,10 +112,11 @@ const SeventhPageStyled = styled.div `
   display: flex;
   flex-direction: row;
   gap: 40px;
-  @media (max-width: 1023px) {
+  @media (max-width: 1440px) {
     display: flex;
     flex-direction: column;
   }
+  
   
 
 `;const StyledDivForBeidge = styled.div `
@@ -122,15 +128,18 @@ const CardWrapper = styled.div `
   display: flex;
   flex-direction: row;
   gap: 40px;
+    
+ 
   @media (max-width: 767px) {
-    max-width: 351px;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 30px;}
-  @media (min-width: 1024px)  {
-    flex-direction: row;
-    gap: 25px;
-  }
+  
+  //@media (min-width: 768px)  {
+  //  flex-direction: row;
+  //  gap: 25px;
+  //}
   @media (min-width: 768px) and (max-width: 1023px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -144,8 +153,13 @@ const TextWrapper = styled.div `
   display: flex;
   flex-direction: column;
   gap: 40px;
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (min-width: 427px) and (max-width: 1439px) {
     gap: 24px;
+
+  }
+  @media (max-width: 321px) {
+    max-width: 310px;
+
 
   }
 `;
@@ -155,7 +169,12 @@ const StyledH6 = styled.h6`
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (max-width: 321px) {
+    max-width: 310px;
+
+
+  }
+  @media (min-width: 427px) and (max-width: 1439px) {
     font-size: 20px;
 
   }
@@ -167,7 +186,12 @@ const StyledP = styled.p `
   font-size: 18px;
   line-height: 23px;
   color: ${theme.colors.fontColorSecondary};
-  @media (min-width: 427px) and (max-width: 1024px) {
+  @media (max-width: 321px) {
+    max-width: 310px;
+
+
+  }
+  @media (min-width: 427px) and (max-width: 1439px) {
     font-size: 18px;
 
   }
@@ -187,9 +211,10 @@ const StyledWrapper = styled.div `
   border-radius: 20px;
   @media (max-width: 767px) {
     width: 100%;
+    align-items: center;
     height: auto;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     height: auto;
   }
 `;

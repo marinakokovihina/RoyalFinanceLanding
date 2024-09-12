@@ -59,20 +59,19 @@ const StyledFooterCard = styled.div `
   padding: 20px;
   gap: 16px;
   color: ${theme.colors.fontColorWhite};
-  @media (max-width: 767px) {
+  @media (max-width: 1440px) {
     width: 95%;
     flex-direction: row;
     height: auto;
 
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    width: 632px;
-    height: 130px;
-    flex-direction: row;
-
-  }
+  //@media (min-width: 768px) and (max-width: 1024px) {
+  //  width: 30%;
+  //  height: 130px;
+  //  flex-direction: row;
+  //
+  //}
   @media (min-width: 1024px) and (max-width: 1439px) {
-   width: 274px;
     flex-direction: column;
     height: 232px;
 

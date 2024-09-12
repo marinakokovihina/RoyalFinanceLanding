@@ -45,7 +45,6 @@ const StyledButton = styled.div `
   background: rgba(56, 70, 190, 1);
   color: #f4f4f5;
   width: 55px;
-  
   height: 55px;
   border-radius: 100%;
   font-size: 28px;

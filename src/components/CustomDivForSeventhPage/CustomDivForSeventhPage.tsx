@@ -83,8 +83,8 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
   height: 382px;
   background: ${theme.colors.colorForCardBlue};
   border-radius: 20px;
-  @media (max-width: 767px) {
-    width: 351px;
+  @media (max-width: 1439px) {
+    width: 345px;
     height: 248px;
     gap: 24px;
     padding: 16px;
@@ -97,6 +97,7 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
   width: 632px;
 
   }
+  @media (max-width: 322px) {width: 322px}
 
 
 `;

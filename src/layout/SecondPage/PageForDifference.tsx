@@ -12,7 +12,7 @@ import man from "../../assets/img/ManForSecondPage.png"
 export const PageForDifference = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const isTablet = useMediaQuery({maxWidth: 1023})
-    // const isDesktop = useMediaQuery({ minWidth: 1025 });
+    const isDesktop = useMediaQuery({ maxWidth: 1399 });
 
     return (
         <WrapperForDifferenceStyled id = "possibilities">
@@ -45,7 +45,7 @@ export const PageForDifference = () => {
         </PageForDifferenceStyled>
             {/*todo расширить на весь экран надпись
             */}
-            <SvgWrapperStyled top={'1070px'} left={'84%'} fill={'none'} display={isMobile ? 'none' : isTablet ? 'none' : "block"}>
+            <SvgWrapperStyled top={'1070px'} left={'84%'} fill={'none'} display={isMobile ? 'none' : isDesktop ? 'none' : "block"}>
                 <Icon IconId={'circleForPageDifference'}  height={'747'} viewBox={'0 0 298 747'} width={'298'}/>
             </SvgWrapperStyled>
         </WrapperForDifferenceStyled>

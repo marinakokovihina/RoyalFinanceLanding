@@ -53,7 +53,7 @@ const StyledWrapHeader = styled.div`
     left: 0;
     width: 100%;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1399px) {
     min-width: 100%;
     padding-left: 0;
     position: fixed;

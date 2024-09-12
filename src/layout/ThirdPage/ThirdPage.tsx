@@ -17,11 +17,11 @@ import man from "../../assets/img/ManForThirdPage.png"
 
 export const ThirdPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
-
+    const isLaptop = useMediaQuery({maxWidth: 1399})
     return (
         <ThirdSection id = "features">
             <IconDiv>
-                <SvgWrapperStyled display={isMobile ? 'none' : 'block'} top='2055px' left={'-15%'}>
+                <SvgWrapperStyled display={isLaptop ? 'none' : 'block'} top='2055px' left={'-15%'}>
                     <Icon IconId='circleForMan' height='748' width='538' viewBox='0 0 538 748'/>
                 </SvgWrapperStyled
                 ><ScrollAnimation   animateIn="animate__fadeInUp"

@@ -16,8 +16,8 @@ import {Image} from "../../components/Image/Image";
 export const FourthPage = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const isMobilePlus = useMediaQuery({ maxWidth: 1023 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-    const isDesktop = useMediaQuery({ minWidth: 1023, maxWidth: 1439 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1439 });
+    const isDesktop = useMediaQuery({ minWidth: 768 });
 
     return (
         <FourthPageStyled id = "safety">
@@ -74,14 +74,13 @@ export const FourthPage = () => {
                                    duration={1}
                                    delay={1}
                                    offset={10}  >
-                    {!isDesktop && (
+                    {!isTablet && (
                         <Image src={microbe} height={isMobile ? '240px' : isTablet ? '336px':  isDesktop ? '600px' : '601px'} width={isMobile ? '240px': isTablet ? '336px' :isDesktop ? '600px' :'601px'}/>
                         // <Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  '601'} width={isMobile ? '240': isTablet ? '336'  :'601'}/>
                     )}
-                    <SvgWrapperStyled display ={isDesktop ?'block' :'none'} top={'3728px'} left={'60%'}>
-                       <Image src={microbe} height={isMobile ? '240px' : isTablet ? '336px':  isDesktop ? '600px' : '601px'} width={isMobile ? '240px': isTablet ? '336px' :isDesktop ? '600px' :'601px'}/>
-                        {/*<Icon IconId={'spider'} viewBox={'0 0 601 601'} height={isMobile ? '240' : isTablet ? '336':  isDesktop ? '600' : '601'} width={isMobile ? '240': isTablet ? '336' :isDesktop ? '600' :'601'}/>*/}
-                    </SvgWrapperStyled>
+                    {isTablet && (
+                       <Image src = {microbe} height = {isMobile ? '240px' : isTablet ? '336px':  isDesktop ? '600px' : '601px'} width={isMobile ? '240px': isTablet ? '336px' :isDesktop ? '600px' :'601px'}/>)
+                    }
                 </ScrollAnimation>
                 <StyledH5Mob><SpanGreen> Безопасность </SpanGreen>хранения и переводов</StyledH5Mob>
 
@@ -138,6 +137,7 @@ const LeftColumn = styled.div`
     margin-left: 5%;  } 
   @media (min-width: 1025px) and (max-width: 1439px) {
     align-items: center;
+    gap: 0px;
     max-width: 60%;
     justify-content: center;
     margin-left: 5%;  }
@@ -190,14 +190,14 @@ const StyledH5Mob = styled.h5`
     margin-bottom: 40px;
 
   }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 40px;
     max-width: 35%;
     display: block;
 
 
   }
-  @media (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 1440px)  {
     max-width: 100%;
     font-size: 48px;
 

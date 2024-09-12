@@ -71,5 +71,9 @@ const CardForSeventhPageStyled = styled.div`
   flex-direction: column;
   gap: 20px;
   border-radius: 20px;
+  @media (min-width: 1024px) and (max-width: 1439px) {
+align-items: center;
+  }
+
 `
 
