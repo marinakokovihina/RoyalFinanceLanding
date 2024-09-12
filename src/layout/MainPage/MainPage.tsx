@@ -42,7 +42,7 @@ const StyledMain = styled.main `
         flex-direction: column;
         margin-bottom: 240px;
         align-items: center;
-        max-width: 100%;
+        max-width: 95%;
         margin-top: 160px;
         
   }

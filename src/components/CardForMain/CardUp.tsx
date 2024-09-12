@@ -31,12 +31,12 @@ export const CardUp = (props: CardForMainProps) => {
         <ScrollAnimation
             animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInRight"}
             animateOnce={animationMode}
-            duration={2}
+            duration={7}
             delay={2}
             offset={10}
             initiallyVisible={true}
         >
-        <StyledCardForMain className= {isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInRight" }
+        <StyledCardForMain className= {isMobile ? "" :  "animate__animated animate__fadeInRight" }
             height={props.height} width={props.width} background={props.background} border={props.border}
                            boxShadow={props.boxShadow} backdropFilter={props.backdropFilter}
 

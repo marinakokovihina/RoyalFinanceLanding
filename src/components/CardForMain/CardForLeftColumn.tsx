@@ -16,12 +16,12 @@ export const CardForLeftColumn = (props: CardForMainProps) => {
         <ScrollAnimation
             animateIn={isMobile ? 'animate__fadeIn' : "animate__fadeInDown"}
             animateOnce={animationMode}
-            duration={2}
+            duration={7}
             delay={2}
             offset={10}
             initiallyVisible={true}
         >
-            <StyledCardForMain className= {isMobile ? "animate__animated animate__fadeIn" :  "animate__animated animate__fadeInDown animate " }
+            <StyledCardForMain className= {isMobile ? "" :  "animate__animated animate__fadeInDown animate " }
                                height={props.height} width={props.width} background={props.background} border={props.border}
                                boxShadow={props.boxShadow} backdropFilter={props.backdropFilter} >
                 <Icon IconId='frameWithTradeIcon' height='72' width='142' viewBox='0 0 142 72'/>
