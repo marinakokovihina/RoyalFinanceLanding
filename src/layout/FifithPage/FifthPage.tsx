@@ -121,7 +121,7 @@ display: flex;
     
 
   }
-  @media (min-width: 431px) and (max-width: 1440px) {
+  @media (min-width: 431px) and (max-width: 1439px) {
     flex-direction: column-reverse;
     align-items: center;
     width: 90%;

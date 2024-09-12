@@ -22,7 +22,7 @@ export const SeventhPage = () => {
     const def = '311px';
     const def2 = '388px'
     const isDesktop = useMediaQuery({ minWidth: 1023 });
-    const m =  useMediaQuery({ maxWidth: 1440 });
+    const m =  useMediaQuery({ maxWidth: 1439 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
 
     //                                         {/*TODO по-нормальному тут сделать с свгшками*/}
@@ -112,7 +112,7 @@ const SeventhPageStyled = styled.div `
   display: flex;
   flex-direction: row;
   gap: 40px;
-  @media (max-width: 1440px) {
+  @media (max-width: 1439px) {
     display: flex;
     flex-direction: column;
   }

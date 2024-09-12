@@ -70,7 +70,7 @@ const StyledFooter = styled.footer `
     border-radius: 20px;
     margin-bottom: 50px;
   }
-  @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     margin-top: 0;
     width: 90%;
     height: auto;

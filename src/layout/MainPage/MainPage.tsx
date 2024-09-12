@@ -61,14 +61,14 @@ const StyledMain = styled.main `
         gap: 120px;
         margin-top: 160px;
   }
-  @media (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1439px) {
     flex-direction: row;
     margin-top: 160px;
     gap: 90px;
 
 
   }
-  @media (min-width: 1440px)  {
+  @media (min-width: 1439px)  {
     flex-direction: row;
     margin-top: 160px;
     gap: 120px;
