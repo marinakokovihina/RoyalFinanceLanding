@@ -13,6 +13,7 @@ import {GlobalStyles} from "./styles/globalStyles";
 import {SvgWrapperStyled} from "./components/SvgWrapper/SvgWrapper";
 import styled from "styled-components";
 import ScrollToTop from "./components/ScrollToTop";
+import "./index.css"
 
 function App() {
 
