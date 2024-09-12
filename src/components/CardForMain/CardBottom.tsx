@@ -15,8 +15,8 @@ export const CardBottom = (props: CardForMainProps) => {
         <ScrollAnimation
             animateIn={isMobile ? "animate__fadeIn" : "animate__fadeInLeft"}
             animateOnce={animationMode}
-            duration={3}
-            delay={2}
+            duration={1}
+            delay={0}
             offset={10}
         >
             <StyledCardForMain className= { isMobile ? " " :  "animate__animated animate__fadeInLeft"}
