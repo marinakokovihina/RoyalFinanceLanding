@@ -19,7 +19,7 @@ export const PageForDifference = () => {
             <ScrollAnimation
                 animateIn="animate__fadeIn"
                 animateOnce={animationMode}
-                duration={5}
+                duration={1}
                 delay={0}
                 offset={20}
             >
