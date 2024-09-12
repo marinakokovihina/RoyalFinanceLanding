@@ -74,6 +74,8 @@ const StyledFooter = styled.footer `
     margin-top: 0;
     width: 90%;
     height: auto;
+    margin-top: 120px;
+
   }
 `;
 const GroupFooterCard = styled.div `

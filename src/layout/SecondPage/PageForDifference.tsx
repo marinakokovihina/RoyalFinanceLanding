@@ -68,7 +68,7 @@ const WrapperForDifferenceStyled = styled.div `
     padding-top: 60px;
     margin-top: 60px;
   }
-  @media (min-width: 767px) and (max-width: 1024px) {
+  @media (min-width: 767px) and (max-width: 1440px) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -94,7 +94,7 @@ const PageForDifferenceStyled = styled.div `
     max-width: 351px;
   }
   
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     display: flex;
     flex-direction: column-reverse;
     gap: 40px;
@@ -110,7 +110,7 @@ const StyledH4Mob = styled.h4 `
     line-height: 40px ;
     
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     display: block;
     font-size: 40px;
     line-height: 40px ;
@@ -127,7 +127,7 @@ const StyledH4Mob = styled.h4 `
     display: none;
     flex-direction: column-reverse;
   }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1440px) {
       display: none;
 
     }
@@ -150,7 +150,7 @@ const RightColumn = styled.div `
     gap: 40px;
     align-items: flex-start;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     flex-direction: column;
     align-items: flex-start;
 

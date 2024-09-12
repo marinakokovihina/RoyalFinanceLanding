@@ -33,7 +33,7 @@ export const MainRightComponent = () => {
 
 const StyledMainRightComponent = styled.div `
     //margin-left: 6%;
-   margin-right: 2%;
+   //margin-right: 2%;
 
 
   @media (max-width: 767px) {

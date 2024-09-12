@@ -38,6 +38,7 @@ const StyledButton = styled.div<ButtonType> `
   display:  ${props => props.display || 'flex'};;
   align-items: center;
   font-weight: 500;
+  min-width: 185px;
   font-size: 18px;
   justify-content: center;
   gap: ${props => props.gap};

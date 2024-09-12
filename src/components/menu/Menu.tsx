@@ -51,6 +51,8 @@ const StyledUl = styled.ul `
   }
   @media (min-width: 1024px) and (max-width: 1440px) {
     // background: ${theme.colors.fontColorWhite};
+    gap: 16px;
+
 
 
   }

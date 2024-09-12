@@ -100,7 +100,7 @@ const FourthPageStyled = styled.div `
     display: flex;
     align-items: center;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     margin-top: 80px;
     padding-top: 80px;
 
@@ -116,7 +116,7 @@ padding: 0;
     gap: 0;
     max-width: 351px;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     flex-direction: column-reverse;
 
   }
@@ -137,7 +137,7 @@ const LeftColumn = styled.div`
     margin-left: 5%;  } 
   @media (min-width: 1025px) and (max-width: 1439px) {
     align-items: center;
-    gap: 0px;
+    gap: 40px;
     max-width: 60%;
     justify-content: center;
     margin-left: 5%;  }
@@ -151,10 +151,10 @@ const RightColumn = styled.div`
     justify-content: center;
 
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     flex-direction: row-reverse;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     gap: 0px;
     align-items: center;
 
@@ -172,7 +172,7 @@ const StyledH5 = styled.h5`
       
 
   }
-  @media (min-width: 446px) and (max-width: 1024px) {
+  @media (min-width: 446px) and (max-width: 1439px) {
     display: none;
 
   }

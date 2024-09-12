@@ -64,6 +64,8 @@ const StyledMain = styled.main `
   @media (min-width: 1024px) and (max-width: 1440px) {
     flex-direction: row;
     margin-top: 160px;
+    gap: 90px;
+
 
   }
   @media (min-width: 1440px)  {

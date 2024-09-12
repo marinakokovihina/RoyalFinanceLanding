@@ -99,7 +99,7 @@ const Container = styled.div`
     gap: 40px;
 
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     flex-direction: column;
     gap: 80px;
 
@@ -117,7 +117,7 @@ const LeftColumn = styled.div`
     align-items: flex-start;
    
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;

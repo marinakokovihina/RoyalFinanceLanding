@@ -91,7 +91,7 @@ const StyledHeader = styled.header`
 
 
   } @media (min-width: 769px) and (max-width: 1439px) {
-    gap: 8%;
+    gap: 6%;
   width: 90%;
   justify-content: start;
   padding-left: 0;
