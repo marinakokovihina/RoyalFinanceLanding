@@ -23,8 +23,7 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
   }
   @media (max-width: 321px) {
   width: 100%;
-    margin-left: 5%;
-
+  align-items: center;
   }
     @media (min-width: 322px) and (max-width: 767px){
     width: auto;

@@ -9,9 +9,9 @@ import {SvgWrapperStyled} from "../../components/SvgWrapper/SvgWrapper";
 import {Icon} from "../../components/Icon/Icon";
 import {useMediaQuery} from "react-responsive";
 import ScrollAnimation from "react-animate-on-scroll";
-import FirstImg from "../../assets/img/Perevod1.png"
+import FirstImg from "../../assets/img/Perevod3.png"
 import SecondImg from "../../assets/img/Perevod2.png"
-import ThirdImg from "../../assets/img/Perevod3.png"
+import ThirdImg from "../../assets/img/Perevod1.png"
 import {animationMode} from "../../store/type";
 
 export const SeventhPage = () => {

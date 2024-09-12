@@ -71,6 +71,7 @@ const MenuBar = styled.div`
   max-width: 100%;
   justify-content: center;
   gap: 30px;
+  
   padding-left: 0;
   @media (min-width: 427px) and (max-width: 768px) {
     width: 100%;
@@ -85,6 +86,10 @@ const MenuBar = styled.div`
     margin-left: 5%;
     justify-content: start;
     padding-left: 0;
+  }
+  @media (max-width: 426px) {
+    margin-left: 5%;
+    justify-content: flex-start;
   }
 `;
 //todo fix menu
