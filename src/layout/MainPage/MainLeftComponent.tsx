@@ -44,9 +44,10 @@ const StyledMainLeftComponent = styled.div `
   justify-content: left;
   text-align: left;
   //margin-left: 5%;
-  @media (max-width: 426px) {
-    padding-left:0px;
-    padding-right: 12px;
+  @media (max-width: 767px) {
+    //padding-left: 10px;
+    max-width: 90%;
+    //padding-right: 12px;
     margin-bottom: 100px;
     align-items: center;
   }
@@ -59,7 +60,7 @@ const StyledH2 = styled.h2 `
     line-height: 32px;
     color: ${theme.colors.fontColorBlue};
     margin-bottom: 20px;
-  @media (max-width: 426px) {
+  @media (max-width: 767px) {
     font-size: 20px;
   }
 
@@ -71,7 +72,7 @@ const StyledH3 = styled.h2`
   line-height: 76px;
   color: ${theme.colors.fontPrimary};
   margin-bottom: 60px;
-  @media (max-width: 430px) {
+  @media (max-width: 767px) {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 40px;

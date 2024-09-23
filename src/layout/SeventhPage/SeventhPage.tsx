@@ -65,7 +65,7 @@ export const SeventhPage = () => {
                                         height1={'36'} width1={'36'} viewBox1={'0 0 36 36'} src={ThirdImg}
                                          viewBox2={'0 0 276 349'} width2={isMobile ? def : '276px'} height2={isMobile ? def2 :'349px'}
                     />
-                    <CustomDivForSeventhPage display={ !isDesktop ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={ isTablet ? 'flex' : 'none'} />
                 </CardWrapper>
             </StyledWrapper>
                 </ScrollAnimation>
@@ -75,7 +75,7 @@ export const SeventhPage = () => {
                                    delay={300}
                                    offset={10}  >
                 <StyledDivForBeidge>
-                    <CustomDivForSeventhPage display={isDesktop ? 'flex' : 'none'} />
+                    <CustomDivForSeventhPage display={!isTablet ? 'flex' : 'none'} />
 
                 </StyledDivForBeidge>
                 </ScrollAnimation>
@@ -100,6 +100,11 @@ const SeventhPageStyled = styled.div `
 
 
   }
+  @media (min-width: 322px) and (max-width: 374px){
+    max-width: 320px;
+
+
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 160px;
     width: 90%;
@@ -114,6 +119,7 @@ const SeventhPageStyled = styled.div `
   gap: 40px;
   @media (max-width: 1439px) {
     display: flex;
+    
     flex-direction: column;
   }
   
@@ -209,12 +215,18 @@ const StyledWrapper = styled.div `
   background: ${theme.colors.fontColorWhite};
   border: 1px solid #F1F1F4;
   border-radius: 20px;
-  @media (max-width: 767px) {
-    width: 100%;
+  @media (min-width: 425px) and (max-width: 767px) {
+    width: 351px;
     align-items: center;
     height: auto;
   }
   @media (min-width: 768px) and (max-width: 1439px) {
     height: auto;
+  }
+  @media (min-width: 320px) and (max-width: 374px){
+    max-width: 320px;
+  }
+  @media (min-width: 375px) and (max-width: 424px){
+    max-width: 90%;
   }
 `;

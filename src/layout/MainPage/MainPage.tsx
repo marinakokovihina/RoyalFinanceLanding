@@ -40,7 +40,7 @@ const StyledMain = styled.main `
   margin-top: 160px;
   @media (max-width: 426px) {
         flex-direction: column;
-        margin-bottom: 240px;
+        //margin-bottom: 240px;
         align-items: center;
         max-width: 95%;
         margin-top: 160px;
@@ -51,7 +51,8 @@ const StyledMain = styled.main `
     flex-direction: column;
     margin-bottom: 240px;
     align-items: center;
-    max-width: 100%;
+
+    max-width: 95%;
     margin-top: 160px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {

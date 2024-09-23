@@ -20,7 +20,10 @@ const CardForFifthPageStyled = styled.div`
   color: ${theme.colors.fontColorWhite};
   border-radius: 20px;
   padding: 20px;
-  @media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 374px) {
+    width: 315px;
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
     width: 351px;
     height: 118px;
     display: flex;

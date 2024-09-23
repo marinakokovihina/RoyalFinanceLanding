@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {IconCardTether} from "./Icons/IconCard";
@@ -7,7 +7,6 @@ import 'animate.css/animate.min.css';
 import   "./../../styles/style.css"
 import {animationMode} from "../../store/type";
 import ScrollAnimation from "react-animate-on-scroll";
-import {animate} from "framer-motion";
 
 export type CardForMainProps = {
     width?: string,
@@ -65,7 +64,11 @@ export const StyledCardForMain = styled.div <CardForMainProps>`
   .animate__delay-0.5s {
     animation-delay: 0.5s;
   }
-  @media (max-width: 767px) {
+  @media (min-width: 319px) and (max-width: 425px) {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+    @media (min-width: 426px) and (max-width: 767px) {
     padding-left: 16px;
     padding-top: 16px;
 

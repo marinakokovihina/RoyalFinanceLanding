@@ -115,6 +115,7 @@ padding: 0;
     flex-direction: column-reverse;
     gap: 0;
     max-width: 351px;
+    align-items: center;
   }
   @media (min-width: 768px) and (max-width: 1439px) {
     flex-direction: column-reverse;
@@ -174,6 +175,7 @@ const StyledH5 = styled.h5`
   }
   @media (min-width: 446px) and (max-width: 1439px) {
     display: none;
+    
 
   }
 `;
@@ -188,7 +190,7 @@ const StyledH5Mob = styled.h5`
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 40px;
-
+    width: 90%;
   }
   @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 40px;

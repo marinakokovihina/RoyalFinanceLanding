@@ -30,11 +30,11 @@ const Text = styled.div `
   text-align: left;
   gap: 16px;
   display: flex;
-  flex-direction: column;
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     max-width: 80%;
+    gap: 5px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;

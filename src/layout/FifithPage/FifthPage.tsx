@@ -51,7 +51,7 @@ export const FifthPage = () => {
                                        duration={1}
                                        delay={20}
                                        offset={100}>
-                        <Image src={Map} height={isMobile ? '242px' : '516px'} width={isMobile ? '351px' : '746px'}/>
+                        <Image src={Map} height={isMobile ? 'auto' : '516px'} width={isMobile ? '321px' : '746px'}/>
                     </ScrollAnimation>
                     </RightColumn>
             </Container>
@@ -69,7 +69,7 @@ export const FifthPage = () => {
   @media  (max-width: 767px) {
     font-size: 32px;
     line-height: 40px;
-    max-width: 350px;
+    max-width: 335px;
     text-align: left;
     display: none;
 

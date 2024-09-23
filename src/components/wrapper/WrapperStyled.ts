@@ -14,19 +14,21 @@ export const StyledWrapper = styled.div <StyledWrapperTypes>`
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "flex-start"};
   align-items: ${props => props.align || "stretch"};
-  flex-wrap: ${props => props.wrap || "no wrap"};
+  flex-wrap: ${props => props.wrap || "nowrap"};
+  -webkit-flex-wrap: ${props => props.wrap || "nowrap"};
+
   @media (min-width: 768px) and (max-width: 1024px) {
     width: max-content;
     max-width: 766px;
     margin-left: 0;
 
   }
-  @media (max-width: 321px) {
-  width: 100%;
-  align-items: center;
+  @media (max-width: 374px) {
+    width: 100%;
+    align-items: center;
     margin-left: 5%;
   }
-    @media (min-width: 322px) and (max-width: 767px){
+    @media (min-width: 375px) and (max-width: 767px){
     width: auto;
       margin-left: 0;
     //  width: fit-content;

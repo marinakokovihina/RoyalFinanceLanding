@@ -51,9 +51,11 @@ export const StyledInnerDiv = styled.div <IconCardTetherProps> `
   margin-top: ${props => props.marginTop};
   @media (max-width: 426px) {
     justify-content: start;
-    padding-left: 16px;
+    width: 295px;
+    padding-left: 10px;
     align-items: center;
   }
+  
 `
 export const StyledP = styled.p <IconCardTetherProps> `
   font-style: normal;
@@ -75,5 +77,11 @@ export const StyledSpan = styled.span `
   font-size: 18px;
   line-height: 32px;
   color: ${theme.colors.fontPrimary};
+  @media (max-width: 426px) {
+    font-size: 16px;
+    font-weight: 400;
+
+
+  }
 `
 

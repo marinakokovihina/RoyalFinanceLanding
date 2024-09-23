@@ -31,7 +31,7 @@ export const Footer = () => {
                 <FooterCard idIcon={'number3White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Быстро и без рисков решим вашу задачу'} textH={'Решим'}/>
             </GroupFooterCard>
             <Button onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
-                    width={isMobile ? '311px' : isTablet ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
+                    width={isMobile ? '280px' : isTablet ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
                      borderRadius={'12px'} iconId={'tgIconForWhiteButton'} background={theme.colors.fontColorWhite}
                      widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'} color={`${theme.colors.fontPrimary}`}
                      gap={'12px'}
@@ -60,10 +60,21 @@ const StyledFooter = styled.footer `
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
   -webkit-align-items: flex-start;
-  
-  @media (max-width: 767px) {
+
+  @media (min-width: 320px) and (max-width: 374px){
+    max-width: 322px;
+    margin-left: 2%;
     flex-direction: column;
-    width: 351px;
+    height: auto;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
+    flex-direction: column;
+    width: 345px;
     height: auto;
     margin-top: 120px;
     padding: 20px;
@@ -71,7 +82,6 @@ const StyledFooter = styled.footer `
     margin-bottom: 50px;
   }
   @media (min-width: 768px) and (max-width: 1439px) {
-    margin-top: 0;
     width: 90%;
     height: auto;
     margin-top: 120px;
@@ -83,9 +93,14 @@ const GroupFooterCard = styled.div `
   flex-direction: row;
   gap: 24px;
   margin-bottom: 62px;
-  @media (max-width: 767px) {
+  @media (min-width: 373px) and (max-width: 767px) {
     flex-direction: column;
     width: 311px;
+  }
+  @media (min-width: 320px) and (max-width: 374px){
+    flex-direction: column;
+    width: auto;
+
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     flex-direction: column;
@@ -107,6 +122,10 @@ const StyledH4 = styled.div `
     text-align: left;
     font-size: 32px;
     line-height: 40px;
+    
 
+  }
+  @media (min-width: 320px) and (max-width: 766px) {
+    width: 80%;
   }
 `

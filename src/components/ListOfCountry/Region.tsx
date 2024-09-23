@@ -28,11 +28,8 @@ const RegionDiv = styled.div `
   margin: 20px 24px 20px 20px;
   flex-wrap: wrap;
   flex-direction: column;
-  @media (max-width: 430px) {
-    width: 351px;
-    max-height: 671px;
-    max-width: max-content;
-
+  @media (min-width: 320px) and (max-width: 430px) {
+    width: 315px;
   }
   @media (min-width: 431px) and (max-width: 1024px) {
     max-width: 100%;

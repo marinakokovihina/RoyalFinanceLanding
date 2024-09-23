@@ -98,7 +98,10 @@ const StyledDiv = styled.div <CustomDivForSeventhPageProps> `
 
   }
   @media (max-width: 322px) {width: 322px}
+  @media (min-width: 427px) and (max-width: 767px) {
+    width: 351px;
 
+  }
 
 `;
 const Item1 = styled.div `

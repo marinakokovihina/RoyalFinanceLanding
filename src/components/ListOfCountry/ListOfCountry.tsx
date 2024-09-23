@@ -54,7 +54,13 @@ const Container = styled.div`
   background: #FFFFFF;
   border: 1px solid #F1F1F4;
   border-radius: 20px;
-  @media (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 374px) {
+    width: 315px;
+    max-height: 671px;
+    max-width: max-content;
+
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
     width: 351px;
     height: auto;
   }
@@ -77,7 +83,8 @@ const ListOfButtons = styled.div`
 //TODO ПОФИКСИТЬ КНОПКИ
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (min-width: 431px) and (max-width: 1024px) {
+  @media (min-width: 320px) and   (max-width: 375px) {
+    width: 85%;
   }
 `;
 
