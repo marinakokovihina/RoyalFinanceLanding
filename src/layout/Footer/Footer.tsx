@@ -30,7 +30,7 @@ export const Footer = () => {
                 <FooterCard idIcon={'number2White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Обсудим детали сотрудничества на выгодных для обоих сторон условиях'} textH={'Договоримся'}/>
                 <FooterCard idIcon={'number3White'} viewBox={'0 0 44 44'} width={'44'} height={'44'} textP={'Быстро и без рисков решим вашу задачу'} textH={'Решим'}/>
             </GroupFooterCard>
-            <Button onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+            <Button onClick = {() => { window.open("https://t.me/royalfinance_RF", "_blank");    }}
                     width={isMobile ? '280px' : isTablet ? '311px' : '238px'} height = {isMobile ? '52px' : '48px'} text={'Связаться с нами'}
                      borderRadius={'12px'} iconId={'tgIconForWhiteButton'} background={theme.colors.fontColorWhite}
                      widthIcon={'24'} heightIcon={'24'} viewBoxIcon={'0 0 24 24'} color={`${theme.colors.fontPrimary}`}

@@ -22,7 +22,7 @@ export const MobileMenu = () => {
                     <MenuBar>
                         <Icon onClick={clickPopUp} IconId={'closeMenu'} viewBox={'0 0 32 32'} width={'32'} height={'32'} />
                         <Logo />
-                        <Button  onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+                        <Button  onClick = {() => { window.open("https://t.me/royalfinance_RF", "_blank");    }}
                                  width={isTablet ?  ' 234px' : isMobile ? 'auto'  :'335px'} height = {'48px'}
                                  text={'Связаться с нами'} borderRadius={'12px'} iconId={'tgIcon'}
                                  background={'linear-gradient(270deg, #4168F1 30%, #3846BE 100%)'}
@@ -33,7 +33,7 @@ export const MobileMenu = () => {
                     </MenuBar>
                     <NavBar>
                         <Menu display={isMobile ? 'block' : isTablet ? 'block' : 'none'}/>
-                        <Button  onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+                        <Button  onClick = {() => { window.open("https://t.me/royalfinance_RF", "_blank");    }}
                                   height = {'48px'}
                                  text={'Связаться с нами'} borderRadius={'12px'} iconId={'tgIcon'}
                                  background={'linear-gradient(270deg, #4168F1 30%, #3846BE 100%)'}

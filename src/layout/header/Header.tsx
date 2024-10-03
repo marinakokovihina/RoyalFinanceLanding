@@ -17,7 +17,7 @@ export const Header = () => {
                 <MobileMenu/>
                 <Logo />
                 <Menu display={isMobile ? 'none' : isTablet ? 'none' : 'block'}/>
-                <Button   onClick = {() => { window.open("https://t.me/Rockefeller_017", "_blank");    }}
+                <Button   onClick = {() => { window.open("https://t.me/royalfinance_RF", "_blank");    }}
                           width={isTablet ?  ' 234px' :'335px'} height = {'48px'}
                           text={'Связаться с нами'} borderRadius={'12px'}
                           iconId={'tgIcon'}
